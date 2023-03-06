@@ -75,6 +75,6 @@
 - 예시    
 
     ```jsx
-    [FE] feat : Login DEsign.py
+    [FE] feat : Login
     
     ```
