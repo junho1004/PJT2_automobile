@@ -77,10 +77,4 @@
     ```jsx
     [FE] feat : Login DEsign.py
     
-    한글한글한글
-    - 영어말고 한글로
-    - 선택사항
-    
-    Issue tracker id : 486
-    JIRA Code : #123
     ```
