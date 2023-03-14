@@ -1,0 +1,123 @@
+buildscript {
+    ext {
+        queryDslVersion = "5.0.0"
+    }
+}
+
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.7.8'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+    id "com.ewerk.gradle.plugins.querydsl" version "1.0.10" //querydsl 추가
+}
+
+group = 'com.isf6'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.spring.io/milestone' }
+    maven { url 'https://repo.spring.io/snapshot' }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-web-services'
+    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+    implementation 'org.springframework.boot:spring-boot-starter-tomcat:2.7.5'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    implementation 'it.ozimov:embedded-redis:0.7.2'
+    testImplementation 'junit:junit:4.13.1'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    compileOnly 'org.projectlombok:lombok'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    runtimeOnly 'com.mysql:mysql-connector-j'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.1'
+    implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.13.1'
+    implementation group: 'com.auth0', name: 'java-jwt', version: '3.10.2'
+
+    // websocket
+    //STOMP 웹소캣 서버 사이드 테스트를 위한 의존성 추가
+    implementation("org.springframework.boot:spring-boot-starter-mustache")
+    //STOMP 관련 프론트 라이브러리
+    implementation'org.webjars.bower:jquery:3.3.1'
+    implementation'org.webjars:sockjs-client:1.1.2'
+    implementation'org.webjars:stomp-websocket:2.3.3-1'
+    implementation'org.webjars:webjars-locator:0.30'
+    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+
+    // test용 h2 데이터베이스
+    implementation 'com.h2database:h2'
+
+    //open vidu
+    implementation('io.openvidu:openvidu-java-client:2.21.1')
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+
+    // Swagger2 gradle
+    implementation (group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'){
+        exclude module: 'swagger-annotations' exclude module: 'swagger-models'
+    }
+    implementation "io.swagger:swagger-annotations:1.5.21"
+    implementation "io.swagger:swagger-models:1.5.21"
+    implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+
+    implementation 'org.springframework.cloud:spring-cloud-starter-aws:2.2.6.RELEASE'
+
+    //querydsl 추가
+    implementation "com.querydsl:querydsl-jpa:${queryDslVersion}"
+    implementation "com.querydsl:querydsl-apt:${queryDslVersion}"
+//    implementation "com.querydsl:querydsl-jpa:${queryDslVersion}" // querydsl 라이브러리
+//    annotationProcessor "com.querydsl:querydsl-apt:${queryDslVersion}:jpa" //  Querydsl 관련 코드 생성 기능 제공
+//    annotationProcessor("jakarta.persistence:jakarta.persistence-api")
+//    annotationProcessor("jakarta.annotation:jakarta.annotation-api")
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+//querydsl 추가 시작 (위에 plugin 추가 부분과 맞물림)
+def querydslDir = "$buildDir/generated/querydsl"
+
+querydsl {
+    jpa = true
+    querydslSourcesDir = querydslDir
+}
+
+sourceSets {
+    main.java.srcDir querydslDir
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+    querydsl.extendsFrom compileClasspath
+}
+
+compileQuerydsl {
+    options.annotationProcessorPath = configurations.querydsl
+}
+
+//compileQuerydsl.doFirst {
+//    if(file(querydslDir).exists() )
+//        delete(file(querydslDir))
+//}
+//querydsl 추가 끝

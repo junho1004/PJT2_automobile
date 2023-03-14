@@ -1,0 +1,121 @@
+/* 상단 네비게이션 */
+
+.body {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  width: 95%;
+  margin: 5% 0 3% 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navleft {
+  display: flex;
+  align-items: center;
+}
+
+.navright {
+  margin-right: 3%;
+}
+
+.logout {
+  color: #d61919;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+  width : 50%;
+}
+
+.userimg {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: auto;
+}
+
+.userimg img {
+  border-radius: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.username {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.mypoint {
+  background-color: black;
+  margin : auto;
+  width : 90%;
+  height: 25px;
+justify-content: center;
+  border-radius: 25px;
+  text-align: center;
+  padding: 5px auto;
+  display: flex;
+}
+
+.myptblack {
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 1px;
+}
+
+.myptgreen {
+  color: #b5ff23;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 1px;
+}
+
+.menus {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-bottom: 3%;
+  border-bottom: 0.3px solid grey;
+}
+
+.menustitle {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+
+.menuicon {
+  width: 18px;
+  height: 18px;
+}
+
+.menutitle {
+  font-size: 15px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 2%;
+}
+
+.updateicon {
+  width: 23px;
+  height: 23px;
+}
+
+.userdiv {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 5px;
+}

@@ -1,0 +1,67 @@
+.body {
+  width : 70%;
+  height : 35%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 10px 10px 5px -3px rgba(77,74,74,0.37);
+  -webkit-box-shadow: 10px 10px 5px -3px rgba(77,74,74,0.37);
+  -moz-box-shadow: 10px 10px 5px -3px rgba(77,74,74,0.37);
+
+  /* 중앙배치 */
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  /* border:red solid 1px; */
+}
+
+.xicon {
+  width: 20px;
+  height: 20px;
+  margin-top: 1.2rem;
+  margin-right: 1rem;
+  
+}
+
+.scrollbox {
+  width : 70%;
+  height : 65%;
+  overflow: scroll;
+  margin: 5% 0;
+}
+
+.userbox {
+  display: flex;
+  align-items: center;
+  padding : 5% 5% 3% 0;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.userimg{
+  width : 33px;
+  height : 33px;
+  border-radius: 100%;
+  margin-right : 5%;
+}
+
+.username {
+  font-size: 10px;
+}

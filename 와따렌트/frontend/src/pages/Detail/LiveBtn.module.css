@@ -1,0 +1,41 @@
+.body {
+  display: flex;
+  margin-bottom : 5%;
+  width : 90%;
+}
+
+.blackBtn {
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  width : 17%;
+  height : 35px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3%;
+}
+
+.liveBtn {
+  width: 65%;
+  height : 35px;
+  border-radius: 8px;
+  border: 2px solid black;
+  background-color: #bcff5e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.livebtntitle {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.livebtnpoint {
+  font-size: 9px;
+  position : absolute;
+  right : 7%;
+}

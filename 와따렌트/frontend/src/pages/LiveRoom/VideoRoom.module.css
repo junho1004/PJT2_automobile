@@ -1,0 +1,239 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* border: 2px solid red; */
+}
+
+.joinpage {
+}
+
+/* 배경 그라데이션 */
+.background {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.bgtop {
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(
+    179.74deg,
+    #000000 0.23%,
+    rgba(17, 17, 17, 0.25) 48.65%,
+    rgba(217, 217, 217, 0) 93.58%
+  );
+}
+
+.bottomgr {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.bgbottom {
+  width: 100%;
+  height: 40vh;
+  background: linear-gradient(
+    179.74deg,
+    rgba(217, 217, 217, 0) 0.23%,
+    rgba(17, 17, 17, 0.5) 48.65%,
+    #000000 93.58%
+  );
+}
+
+/* 라이브 화면 */
+.contentbox {
+  width: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.toptop {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 3%;
+}
+
+.sellerimg {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+
+.sellerimg img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+
+.sellername {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  width: 100px;
+  padding-left: 5%;
+}
+
+.subtotal {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.eyeicon {
+  width: 20px;
+}
+
+.topright {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 2%;
+}
+
+.live {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16.5px;
+  background-color: #bcff5e;
+  width: 55px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.xicon {
+  width: 25px;
+  color: white;
+  z-index: 999;
+}
+
+.bottombottom {
+  display: flex;
+}
+
+/* Go? 버튼 */
+.gobtn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  width: 65px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #bcff5e;
+
+  position: fixed;
+  bottom: 5.5%;
+  left: 4%;
+  border: 1px solid #bcff5e;
+  z-index: 4;
+}
+
+.nogobtn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  width: 65px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #d9d9d9;
+
+  position: fixed;
+  bottom: 5.5%;
+  left: 4%;
+  border: 1px solid #d9d9d9;
+  z-index: 4;
+}
+
+/* 낙찰자 모달 */
+.modal {
+  background-color: white;
+  z-index: 999;
+  width: 70%;
+  margin: auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5%;
+  box-shadow: 14px 10px 30px -9px rgba(9, 9, 9, 0.73);
+  -webkit-box-shadow: 14px 10px 30px -9px rgba(9, 9, 9, 0.73);
+  -moz-box-shadow: 14px 10px 30px -9px rgba(9, 9, 9, 0.73);
+}
+
+.modaltext {
+  font-size: 18px;
+}
+
+.celediv {
+  /* position: absolute; */
+  top: 15%;
+  z-index: 50;
+}
+
+.pricediv {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bidtext {
+  margin-top: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gotext {
+  margin-top: 10px;
+  z-index: 999;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
