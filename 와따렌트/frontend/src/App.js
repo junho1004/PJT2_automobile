@@ -38,6 +38,9 @@ import NotFound from "./pages/NotFound/NotFound";
 import MapHome from "./pages/Map/MapHome"
 //gpspage
 import GpsPage from "./pages/Map/GpsPage"
+//reservation
+import ReservationHome from "./pages/Map/ReservationHome"
+import Reservation from "./pages/Map/Reservation"
 
 const router = createBrowserRouter([
   {
@@ -67,6 +70,8 @@ const router = createBrowserRouter([
       { path: "/report/:userId", element: <Report /> },
       { path: "/MapHome", element: <MapHome /> },
       { path: "/Gpspage", element: <GpsPage /> },
+      { path: "/ReservationHome", element: <ReservationHome /> },
+      { path: "/Reservation", element: <Reservation /> },
     ],
   },
 ]);

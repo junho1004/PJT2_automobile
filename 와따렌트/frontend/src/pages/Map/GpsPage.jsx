@@ -3,6 +3,7 @@ import { useEffect } from "react"
 import { useNavigate } from "react-router-dom";
 import styles from "./GpsPage.module.css";
 
+
 const { kakao } = window
 
 export default function GpsPage() {
@@ -15,18 +16,16 @@ export default function GpsPage() {
     }
     let map = new kakao.maps.Map(container, options)
   })
-
+  const id = window.localStorage.getItem("loginId");
   return (
     <div className = {styles.background}>
-        <div style = {{padding:"50px"}}>
+        {/* <div style = {{padding:"50px"}}> */}
+        <div className={styles.texta}>{id} 님의 현재위치</div>
           <div 
             id = "map"
-            className = {styles.texta} 
-            style = {{
-              width: "240px",
-              height: "400px"
-            }}>ㅇㅇㅇ</div>
-          </div>
-    </div>
+            className = {styles.map}
+            >d</div>
+      </div>
+    // </div>
   );
 }

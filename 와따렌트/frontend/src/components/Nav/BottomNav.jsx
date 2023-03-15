@@ -121,9 +121,6 @@ export default function BottomNav({ curLocation }) {
           />
         )}
       </nav>
-      <div className={styles.company}>
-        줌고(zumgo) | 사업자 등록번호 :344-47-01049 한선영 대표 외 ISF5
-      </div>
     </div>
   );
 }

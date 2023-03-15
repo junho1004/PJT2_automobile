@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   /* align-items: flex-end; */
-  padding: 30% 30% 50% 30%;
+  padding: 10% 20% 0% 20%;
   align-items: center;
 }
 
 
 .top {
   display: flex;
-  width: 85%;
+  width: 100%;
 }
 
 .topleft {
@@ -17,7 +17,7 @@
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
-  margin-bottom: 30px;
+  /* margin-bottom: 10px; */
 }
 .font {
   height: 50px;
@@ -71,7 +71,7 @@
   display: flex;
   justify-content: center;
   margin-top: 10%;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: flex-end;
   
   /* align-items: center; */
@@ -81,10 +81,10 @@
 .loginbtn {
   font-family: "Poppins", sans-serif;
   background-color: rgba(252, 234, 43, 1);
-  width: 200px;
-  height: 30px;
+  width: 350px;
+  height: 50px;
   /* border-radius: 25px; */
-  font-size: 12px;
+  font-size: 20px;
   /* font-weight: 600; */
   display: flex;
   justify-content: center;

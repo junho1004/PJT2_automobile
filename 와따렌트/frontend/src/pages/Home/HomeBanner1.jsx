@@ -10,34 +10,36 @@ export default function HomeBanner() {
   const token = window.localStorage.getItem("token");
   let [loginId, setLoginId] = useState("");
   let [loginPassword, setLoginPassword] = useState("");
-  let [savedLoginId, setSavedLoginId] = useState("");
+  // let [savedLoginId, setSavedLoginId] = useState("");
   // let [savedLoginPassword, setSavedLoginPassword] = useState("");
 
   return (
     <div className={styles.body}>
       <div className={styles.top}>
         <div className={styles.topleft}>
-          <img src={car1} alt="go" style={{width:"500px",height:"300px"}} />
+          <img src={car1} alt="go" style={{width:"600px",height:"400px"}} />
           
         </div>
         {/* <div className={styles.topright}></div> */}
       </div>
       <div className={styles.bottom}>
-        <div>
-          <span style={{color:"white"}}>아이디 :</span>{" "}
+        <div style={{margin:"20px"}}>
+          <span style={{color:"white",fontSize:"20px"}}>아이디 :</span>{" "}
           <input
             type="text"
             size={24}
+            style={{width:"350px",height:"45px"}}
             onChange={(e) => {
               setLoginId(e.target.value);
             }}
           />
         </div>
         <div >
-        <span style={{color:"white"}}>비밀번호 :</span>{" "}
+        <span style={{color:"white",fontSize:"20px"}}>비밀번호 :</span>{" "}
           <input
             type="password"
             size={24}
+            style={{width:"350px",height:"45px"}}
             onChange={(e) => {
               setLoginPassword(e.target.value);
             }}
@@ -74,7 +76,7 @@ export default function HomeBanner() {
             }
           }}
         >
-          <span style={{color:"white",fontWeight:"700"}}>Login</span>
+          <span style={{color:"white",fontWeight:"700",fontSize:"25px"}}>Login</span>
         </button>
       </div>
       {/* <div>
