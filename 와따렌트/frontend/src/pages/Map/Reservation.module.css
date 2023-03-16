@@ -18,7 +18,16 @@
 .background {
     background-color: white;
     width : 50vw;
-    height: 50vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
+  } 
+
+  .text3{
+    font-weight: 700;
+    font-size: 1.5em;
+    color: black;
+    text-align : center;
+    margin: 0px;
+   
   } 
