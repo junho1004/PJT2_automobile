@@ -1,4 +1,6 @@
+/*global kakao*/
 import React from "react";
+import { useEffect } from "react"
 import { useNavigate } from "react-router-dom";
 import styles from "./ReservationHome.module.css";
 import { useLocation } from "react-router";
@@ -6,11 +8,12 @@ import spot from "../../assets/images/spot.png";
 import Reservation from "./Reservation";
 import previous from "../../assets/images/previous.png";
 
+const { kakao } = window
+
 export default function MapHome() {
   const id = window.localStorage.getItem("loginId");
   const navigate = useNavigate();
   const location = useLocation();
-
 
   return (
     <div className={styles.background}>

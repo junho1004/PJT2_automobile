@@ -144,7 +144,7 @@ function SelectCar() {
           className={styles.next3}
           onClick={() => {
             {
-              navigate("/SelectCar");
+              navigate("/CarMoving");
             }
           }}
         >
