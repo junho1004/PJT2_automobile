@@ -4,6 +4,7 @@ import styles from "./ReservationHome.module.css";
 import { useLocation } from "react-router";
 import spot from "../../assets/images/spot.png";
 import Reservation from "./Reservation";
+import previous from "../../assets/images/previous.png";
 
 export default function MapHome() {
   const id = window.localStorage.getItem("loginId");
@@ -13,7 +14,14 @@ export default function MapHome() {
 
   return (
     <div className={styles.background}>
-        <div className={styles.next}><div className={styles.text}>예약하기</div></div>
+        <div className={styles.next}>
+          <div className={styles.text}>예약하기</div>
+          <button
+              onClick={() => {
+                { navigate("/MapHome")}
+              }}
+            ><img src={previous} alt="go" className={styles.mini}/></button>
+        </div>
         <div className={styles.next1}>
             <img src={spot} alt="go" style={{width:"60px",height:"50px"}} />
             <div>
@@ -21,10 +29,20 @@ export default function MapHome() {
             <div className={styles.text2}>서울 성북동</div>
             </div>
         </div>
-      <div>대여일</div>
+      {/* <div><p className={styles.text3}>대여일</p></div> */}
       <div>
       <Reservation />
       </div>
+      <div className={styles.next2}>
+        <button
+        className={styles.next2}
+              onClick={() => {
+                { navigate("/SelectCar")}
+              }}
+            >
+              <div className={styles.text1}>다음</div>
+            </button>
+        </div>
     </div>
   );
 }

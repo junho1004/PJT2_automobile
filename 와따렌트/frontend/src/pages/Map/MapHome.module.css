@@ -35,12 +35,11 @@
   .next{
       background-color: rgba(217, 217, 217, 1);
       width : 100vw;
-      height: 10%;
-      padding-top: 10px;
-      /* justify-content: center;
-      align-items: center;
-      align-content: center; */
-      /* display: flex; */
+      height: 8%;
+      text-align : center;
+      display: flex;
+  justify-content: center;
+  align-items: center;
   }
 
   .text {
@@ -49,9 +48,11 @@
     color: white;
   }
   .text1 {
-    font-weight: 500;
-    font-size: 1.3em;
+    /* padding-left:20px ; */
+    font-weight: 700;
+    font-size: 1em;
     color: black;
+    /* text-align : center; */
   }
   .texta {
     /* font-weight: 700; */
