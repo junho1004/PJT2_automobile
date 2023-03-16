@@ -1,5 +1,7 @@
 import React from 'react';
 import '@mobiscroll/react/dist/css/mobiscroll.min.css';
+import styles from "./Reservation.module.css";
+import useState from "react";
 import { Datepicker, Page, getJson, setOptions, localeEs } from '@mobiscroll/react';
 
 setOptions({
@@ -12,9 +14,9 @@ function Reservation() {
     let todayMonth = now.getMonth() + 1
     let todayDate = now.getDate()
     let hours = now.getHours()
-    console.log(todayMonth)
-    console.log(todayDate)
-    console.log(hours)
+    // console.log(todayMonth)
+    // console.log(todayDate)
+    // console.log(hours)
     const min = `2023-${todayMonth}-${todayDate}T00:00`;
     const max = `2023-12-${todayDate}T00:00`;
     // const min = `2023-03-15T00:00`;
@@ -57,9 +59,9 @@ function Reservation() {
     
 
     return (
-        <div>
         <Page className="md-calendar-booking">
-            <div className="mbsc-form-group">
+            <div classname={styles.text3}>대여일/반납일</div>
+            <div>
                 <div className="mbsc-form-group-title">날짜와 시간을 선택해주세요</div>
                 <Datepicker 
                     select="range"
@@ -111,7 +113,6 @@ function Reservation() {
                 />
             </div>
         </Page>
-        </div>
     );
 }
 
