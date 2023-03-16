@@ -1,119 +1,48 @@
-import React from 'react';
-import '@mobiscroll/react/dist/css/mobiscroll.min.css';
-import styles from "./Reservation.module.css";
-import useState from "react";
-import { Datepicker, Page, getJson, setOptions, localeEs } from '@mobiscroll/react';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import styles from "./ReservationHome.module.css";
+import { useLocation } from "react-router";
+import spot from "../../assets/images/spot.png";
+import Reservation from "./Reservation";
+import previous from "../../assets/images/previous.png";
 
-setOptions({
-    theme: 'ios',
-    themeVariant: 'light'
-});
+export default function MapHome() {
+  const id = window.localStorage.getItem("loginId");
+  const navigate = useNavigate();
+  const location = useLocation();
 
-function Reservation() {
-    let now = new Date()
-    let todayMonth = now.getMonth() + 1
-    let todayDate = now.getDate()
-    let hours = now.getHours()
-    // console.log(todayMonth)
-    // console.log(todayDate)
-    // console.log(hours)
-    const min = `2023-${todayMonth}-${todayDate}T00:00`;
-    const max = `2023-12-${todayDate}T00:00`;
-    // const min = `2023-03-15T00:00`;
-    // const max = `2023-06-20T00:00`;
-    // const [datetimeLabels, setDatetimeLabels] = React.useState([]);
-    // const [datetimeInvalid, setDatetimeInvalid] = React.useState([]);
 
-    
-    // const onPageLoadingDatetime = React.useCallback((event, inst) => {
-    //     getDatetimes(event.firstDay, (bookings) => {
-    //         setDatetimeLabels(bookings.labels);
-    //         setDatetimeInvalid(bookings.invalid);
-    //     });
-    // }, []);
-
-    
-    // const getDatetimes = (d, callback) => {
-    //     let invalid = [];
-    //     let labels = [];
-
-    //     getJson('https://trial.mobiscroll.com/getbookingtime/?year=' + d.getFullYear() + '&month=' + d.getMonth(), (bookings) => {
-    //         for (let i = 0; i < bookings.length; ++i) {
-    //             const booking = bookings[i];
-    //             const bDate = new Date(booking.d);
-
-    //             if (booking.nr > 0) {
-    //                 labels.push({
-    //                     start: bDate,
-    //                     title: booking.nr + ' SPOTS',
-    //                     textColor: '#e1528f'
-    //                 });
-    //                 invalid = [...invalid, ...booking.invalid];
-    //             } else {
-    //                 invalid.push(d);
-    //             }
-    //         }
-    //         callback({ labels: labels, invalid: invalid });
-    //     }, 'jsonp');
-    // }
-    
-
-    return (
-        <Page className="md-calendar-booking">
-            <div classname={styles.text3}>대여일/반납일</div>
+  return (
+    <div className={styles.background}>
+        <div className={styles.next}>
+          <div className={styles.text}>예약하기</div>
+          <button
+              onClick={() => {
+                { navigate("/MapHome")}
+              }}
+            ><img src={previous} alt="go" className={styles.mini}/></button>
+        </div>
+        <div className={styles.next1}>
+            <img src={spot} alt="go" style={{width:"60px",height:"50px"}} />
             <div>
-                <div className="mbsc-form-group-title">날짜와 시간을 선택해주세요</div>
-                <Datepicker 
-                    select="range"
-                    rangeHighlight={true}
-                    showRangeLabels={false}
-                    minRange={1}
-                    maxRange={10}
-                    display="inline"
-                    controls={['calendar']}
-                    min={min}
-                    max={max}
-                    
-                    // minTime="08:00"
-                    // maxTime="19:59"
-                    // stepMinute={60}
-                    // width={null}
-                    // labels={datetimeLabels}
-                    // invalid={datetimeInvalid}
-                    // onPageLoading={onPageLoadingDatetime}
-                    cssClass="booking-datetime"
-                />
-                <Datepicker 
-                    display="inline"
-                    controls={['time']}
-                    // min={min}
-                    // max={max}
-                    minTime="08:00"
-                    maxTime="19:59"
-                    stepMinute={60}
-                    width={null}
-                    // labels={datetimeLabels}
-                    // invalid={datetimeInvalid}
-                    // onPageLoading={onPageLoadingDatetime}
-                    cssClass="booking-datetime"
-                />
-                <Datepicker 
-                    display="inline"
-                    controls={['time']}
-                    // min={min}
-                    // max={max}
-                    minTime="08:00"
-                    maxTime="19:59"
-                    stepMinute={60}
-                    width={null}
-                    // labels={datetimeLabels}
-                    // invalid={datetimeInvalid}
-                    // onPageLoading={onPageLoadingDatetime}
-                    cssClass="booking-datetime"
-                />
+            <div className={styles.text1}>현재위치</div>
+            <div className={styles.text2}>서울 성북동</div>
             </div>
-        </Page>
-    );
-}
-
-export default Reservation;
+        </div>
+      {/* <div><p className={styles.text3}>대여일</p></div> */}
+      <div>
+      <Reservation />
+      </div>
+      <div className={styles.next2}>
+        <button
+        className={styles.next2}
+              onClick={() => {
+                { navigate("/SelectCar")}
+              }}
+            >
+              <div className={styles.text1}>다음</div>
+            </button>
+        </div>
+    </div>
+  );
+};
