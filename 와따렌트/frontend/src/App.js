@@ -41,6 +41,8 @@ import GpsPage from "./pages/Map/GpsPage"
 //reservation
 import ReservationHome from "./pages/Map/ReservationHome"
 import Reservation from "./pages/Map/Reservation"
+import SelectCar from "./pages/Map/SelectCar"
+
 
 const router = createBrowserRouter([
   {
@@ -72,6 +74,7 @@ const router = createBrowserRouter([
       { path: "/Gpspage", element: <GpsPage /> },
       { path: "/ReservationHome", element: <ReservationHome /> },
       { path: "/Reservation", element: <Reservation /> },
+      { path: "/SelectCar", element: <SelectCar/> },
     ],
   },
 ]);
