@@ -26,11 +26,11 @@ function CarMoving() {
   //   unsub()
   //   }, []);
   // unsub()
-  const unsub = onSnapshot(doc(db, "test", "tLB6J6qUCZoxXfxEdu9s"), (doc) => {
+  const unsub = onSnapshot(doc(db, "Ego", "Ego_status"), (doc) => {
     // setLat(doc.data().current_position_x)
     // setLng(doc.data().current_position_y)
-    setLat(doc.data().lat)
-    setLng(doc.data().lng)
+    setLat(doc.data().current_position_x)
+    setLng(doc.data().current_position_y)
   });
   console.log(lat, lng)
   
