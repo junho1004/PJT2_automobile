@@ -16,7 +16,7 @@ function GpsPage() {
   useEffect(() => {
     let container = document.getElementById('map')
     let options = {
-      center: new kakao.maps.LatLng(37.239406, 126.773281),
+      center: new kakao.maps.LatLng(37.242751, 126.773852),
       level: 3,
     }
     let map = new kakao.maps.Map(container, options)
