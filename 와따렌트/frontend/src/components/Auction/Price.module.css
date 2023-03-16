@@ -1,0 +1,21 @@
+.prices {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices button {
+  margin: 3%;
+  background-color: white;
+  border-radius: 40px;
+  width: 70px;
+  height: 40px;
+  font-size: 17px;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+
+  box-shadow: 5px 7px 5px 0px rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: 5px 7px 5px 0px rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: 5px 7px 5px 0px rgba(0, 0, 0, 0.85);
+}

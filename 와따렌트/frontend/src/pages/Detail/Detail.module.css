@@ -1,0 +1,234 @@
+.container {
+  
+}
+
+
+.body {
+  width : 100vw;
+}
+
+.goback {
+  width: 30px;
+  color : white;
+  position: absolute;
+  z-index: 2;
+  top : 5%;
+  left : 2%;
+}
+
+.swiperbox {
+  position : relative;
+  width: 100%;
+  /* background-color: black; */
+}
+
+.swiper {
+  height: 30%;
+  border-color: 2px blue;
+}
+
+.swiperimg {
+  width: 100%;
+}
+
+.swiperimg img{
+  object-fit: cover; 
+}
+
+
+
+img {
+  width : 100%;
+  height : 100%;
+  object-fit: cover;
+}
+
+.container {
+  width : 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 2% auto;
+}
+
+/* 라이브 예정 알림 표시 */
+.livealert {
+  width : 100px;
+  height : 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #bcff5e;
+  border-radius: 35px;
+  position : absolute;
+  bottom: 5%;
+  right : 5%;
+  z-index: 1;
+}
+
+.livealert span {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* 판매자 정보 */
+
+.seller {
+  display: flex;
+  align-items: center;
+  margin : 2% 0;
+}
+
+.seller:hover .sellerName {
+  text-decoration: underline;
+}
+
+.sellerImgBox {
+  width : 40px;
+  height : 40px;
+}
+
+.sellerImg {
+  border-radius: 100%;
+}
+
+.sellerName{
+  margin-left: 3%;
+  font-size: 12px;
+}
+
+
+.selectbox {
+  width : 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete {
+  color : rgb(231, 65, 65);
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+/* 드롭다운 */
+.dropdown {
+  width: 70px;
+  height : 25px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 10px;
+  text-align: center;
+  margin: 2.5% 0;
+}
+
+.dropdown option {
+  padding : 3px;
+}
+
+/* 상품 정보 */
+.title {
+  font-weight: 800;
+  font-size: 15px;
+  margin: 3% 0;
+}
+
+.canedit{
+  display: flex;
+  align-items: center;
+}
+
+.editbtn {
+  width : 20px;
+  height : 20px;
+  color: #636363;
+}
+
+.price {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.desc {
+  font-size: 11px;
+  font-weight: 700;
+  margin: 2% 0;
+  white-space: pre-line;
+}
+
+.icons {
+  display: flex;
+  justify-content: left;
+  margin : 0;
+  padding: 0;
+  width: 24%;
+}
+
+
+.true {
+  color: black;
+}
+
+.false {
+  color:white;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin :  1% 7% 2% 7%;
+}
+
+.icon svg {
+  width : 21px;
+  padding: 0;
+  margin: 0;
+}
+
+.zimg {
+  width: 14px;
+}
+
+.zimg img {
+  object-fit: cover;
+}
+
+.count {
+  position: absolute;
+  left: 19px;
+  bottom : 0;
+  font-size: 8px;
+}
+
+.zcount {
+  position: absolute;
+  left: 16px;
+  bottom : 0;
+  font-size: 8px;
+}
+
+.timeBox {
+  margin : 3% 0 5% 0;
+  width: 90%;
+}
+
+
+.timeTitle {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.timeContent {
+  font-size: 10px;
+  height : 40px;
+  border-radius: 8px;
+  background-color: #e9e9e9;
+  display: flex;
+  align-items: center;
+  padding-left : 15px;
+}
+
+.time {
+  font-weight: 500;
+}

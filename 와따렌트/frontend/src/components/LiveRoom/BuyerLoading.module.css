@@ -1,0 +1,71 @@
+.back {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navleft {
+  display: flex;
+  width: 95%;
+  margin: 5% 0 3% 0;
+  align-items: center;
+}
+
+.body {
+  text-align: center;
+  width: 70%;
+  margin-top: 12%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  display: inline-block;
+  margin-top: 20%;
+}
+
+.live {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: black;
+  display: inline-block;
+  margin-top: 23%;
+  background-color: #bcff5e;
+  padding: 2% 8% 2% 8%;
+  border-radius: 20px;
+}
+
+.tutorial {
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20%;
+}
+
+.goicon {
+  width: 44px;
+  height: 24px;
+  object-fit: cover;
+}
+
+.p1 {
+  margin-bottom: 10%;
+}
+
+.p11 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.1%;
+}
+
+.span {
+  margin-right: 1.1%;
+  margin-left: 1.1%;
+}
