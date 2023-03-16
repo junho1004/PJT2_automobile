@@ -5,6 +5,7 @@
     "homepage": ".",
     "dependencies": {
         "@heroicons/react": "^2.0.14",
+        "@mobiscroll/react": "https://npm.mobiscroll.com/@mobiscroll/react-trial/-/react-trial-5.22.2.tgz",
         "@reduxjs/toolkit": "^1.9.2",
         "@stomp/stompjs": "^6.1.2",
         "@testing-library/jest-dom": "^5.14.1",
