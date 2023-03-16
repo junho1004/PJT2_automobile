@@ -32,7 +32,7 @@ export default function MapHome() {
         </div>
         <div className={styles.next}>
         <button
-        className={styles.next}
+        // className={styles.next}
               onClick={() => {
                 { navigate("/ReservationHome")}
               }}
