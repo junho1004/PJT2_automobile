@@ -63,7 +63,7 @@ function SelectCar() {
         //마커가 표시 될 위치
         position: position,
         image: markerimage,
-        clickable: true,
+        // clickable: true,
       });
 
       marker.setMap(map);
