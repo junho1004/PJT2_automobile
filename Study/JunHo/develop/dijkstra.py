@@ -76,14 +76,20 @@ class dijkstra_path_pub :
         
         
         #print(type(docs))
+        #print(len(docs))
         for doc in docs:
-            # print(doc.to_dict()["lat"])
-            # print(doc.to_dict()["lng"])
-            # print(type(doc.to_dict()["lat"]))
-            # print(type(doc.to_dict()["lng"]))
+            #print(doc.to_dict()["lat"])
+            #print(doc.to_dict()["lng"])
+            #print(type(doc.to_dict()["lat"]))
+            #print(type(doc.to_dict()["lng"]))
             self.gps_lat = doc.to_dict()["lat"]
             self.gps_lng = doc.to_dict()["lng"]
+            break
         
+        #print(self.gps_lat)
+        #print(self.gps_lng)
+        
+
         self.proj_UTM = Proj(proj = 'utm', zone = 52, ellps = 'WGS84', preserve_units = False)
         xy_zone = self.proj_UTM(self.gps_lng, self.gps_lat)
         self.e_o = 302459.942
@@ -96,7 +102,9 @@ class dijkstra_path_pub :
             self.goal_utm_x = xy_zone[0] - self.e_o
             self.goal_utm_y = xy_zone[1] - self.n_o
         
-        
+        # print(self.goal_utm_x)
+        # print(self.goal_utm_y)
+
         goal_min_dis=float('inf')
         self.goal_x = self.goal_utm_x
         self.goal_y = self.goal_utm_y
@@ -110,14 +118,16 @@ class dijkstra_path_pub :
                 goal_min_dis=goal_dis
                 self.end_node = node_idx
 
-        print(self.end_node)
-
+        #print(self.end_node)
+        #self.end_node = "A119BS010247"
 
 
         self.global_path_msg = Path()
         self.global_path_msg.header.frame_id = '/map'
 
         self.global_path_msg = self.calc_dijkstra_path_node(self.start_node, self.end_node)
+        #print(self.global_path_msg)
+
 
         rate = rospy.Rate(10) # 10hz
         while not rospy.is_shutdown():
@@ -159,7 +169,9 @@ class dijkstra_path_pub :
             read_pose.pose.position.x = path_x
             read_pose.pose.position.y = path_y
             read_pose.pose.orientation.w = 1
+            
             out_path.poses.append(read_pose)
+            
 
         return out_path
 
