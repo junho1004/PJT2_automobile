@@ -1,5 +1,5 @@
 .background {
-  background-color: rgba(217, 217, 217, 1);
+  background-color: whitesmoke;
   border-radius: 50px 50px 50px 50px;
   width : 100vw;
   height: 90%;
@@ -9,22 +9,36 @@
   align-items: center;
   box-shadow: 5px 5px 5px gray;
 } 
+
+.mapwrap {
+  width : 90%;
+  height : 85%;
+}
 .map{
 /* align-items: center; */
 display: flex;
 border-radius: 50px 50px 50px 50px;
 /* justify-content: center; */
 align-items: center;
-position : absolute;
-margin: 10% 5% 5% 5%;
-width : 90%;
-height : 90%;
+/* position : absolute; */
+width : 100%;
+height: 100%;
 }
 .texta {
+font-weight: 700;
+font-size: 1.2em;
+color: black;
+margin-top: 10px;
+margin-bottom: 10px;
+
+/* flex-direction: row; */
+}
+.textb {
 font-weight: 700;
 font-size: 0.9em;
 color: black;
 margin-top: 10px;
+margin-bottom: 10px;
 
 /* flex-direction: row; */
 }

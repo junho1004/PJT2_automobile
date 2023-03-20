@@ -101,10 +101,10 @@ align-content: center; */
   /* align-content: center; */
   /* justify-content: center; */
   /* align-items: center; */
-  /* justify-content: center;*/
+  justify-content: center;
   align-items: center;
   align-content: center;
-  display: flex;
+  /* display: flex; */
 }
 .size{
   height: 80px;

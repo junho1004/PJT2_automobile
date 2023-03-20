@@ -1,6 +1,4 @@
-/*global kakao*/
 import React from "react";
-import { useEffect } from "react"
 import { useNavigate } from "react-router-dom";
 import styles from "./ReservationHome.module.css";
 import { useLocation } from "react-router";
@@ -8,12 +6,12 @@ import spot from "../../assets/images/spot.png";
 import Reservation from "./Reservation";
 import previous from "../../assets/images/previous.png";
 
-const { kakao } = window
-
 export default function MapHome() {
   const id = window.localStorage.getItem("loginId");
   const navigate = useNavigate();
   const location = useLocation();
+  const address = window.localStorage.getItem("address");
+
 
   return (
     <div className={styles.background}>
@@ -29,7 +27,7 @@ export default function MapHome() {
             <img src={spot} alt="go" style={{width:"60px",height:"50px"}} />
             <div>
             <div className={styles.text1}>현재위치</div>
-            <div className={styles.text2}>서울 성북동</div>
+            <div className={styles.text2}>{address}</div>
             </div>
         </div>
       {/* <div><p className={styles.text3}>대여일</p></div> */}
@@ -40,7 +38,8 @@ export default function MapHome() {
         <button
         className={styles.next2}
               onClick={() => {
-                { navigate("/SelectCar")}
+                { navigate("/SelectCar")};
+                window.location.reload();
               }}
             >
               <div className={styles.text1}>다음</div>

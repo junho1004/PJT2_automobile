@@ -25,7 +25,7 @@ export default function MapHome() {
           </div>
           <div className={styles.texta}>{id} 님 안녕하세요</div>
         </div>
-        <div className={styles.textb}>어디로 갈까요?</div>
+        <div className={styles.textb}>어디로 모시러 갈까요?</div>
         <div className={styles.body2}>
         <GpsPage />
         </div>

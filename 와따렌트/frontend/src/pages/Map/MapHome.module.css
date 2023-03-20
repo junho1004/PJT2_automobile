@@ -7,7 +7,7 @@
 } 
 
 .body1 {
-  background-color: rgba(86, 103, 166, 1);
+  background-color:  rgba(86, 103, 166, 1);
   /* border-radius: 50px 50px 0 0;
   background-color: white; */
   /* display: flex; */
@@ -33,7 +33,7 @@
   display: none;
 }
 .next{
-    background-color: rgba(217, 217, 217, 1);
+    background-color: rgba(252, 234, 43, 1);
     width : 100vw;
     height: 8%;
     text-align : center;
@@ -89,6 +89,7 @@ align-items: center;
   width: 95%;
   margin : auto;
   justify-content: space-between;
+  /* background-color: black; */
   /* flex: 1 2; */
 }
 .alla{
