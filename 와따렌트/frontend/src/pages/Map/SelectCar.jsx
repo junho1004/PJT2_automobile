@@ -9,9 +9,14 @@ import minicar from "../../assets/images/minicar.png";
 import spot from "../../assets/images/spot.png";
 import car from "../../assets/images/car.png";
 
+
 const { kakao } = window;
+const address = window.localStorage.getItem("address");
+const lat = window.localStorage.getItem("lat");
+const lng = window.localStorage.getItem("lng");
 
 function SelectCar() {
+  let [caraddress, Setcaraddress] = useState("");
   useEffect(() => {
     mapscript();
   }, []);
@@ -27,7 +32,7 @@ function SelectCar() {
   const mapscript = () => {
     let container = document.getElementById("map");
     let options = {
-      center: new kakao.maps.LatLng(37.242751, 126.773852),
+      center: new kakao.maps.LatLng(lat, lng),
       level: 3,
     };
 
@@ -36,7 +41,7 @@ function SelectCar() {
 
     const myMarker = new kakao.maps.Marker({
       map: map,
-      position: new kakao.maps.LatLng(37.242751, 126.773852),
+      position: new kakao.maps.LatLng(lat, lng),
     });
     myMarker.setMap(map);
 
@@ -57,27 +62,44 @@ function SelectCar() {
       //     yAnchor: 1,
       // })
 
+
       const marker = new kakao.maps.Marker({
         //마커가 표시 될 지도
         map: map,
         //마커가 표시 될 위치
         position: position,
         image: markerimage,
-        // clickable: true,
+        clickable: true,
       });
 
       marker.setMap(map);
 
       const infowindow = new kakao.maps.InfoWindow({
         content: `<div style="padding:5px;">${el.title}차량이 선택되었습니다.</div>`,
-
-        removable : true,
+        // removable : true,
       });
 
       kakao.maps.event.addListener(marker, "click", function () {
         infowindow.open(map, marker);
+        
+        
+        let lat = el.lat
+        let lng = el.lng
+        
+        let geocoder = new kakao.maps.services.Geocoder();
+        Gpspage(lat,lng);
+        function Gpspage(lat,lng) {
+          let coord = new kakao.maps.LatLng(lat, lng);
+          let callback = function(result, status) {
+            if (status === kakao.maps.services.Status.OK) {
+              Setcaraddress(result[0].address.address_name)
+            }
+          }
+          geocoder.coord2Address(coord.getLng(), coord.getLat(), callback);};
+          
+          
+        });
 
-      });
     });
   };
 
@@ -113,21 +135,23 @@ function SelectCar() {
           style={{ width: "30px", height: "40px", margin: "20px" }}
         />
         <div>
-          <div className={styles.text1}>서울 성북구</div>
+          <div className={styles.text1}>{address}</div>
         </div>
       </div>
       <div className={styles.next4}>
         <div className={styles.text1}>
-          <div style={{ paddingBottom: "5px" }}>
+          <div style={{ paddingBottom: "5px",justifyContent: "center",alignItems:"center",alignContent:"center",display:"flex"}}>
             <span style={{ fontSize: "20px" }}>이 차량의 현재 위치 : </span>
-            <span>서울 용산구 이태원로</span>
+            <span> {caraddress}</span>
           </div>
-          <div style={{ display: "flex" }}>
+      </div>
+      <div className={styles.next5}>
+          <div style={{ display: "flex",justifyContent:"center",alignItems:"center",alignContent:"center",width:"100%"}}>
             <img src={car} alt="go" className={styles.size} />
             <div className={styles.box}>
             <div style={{ padding: "0px" }}>
               <span>예상 도착 시간은 </span>
-              <span style={{ fontSize: "20px" }}>약 10분</span>
+             <span style={{ fontSize: "20px" }}>약 10분</span>
               <span> 입니다</span>
             </div>
             <div style={{ padding: "0px" }}>
@@ -138,13 +162,13 @@ function SelectCar() {
             </div>
           </div>
         </div>
-      </div>
+        </div>
       <div className={styles.next3}>
         <button
           className={styles.next3}
           onClick={() => {
             {
-              navigate("/CarMoving");
+              navigate("/SelectCar");
             }
           }}
         >
