@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 import styles from "./ReservationHome.module.css";
 import { useLocation } from "react-router";
 import spot from "../../assets/images/spot.png";
-import Reservation from "./Reservation";
+import Calendar from "./Calendar.jsx";
 import previous from "../../assets/images/previous.png";
 
-export default function MapHome() {
+export default function ReservationHome() {
   const id = window.localStorage.getItem("loginId");
   const navigate = useNavigate();
   const location = useLocation();
@@ -32,7 +32,7 @@ export default function MapHome() {
         </div>
       {/* <div><p className={styles.text3}>대여일</p></div> */}
       <div>
-      <Reservation />
+      <Calendar />
       </div>
       <div className={styles.next2}>
         <button
