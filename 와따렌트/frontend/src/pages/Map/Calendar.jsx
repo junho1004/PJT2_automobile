@@ -11,34 +11,35 @@
 //         </div>
 //     )
 // }
-
-import React, { useState } from 'react'
-
-import { DatePicker } from 'react-responsive-datepicker'
-import 'react-responsive-datepicker/dist/index.css'
+import React, {useState} from "react";
+import Datepicker from "react-tailwindcss-datepicker";
 
 const Calendar = () => {
-  const [isOpen, setIsOpen] = useState(false)
+    const [value, setValue] = useState({
+        startDate: "",
+        endDate: ""
+    });
+    
+    const handleValueChange = (newValue) => {
+        console.log("newValue:", newValue);
+        setValue(newValue);
+    }
+    
+    return (
+        <div>
+          <h2 >시작 날짜와 종료 날짜를 선택해주세요</h2>
+          <hr/>
+            <Datepicker
+                value={value}
+                onChange={handleValueChange}
+                separator={"~"} 
+                // showFooter={true} 
+                useRange={false} 
+                minDate={new Date()} 
+                maxDate={new Date("2023-12-31")} 
+            />
+        </div>
+    );
+};
 
-  return (
-    <div>
-      <button
-        onClick={() => {
-          setIsOpen(true)
-        }}
-      >
-        Open
-      </button>
-      <DatePicker
-        isOpen={isOpen}
-        onClose={() => setIsOpen(false)}
-        defaultValue={new Date(2023, 3, 21)}
-        minDate={new Date(2023, 1, 1)}
-        maxDate={new Date(2024, 1, 10)}
-        headerFormat='DD, MM dd'
-      />
-    </div>
-  )
-}
-
-export default Calendar
+export default Calendar;
