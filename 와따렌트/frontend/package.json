@@ -19,7 +19,9 @@
         "install": "^0.13.0",
         "openvidu-browser": "^2.25.0",
         "proj4": "^2.9.0",
+
         "radium": "^0.26.2",
+
         "react": "^18.2.0",
         "react-beforeunload": "^2.5.3",
         "react-calendar": "^4.0.0",
