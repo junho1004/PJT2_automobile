@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./ReservationHome.module.css";
 import { useLocation } from "react-router";
 import spot from "../../assets/images/spot.png";
 import Calendar from "./Calendar.jsx";
+import TimePicker from "./TimePicker";
 import previous from "../../assets/images/previous.png";
 
+
+
+
 export default function ReservationHome() {
+
   const id = window.localStorage.getItem("loginId");
   const navigate = useNavigate();
   const location = useLocation();
   const address = window.localStorage.getItem("address");
-
 
   return (
     <div className={styles.background}>
@@ -31,8 +35,12 @@ export default function ReservationHome() {
             </div>
         </div>
       {/* <div><p className={styles.text3}>대여일</p></div> */}
+      <div style={{ marginTop : "15px", marginLeft: "10px"}}>
+        <Calendar />
+        <br />
+      </div>
       <div>
-      <Calendar />
+        <TimePicker/>
       </div>
       <div className={styles.next2}>
         <button

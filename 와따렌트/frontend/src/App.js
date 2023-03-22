@@ -50,26 +50,7 @@ const router = createBrowserRouter([
 function App() {
   const dispatch = useDispatch()
   const token = localStorage.getItem("token"); // 로그인 정보를 로컬스토리지에서 가져옵니다.
-  
-  useEffect(() => {
-    if (!token) return; // 로그인 정보가 없다면 여기서 멈춥니다.
-    axios
-      .get("http://i8c110.p.ssafy.io/api/me", {
-        headers: {
-          Authorization: token,
-        },
-      })
-      .then((res) => {
-        dispatch(
-          login({
-            userCode: res.data.user.userCode,
-            point: res.data.user.point,
-            kakaoNickname: res.data.user.kakaoNickname,
-            kakaoProfileImg: res.data.user.kakaoProfileImg,
-          })
-        );
-      });
-  });
+
 
   return (
     <div className="app">
