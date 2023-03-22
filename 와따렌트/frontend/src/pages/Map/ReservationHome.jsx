@@ -3,15 +3,15 @@ import { useNavigate } from "react-router-dom";
 import styles from "./ReservationHome.module.css";
 import { useLocation } from "react-router";
 import spot from "../../assets/images/spot.png";
+
 import Calendar from "./Calendar.jsx";
 import TimePicker from "./TimePicker";
+
+import Reservation from "./Reservation";
 import previous from "../../assets/images/previous.png";
 
 
-
-
 export default function ReservationHome() {
-
   const id = window.localStorage.getItem("loginId");
   const navigate = useNavigate();
   const location = useLocation();
@@ -42,6 +42,7 @@ export default function ReservationHome() {
       <div>
         <TimePicker/>
       </div>
+
       <div className={styles.next2}>
         <button
         className={styles.next2}
