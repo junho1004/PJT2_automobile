@@ -1,0 +1,18 @@
+d:\road_model_maker\src\proj_mgeo_editor_morai_opengl\log\log_20221207125909.log
+		INFO	2022-12-07 12:59:10	User ID : 265
+TRACE	2022-12-07 12:59:46	Called: load_mgeo
+TRACE	2022-12-07 12:59:46	Called: ask_save_current_data
+TRACE	2022-12-07 12:59:46	No MGeo data to save -> return
+TRACE	2022-12-07 12:59:46	init_load_path: C:\Users\sjhan\Desktop\ÀüºÏ´ë µµ·Î
+TRACE	2022-12-07 12:59:53	load MGeo data from: C:/Users/sjhan/Desktop/sejong_mgeo
+INFO	2022-12-07 12:59:53	MGeo data successfully loaded from: C:/Users/sjhan/Desktop/sejong_mgeo
+INFO	2022-12-07 13:00:00	C:/Users/sjhan/Desktop/sejong_mgeo
+TRACE	2022-12-07 13:00:00	Called: reset_start_point
+TRACE	2022-12-07 13:00:00	Called: reset_end_point
+TRACE	2022-12-07 13:00:00	Called: reset_stop_point
+TRACE	2022-12-07 13:02:59	Called: reset_start_point
+TRACE	2022-12-07 13:02:59	Called: reset_end_point
+TRACE	2022-12-07 13:02:59	Called: reset_stop_point
+INFO	2022-12-07 13:02:59	Data successfully loaded from: C:/Users/sjhan/Desktop/sejong_mgeo
+TRACE	2022-12-07 13:03:39	Called: find_on_stop_line
+TRACE	2022-12-07 13:06:51	init_save_path: C:\Users\sjhan\Desktop

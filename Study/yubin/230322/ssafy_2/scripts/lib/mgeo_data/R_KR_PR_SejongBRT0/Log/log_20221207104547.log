@@ -1,0 +1,110 @@
+d:\road_model_maker\src\proj_mgeo_editor_morai_opengl\log\log_20221207104547.log
+		INFO	2022-12-07 10:45:48	User ID : 265
+TRACE	2022-12-07 10:45:58	Called: load_mgeo
+TRACE	2022-12-07 10:45:58	Called: ask_save_current_data
+TRACE	2022-12-07 10:45:58	No MGeo data to save -> return
+TRACE	2022-12-07 10:45:58	init_load_path: C:\Users\sjhan\Desktop
+TRACE	2022-12-07 10:46:01	load MGeo data from: C:/Users/sjhan/Desktop/sejong_mgeo
+INFO	2022-12-07 10:46:01	MGeo data successfully loaded from: C:/Users/sjhan/Desktop/sejong_mgeo
+INFO	2022-12-07 10:46:09	C:/Users/sjhan/Desktop/sejong_mgeo
+TRACE	2022-12-07 10:46:09	Called: reset_start_point
+TRACE	2022-12-07 10:46:09	Called: reset_end_point
+TRACE	2022-12-07 10:46:09	Called: reset_stop_point
+TRACE	2022-12-07 10:49:04	Called: reset_start_point
+TRACE	2022-12-07 10:49:04	Called: reset_end_point
+TRACE	2022-12-07 10:49:04	Called: reset_stop_point
+INFO	2022-12-07 10:49:05	Data successfully loaded from: C:/Users/sjhan/Desktop/sejong_mgeo
+TRACE	2022-12-07 10:49:13	Called: find_by_mgeo_id
+TRACE	2022-12-07 10:49:20	point_move: 15
+TRACE	2022-12-07 10:49:20	change_point_in_line (ptr @ link: A219AS300247, point_idx: 15 )
+TRACE	2022-12-07 10:49:20	point_move: 15
+TRACE	2022-12-07 10:49:20	change_point_in_line (ptr @ link: A219AS300247, point_idx: 30 )
+TRACE	2022-12-07 10:49:20	point_move: 15
+TRACE	2022-12-07 10:49:20	change_point_in_line (ptr @ link: A219AS300247, point_idx: 45 )
+TRACE	2022-12-07 10:49:20	point_move: 15
+TRACE	2022-12-07 10:49:20	change_point_in_line (ptr @ link: A219AS300247, point_idx: 60 )
+TRACE	2022-12-07 10:49:20	point_move: 15
+TRACE	2022-12-07 10:49:20	change_point_in_line (ptr @ link: A219AS300247, point_idx: 75 )
+TRACE	2022-12-07 10:49:20	point_move: 15
+TRACE	2022-12-07 10:49:20	change_point_in_line (ptr @ link: A219AS300247, point_idx: 90 )
+TRACE	2022-12-07 10:49:21	point_move: 15
+TRACE	2022-12-07 10:49:21	change_point_in_line (ptr @ link: A219AS300247, point_idx: 105 )
+TRACE	2022-12-07 10:49:21	point_move: 15
+TRACE	2022-12-07 10:49:21	change_point_in_line (ptr @ link: A219AS300247, point_idx: 120 )
+TRACE	2022-12-07 10:49:21	point_move: 15
+TRACE	2022-12-07 10:49:21	change_point_in_line (ptr @ link: A219AS300247, point_idx: 135 )
+TRACE	2022-12-07 10:49:21	point_move: 15
+TRACE	2022-12-07 10:49:21	change_point_in_line (ptr @ link: A219AS300247, point_idx: 150 )
+TRACE	2022-12-07 10:49:22	Called: divide_a_link_smart
+TRACE	2022-12-07 10:49:22	dist_start: 75.00, dist_end: 207.19 -> keep_front = False
+TRACE	2022-12-07 10:49:22	Called: divide_a_link
+TRACE	2022-12-07 10:49:22	set_point_in_line (ptr @ link: A219AS300247, point_idx: 0 )
+TRACE	2022-12-07 10:49:27	Called: reset_start_point
+TRACE	2022-12-07 10:49:27	Called: reset_end_point
+TRACE	2022-12-07 10:49:27	Called: reset_stop_point
+INFO	2022-12-07 10:49:27	divide_a_link is done successfully
+TRACE	2022-12-07 10:49:30	Called: reset_start_point
+TRACE	2022-12-07 10:49:30	Called: reset_end_point
+TRACE	2022-12-07 10:49:30	Called: reset_stop_point
+TRACE	2022-12-07 10:49:32	point_move: 15
+TRACE	2022-12-07 10:49:32	change_point_in_line (ptr @ link: A219AS300245, point_idx: 15 )
+TRACE	2022-12-07 10:49:32	point_move: 15
+TRACE	2022-12-07 10:49:32	change_point_in_line (ptr @ link: A219AS300245, point_idx: 30 )
+TRACE	2022-12-07 10:49:32	point_move: 15
+TRACE	2022-12-07 10:49:32	change_point_in_line (ptr @ link: A219AS300245, point_idx: 45 )
+TRACE	2022-12-07 10:49:32	point_move: 15
+TRACE	2022-12-07 10:49:32	change_point_in_line (ptr @ link: A219AS300245, point_idx: 60 )
+TRACE	2022-12-07 10:49:32	point_move: 15
+TRACE	2022-12-07 10:49:32	change_point_in_line (ptr @ link: A219AS300245, point_idx: 75 )
+TRACE	2022-12-07 10:49:33	point_move: 15
+TRACE	2022-12-07 10:49:33	change_point_in_line (ptr @ link: A219AS300245, point_idx: 90 )
+TRACE	2022-12-07 10:49:33	point_move: 15
+TRACE	2022-12-07 10:49:33	change_point_in_line (ptr @ link: A219AS300245, point_idx: 105 )
+TRACE	2022-12-07 10:49:33	point_move: 15
+TRACE	2022-12-07 10:49:33	change_point_in_line (ptr @ link: A219AS300245, point_idx: 120 )
+TRACE	2022-12-07 10:49:33	point_move: 15
+TRACE	2022-12-07 10:49:33	change_point_in_line (ptr @ link: A219AS300245, point_idx: 135 )
+TRACE	2022-12-07 10:49:33	point_move: 15
+TRACE	2022-12-07 10:49:33	change_point_in_line (ptr @ link: A219AS300245, point_idx: 150 )
+TRACE	2022-12-07 10:49:34	Called: divide_a_link_smart
+TRACE	2022-12-07 10:49:34	dist_start: 75.00, dist_end: 205.81 -> keep_front = False
+ERROR	2022-12-07 10:49:34	divide_a_link_smart failed (traceback below) 
+		Traceback (most recent call last):
+		  File "d:\road_model_maker\src\proj_mgeo_editor_morai_opengl\GUI\opengl_canvas.py", line 5005, in divide_a_link_smart
+		    if self.sp['type'] == MGeoItem.LANE_BOUNDARY:
+		TypeError: 'NoneType' object is not subscriptable
+		
+TRACE	2022-12-07 10:49:45	point_move: 15
+TRACE	2022-12-07 10:49:45	change_point_in_line (ptr @ link: A219AS300245, point_idx: 15 )
+TRACE	2022-12-07 10:49:45	point_move: 15
+TRACE	2022-12-07 10:49:45	change_point_in_line (ptr @ link: A219AS300245, point_idx: 30 )
+TRACE	2022-12-07 10:49:45	point_move: 15
+TRACE	2022-12-07 10:49:45	change_point_in_line (ptr @ link: A219AS300245, point_idx: 45 )
+TRACE	2022-12-07 10:49:46	point_move: 15
+TRACE	2022-12-07 10:49:46	change_point_in_line (ptr @ link: A219AS300245, point_idx: 60 )
+TRACE	2022-12-07 10:49:46	point_move: 15
+TRACE	2022-12-07 10:49:46	change_point_in_line (ptr @ link: A219AS300245, point_idx: 75 )
+TRACE	2022-12-07 10:49:46	point_move: 15
+TRACE	2022-12-07 10:49:46	change_point_in_line (ptr @ link: A219AS300245, point_idx: 90 )
+TRACE	2022-12-07 10:49:46	point_move: 15
+TRACE	2022-12-07 10:49:46	change_point_in_line (ptr @ link: A219AS300245, point_idx: 105 )
+TRACE	2022-12-07 10:49:46	point_move: 15
+TRACE	2022-12-07 10:49:46	change_point_in_line (ptr @ link: A219AS300245, point_idx: 120 )
+TRACE	2022-12-07 10:49:46	point_move: 15
+TRACE	2022-12-07 10:49:46	change_point_in_line (ptr @ link: A219AS300245, point_idx: 135 )
+TRACE	2022-12-07 10:49:47	point_move: 15
+TRACE	2022-12-07 10:49:47	change_point_in_line (ptr @ link: A219AS300245, point_idx: 150 )
+TRACE	2022-12-07 10:49:47	Called: divide_a_link_smart
+TRACE	2022-12-07 10:49:48	dist_start: 75.00, dist_end: 205.81 -> keep_front = False
+TRACE	2022-12-07 10:49:48	Called: divide_a_link
+TRACE	2022-12-07 10:49:48	set_point_in_line (ptr @ link: A219AS300245, point_idx: 0 )
+TRACE	2022-12-07 10:49:52	Called: reset_start_point
+TRACE	2022-12-07 10:49:52	Called: reset_end_point
+TRACE	2022-12-07 10:49:52	Called: reset_stop_point
+INFO	2022-12-07 10:49:52	divide_a_link is done successfully
+TRACE	2022-12-07 10:49:55	Called: reset_start_point
+TRACE	2022-12-07 10:49:55	Called: reset_end_point
+TRACE	2022-12-07 10:49:55	Called: reset_stop_point
+TRACE	2022-12-07 10:49:58	Called: connect_nodes
+INFO	2022-12-07 10:49:58	Invalid operation: two links are already connected!
+TRACE	2022-12-07 10:50:02	init_save_path: C:\Users\sjhan\Desktop
