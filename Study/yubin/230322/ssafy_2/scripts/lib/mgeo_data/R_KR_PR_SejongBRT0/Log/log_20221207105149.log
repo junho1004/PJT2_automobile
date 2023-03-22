@@ -1,0 +1,64 @@
+d:\road_model_maker\src\proj_mgeo_editor_morai_opengl\log\log_20221207105149.log
+		INFO	2022-12-07 10:51:51	User ID : 265
+TRACE	2022-12-07 10:51:54	Called: load_mgeo
+TRACE	2022-12-07 10:51:54	Called: ask_save_current_data
+TRACE	2022-12-07 10:51:54	No MGeo data to save -> return
+TRACE	2022-12-07 10:51:54	init_load_path: C:\Users\sjhan\Desktop
+TRACE	2022-12-07 10:52:18	load MGeo data from: C:/Users/sjhan/Desktop/sejong_mgeo
+INFO	2022-12-07 10:52:18	MGeo data successfully loaded from: C:/Users/sjhan/Desktop/sejong_mgeo
+INFO	2022-12-07 10:52:26	C:/Users/sjhan/Desktop/sejong_mgeo
+TRACE	2022-12-07 10:52:26	Called: reset_start_point
+TRACE	2022-12-07 10:52:26	Called: reset_end_point
+TRACE	2022-12-07 10:52:26	Called: reset_stop_point
+TRACE	2022-12-07 10:55:20	Called: reset_start_point
+TRACE	2022-12-07 10:55:20	Called: reset_end_point
+TRACE	2022-12-07 10:55:20	Called: reset_stop_point
+INFO	2022-12-07 10:55:21	Data successfully loaded from: C:/Users/sjhan/Desktop/sejong_mgeo
+TRACE	2022-12-07 10:56:18	Called: connect_nodes
+INFO	2022-12-07 10:56:18	connecting link (id: LN000724) created (from node: A119AS300642 -> to: ND000452)
+TRACE	2022-12-07 10:56:20	Called: reset_start_point
+TRACE	2022-12-07 10:56:20	Called: reset_end_point
+TRACE	2022-12-07 10:56:20	Called: reset_stop_point
+INFO	2022-12-07 10:56:26	start, put points on line
+INFO	2022-12-07 10:56:27	end, put points on line
+INFO	2022-12-07 10:56:33	start, put points on line
+INFO	2022-12-07 10:56:36	end, put points on line
+TRACE	2022-12-07 10:56:42	Called: fill_points_in_links
+INFO	2022-12-07 10:56:47	Filled points in selected links
+INFO	2022-12-07 10:56:54	[Edit item properties] id: LN000723, lane_ch_link_right : None > LN000721
+INFO	2022-12-07 10:56:54	[Edit item properties] id: LN000723, lane_ch_link_left : None > None
+INFO	2022-12-07 10:56:54	[Edit item properties] id: LN000721, lane_ch_link_right : None > LN000724
+INFO	2022-12-07 10:56:54	[Edit item properties] id: LN000721, lane_ch_link_left : None > LN000723
+INFO	2022-12-07 10:56:54	[Edit item properties] id: LN000724, lane_ch_link_right : None > None
+INFO	2022-12-07 10:56:54	[Edit item properties] id: LN000724, lane_ch_link_left : None > LN000721
+TRACE	2022-12-07 10:56:57	Called: fill_points_in_links
+INFO	2022-12-07 10:57:03	Filled points in selected links
+TRACE	2022-12-07 10:57:04	Called: reverse_link_points
+TRACE	2022-12-07 10:57:06	Called: reset_start_point
+TRACE	2022-12-07 10:57:06	Called: reset_end_point
+TRACE	2022-12-07 10:57:06	Called: reset_stop_point
+TRACE	2022-12-07 10:57:14	point_move: 1
+TRACE	2022-12-07 10:57:14	change_point_in_line (ptr @ link: LN000721, point_idx: 1 )
+TRACE	2022-12-07 10:57:14	point_move: 1
+TRACE	2022-12-07 10:57:14	change_point_in_line (ptr @ link: LN000721, point_idx: 2 )
+TRACE	2022-12-07 10:57:14	point_move: 1
+TRACE	2022-12-07 10:57:14	change_point_in_line (ptr @ link: LN000721, point_idx: 3 )
+TRACE	2022-12-07 10:57:41	Called: reverse_link_points
+TRACE	2022-12-07 10:57:42	Called: reset_start_point
+TRACE	2022-12-07 10:57:42	Called: reset_end_point
+TRACE	2022-12-07 10:57:42	Called: reset_stop_point
+TRACE	2022-12-07 10:57:48	Called: fill_points_in_links
+INFO	2022-12-07 10:57:52	Filled points in selected links
+TRACE	2022-12-07 10:58:05	init_save_path: C:\Users\sjhan\Desktop
+TRACE	2022-12-07 10:58:18	save MGeo data into: C:/Users/sjhan/Desktop/sejong_mgeo
+INFO	2022-12-07 10:58:18	Successfully exported to: C:/Users/sjhan/Desktop/sejong_mgeo
+TRACE	2022-12-07 10:58:44	Called: find_by_mgeo_id
+TRACE	2022-12-07 10:58:49	Called: find_by_mgeo_id
+TRACE	2022-12-07 10:58:53	Called: find_by_mgeo_id
+TRACE	2022-12-07 10:58:56	Called: find_by_mgeo_id
+TRACE	2022-12-07 10:59:52	Called: find_and_repair_null_type_def
+INFO	2022-12-07 10:59:52	type_def null ¡æ ngii_model2
+INFO	2022-12-07 10:59:52	complete change_ngii_to_mgeo
+TRACE	2022-12-07 10:59:55	Called: set_max_speed_link
+INFO	2022-12-07 10:59:59	set_max_speed completed successfully.
+TRACE	2022-12-07 11:00:01	init_save_path: C:\Users\sjhan\Desktop
