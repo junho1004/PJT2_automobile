@@ -6,7 +6,7 @@ import axios from 'axios';
 import {useEffect} from 'react'
 import Root from "./pages/Root";
 // 로그인
-import Login from "./pages/Login/Login";
+import Login from "./pages/Login/Login.tsx";
 import Home from "./pages/Home/Home";
 // 유저 관리
 // 상품관리
