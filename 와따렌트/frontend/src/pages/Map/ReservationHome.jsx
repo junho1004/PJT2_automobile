@@ -5,7 +5,8 @@ import { useLocation } from "react-router";
 import spot from "../../assets/images/spot.png";
 
 import Calendar from "./Calendar.jsx";
-import TimePicker from "./TimePicker";
+import TimePickerStart from "./TimePickerStart";
+import TimePickerEnd from "./TimePickerEnd";
 
 import Reservation from "./Reservation";
 import previous from "../../assets/images/previous.png";
@@ -39,9 +40,8 @@ export default function ReservationHome() {
         <Calendar />
         <br />
       </div>
-      <div>
-        <TimePicker/>
-      </div>
+        <TimePickerStart/>
+        <TimePickerEnd/>
 
       <div className={styles.next2}>
         <button
