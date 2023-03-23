@@ -15,19 +15,20 @@ export default function Oauth() {
     (async () => {
       try {
         // 토큰 axios 요청
-        await axios.get(`api/oauth/token?code=${code}`).then((res) => {
-          const token = res.headers.authorization;
+        await axios.get(`api/oauth/token?code=${code}`)
+            .then((res) => {
+              const token = res.headers.authorization;
 
-          // 받아온 토큰을 로컬 스토리지에 token으로 저장
-          localStorage.setItem("token", token);
+              // 받아온 토큰을 로컬 스토리지에 token으로 저장
+              localStorage.setItem("token", token);
 
-          // 유저 정보를 불러오는 api
-          axios
-            .get(`${process.env.REACT_APP_API_ME}`, {
-              headers: {
-                Authorization: token,
-              },
-            })
+              // 유저 정보를 불러오는 api
+              axios
+                .get(`${process.env.REACT_APP_API_ME}`, {
+                  headers: {
+                    Authorization: token,
+                  },
+                })
             .then((res) => {
               dispatch(
                 login({
