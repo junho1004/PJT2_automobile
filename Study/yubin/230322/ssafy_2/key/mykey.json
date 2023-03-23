@@ -1,0 +1,45 @@
+{
+
+
+
+    "type": "service_account",
+  
+  
+  
+    "project_id": "ssafy-seo8-44f08",
+  
+  
+  
+    "private_key_id": "40c3d75ae222e0b4409d2f70ec6f10ff355a20bd",
+  
+  
+  
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDGIU8OJVpt6IYZ\n0p1ZLlC+xFlBO2iF2Kjtc0W49dEwJynJuXqt7yg+lFMjHPxazZRpEuVNZgzaPfeW\nIKF5uOMeGsJA9j5OHy0MuCu5uYNPa+Dsqkb17/IjZ040PvorUl8AoQAFbR/Yrg6q\nNs8Mug9ZNI5OjkKlwagsfDCCC8iclfVqvZPg2CuuTaQOEzgJ3urT14TY9qSub3c3\nQUwP/aai7rmtU2a3BNgyyjwdj8YIzoRiZ7fLVUaGYv182aWiOkr/oMKDPRWGQGJZ\n0VMJXjzBTyI5r6dM+2/FsCTNaOa4mkUXDblCc9rRI3lpQ6n+VJ2ZjdfNqa1L302n\nOllieuHdAgMBAAECggEAOqLV9i5I1nk34sGJrsB9xg9vCNavptkJmYiBbG1XlQQq\nIljBvWMnimm0NxKXfroTv4sHkMHwcNBhCy2qDE+S67Bop/gYVV91oiuJSURlX6Zi\nITh9msCB7UdgBidTO2n70sBTNMfoYmSU03w4B6Cy9SgQK6B/ifXHsy6n3nzlSK21\nb2oGmNputJ6s2zTuPe0QIH5W4NLAqxWaaRFS60beVEkVAxhohCnysJuS+cx4fO+O\nzphfqsSJHSpZbC6ZOOkAEnXpHfoh/eUv8jPKr+ws3oaAbRqkdrmKBPoMO8pwGIud\n4Z/IGhiDuqCouOFBU/0SDrKiRy7JFMFqwgWoMw8YYwKBgQDhOMj8WsSkdCv1RXIU\nf3I1PA3/qf0d9yMA2jfVO80VPYAqRWPG1FCL8AbVFCRJjnR30x7siR0vmunQ4a4I\nRwX3Y1AQ0c5CxS2pwJdDiEEXCmSAVdPwCXs2bi7JNNpcDixZhJnjk9LT6+QHFMOt\nfXlAvyCjcARUnjEf/3YIjP/D9wKBgQDhNL2tdJL4RMjhb6oxqKwureH1s8mMV0XX\n2TkBxdNSmalHQG0Sh9R/pm58a7aLeSFX3T3Se7RTewFzvcwpRYCd3/yEUQ68Q0ju\nZGva4kr4Xe5V186Fy7ohkFAJhTzmsF9osDACS9H6PhChx51iXOkx0IZcrzOHSjn2\nJePzYEArywKBgBrkHdNLvyjnmgwKA6oA4ZELn5xEHq3CQVKru3jhUAZWNoRVjqlB\n1nAu85HjesWxlaRs98dEQ9DYTUycdZwVZtf36qpncpo0UtRu42Cz1xm6Ku/Lz6dc\nanLASyPJBL1zD8aMd5ddohGdm7dgulBvp9ecOnhpOosj7Dem1+ADfdJXAoGAeXzU\nHfBXIGsq2sI8U9GkIQJYdQ1p2rVxzgE2yYgIefS+5tsQfACeV8ZWr/QDY7YSkK2f\nHh7xpl8i52cp7dG6knA0bsSzaEf73e56aHfO7bDuU4y5sl+2p0iMhLZFpkTbE0SI\ngZSZT5+PpVZjxp5MhjzxXqp856zZG7pRAAeaVoUCgYAxpcpi/dE9n2WE3GBdfp0W\neaRDPkrKutQo77elOd1+hgwhMYTlyMnvTEd7zWmwI4MYYKT/4VgyyyyVzP55htA/\nkWzz5ithPR9ofducujOkxie2XfrHNGu3buSMPOqtYG6NEDk+/dHQtSTwVgqdsude\nCwtuk5JL0VDCT9GMbzycfg==\n-----END PRIVATE KEY-----\n",
+  
+  
+  
+    "client_email": "firebase-adminsdk-221ul@ssafy-seo8-44f08.iam.gserviceaccount.com",
+  
+  
+  
+    "client_id": "107186578157228922124",
+  
+  
+  
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  
+  
+  
+    "token_uri": "https://oauth2.googleapis.com/token",
+  
+  
+  
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  
+  
+  
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-221ul%40ssafy-seo8-44f08.iam.gserviceaccount.com"
+  
+  
+  
+  }
