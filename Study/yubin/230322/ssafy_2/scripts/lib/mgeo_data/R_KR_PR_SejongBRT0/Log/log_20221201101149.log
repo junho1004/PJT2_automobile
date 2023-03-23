@@ -1,0 +1,2844 @@
+d:\road_model_maker\src\proj_mgeo_editor_morai_opengl\log\log_20221201101149.log
+		INFO	2022-12-01 10:11:53	User ID : 265
+TRACE	2022-12-01 10:16:49	Called: load_mgeo
+TRACE	2022-12-01 10:16:49	Called: ask_save_current_data
+TRACE	2022-12-01 10:16:49	No MGeo data to save -> return
+TRACE	2022-12-01 10:16:49	init_load_path: C:\Users\sjhan\Desktop\ÀüºÏ´ë µµ·Î
+TRACE	2022-12-01 10:16:54	load MGeo data from: C:/Users/sjhan/Desktop/sejong_mgeo
+INFO	2022-12-01 10:16:54	MGeo data successfully loaded from: C:/Users/sjhan/Desktop/sejong_mgeo
+INFO	2022-12-01 10:17:02	C:/Users/sjhan/Desktop/sejong_mgeo
+TRACE	2022-12-01 10:17:02	Called: reset_start_point
+TRACE	2022-12-01 10:17:02	Called: reset_end_point
+TRACE	2022-12-01 10:17:02	Called: reset_stop_point
+TRACE	2022-12-01 10:19:48	Called: reset_start_point
+TRACE	2022-12-01 10:19:48	Called: reset_end_point
+TRACE	2022-12-01 10:19:48	Called: reset_stop_point
+INFO	2022-12-01 10:19:48	Data successfully loaded from: C:/Users/sjhan/Desktop/sejong_mgeo
+TRACE	2022-12-01 10:21:00	Called: add_new_mgeo_item MGeoItem.NODE 
+TRACE	2022-12-01 10:21:00	Called: reset_start_point
+TRACE	2022-12-01 10:21:00	Called: reset_end_point
+TRACE	2022-12-01 10:21:00	Called: reset_stop_point
+INFO	2022-12-01 10:21:00	add MGeoItem.NODE point: id: ND000102, point: [-8.49735412e+02  3.81526979e+03  2.84715560e+00] in Map: sejong_mgeo
+TRACE	2022-12-01 10:21:12	Called: delete_item
+INFO	2022-12-01 10:21:12	NODE (id: ND000102) deleted.
+TRACE	2022-12-01 10:21:12	Called: reset_start_point
+TRACE	2022-12-01 10:21:12	Called: reset_end_point
+TRACE	2022-12-01 10:21:12	Called: reset_stop_point
+TRACE	2022-12-01 10:21:14	Called: connect_nodes
+INFO	2022-12-01 10:21:14	connecting link (id: LM000025) created (from node: RB219AS303488E -> to: RB219AS300454E)
+TRACE	2022-12-01 10:21:16	Called: reset_start_point
+TRACE	2022-12-01 10:21:16	Called: reset_end_point
+TRACE	2022-12-01 10:21:16	Called: reset_stop_point
+TRACE	2022-12-01 10:21:19	Called: add_link_point
+TRACE	2022-12-01 10:21:21	Called: reset_start_point
+TRACE	2022-12-01 10:21:21	Called: reset_end_point
+TRACE	2022-12-01 10:21:21	Called: reset_stop_point
+INFO	2022-12-01 10:21:21	add_link_point is done successfully
+TRACE	2022-12-01 10:21:24	point_move: 1
+TRACE	2022-12-01 10:21:24	change_point_in_line (ptr @ link: LM000025, point_idx: 1 )
+TRACE	2022-12-01 10:21:25	Called: divide_a_link_smart
+TRACE	2022-12-01 10:21:25	dist_start: 0.75, dist_end: 0.75 -> keep_front = True
+TRACE	2022-12-01 10:21:25	Called: divide_a_laneMarking
+TRACE	2022-12-01 10:21:25	set_point_in_line (ptr @ link: LM000025, point_idx: 0 )
+TRACE	2022-12-01 10:21:27	Called: reset_start_point
+TRACE	2022-12-01 10:21:27	Called: reset_end_point
+TRACE	2022-12-01 10:21:27	Called: reset_stop_point
+TRACE	2022-12-01 10:21:30	Called: reset_start_point
+TRACE	2022-12-01 10:21:30	Called: reset_end_point
+TRACE	2022-12-01 10:21:30	Called: reset_stop_point
+INFO	2022-12-01 10:21:31	divide_a_laneMarking is completed successfully
+TRACE	2022-12-01 10:21:34	Called: reset_start_point
+TRACE	2022-12-01 10:21:34	Called: reset_end_point
+TRACE	2022-12-01 10:21:34	Called: reset_stop_point
+TRACE	2022-12-01 10:21:37	Called: delete_item
+INFO	2022-12-01 10:21:38	LANE_BOUNDARY (id: LM000045) deleted.
+TRACE	2022-12-01 10:21:42	Called: reset_start_point
+TRACE	2022-12-01 10:21:42	Called: reset_end_point
+TRACE	2022-12-01 10:21:42	Called: reset_stop_point
+TRACE	2022-12-01 10:21:42	Called: delete_item
+INFO	2022-12-01 10:21:43	LANE_BOUNDARY (id: LM000025) deleted.
+TRACE	2022-12-01 10:21:47	Called: reset_start_point
+TRACE	2022-12-01 10:21:47	Called: reset_end_point
+TRACE	2022-12-01 10:21:47	Called: reset_stop_point
+TRACE	2022-12-01 11:14:38	Called: add_new_mgeo_item MGeoItem.NODE 
+TRACE	2022-12-01 11:14:38	Called: reset_start_point
+TRACE	2022-12-01 11:14:38	Called: reset_end_point
+TRACE	2022-12-01 11:14:38	Called: reset_stop_point
+INFO	2022-12-01 11:14:38	add MGeoItem.NODE point: id: ND000103, point: [-8.49353596e+02  3.81489426e+03  2.86350424e+00] in Map: sejong_mgeo
+TRACE	2022-12-01 11:14:50	Called: reset_start_point
+TRACE	2022-12-01 11:14:50	Called: reset_end_point
+TRACE	2022-12-01 11:14:50	Called: reset_stop_point
+TRACE	2022-12-01 11:14:54	Called: reset_start_point
+TRACE	2022-12-01 11:14:54	Called: reset_end_point
+TRACE	2022-12-01 11:14:54	Called: reset_stop_point
+INFO	2022-12-01 11:14:54	[Edit item properties] type: NODE, id: ND000103, point 
+		: [-849.3535958839146, 3814.894262719389, 2.8635042397746204] ¡æ [-849.2127085198008, 3814.894262719389, 2.8635042397746204]
+TRACE	2022-12-01 11:14:57	Called: delete_item
+INFO	2022-12-01 11:14:57	LANE_NODE (id: ND000003) deleted.
+TRACE	2022-12-01 11:14:58	Called: reset_start_point
+TRACE	2022-12-01 11:14:58	Called: reset_end_point
+TRACE	2022-12-01 11:14:58	Called: reset_stop_point
+TRACE	2022-12-01 11:15:03	point_move: 1
+TRACE	2022-12-01 11:15:03	change_point_in_line (ptr @ link: A219AS301461, point_idx: 1 )
+TRACE	2022-12-01 11:15:03	point_move: 1
+TRACE	2022-12-01 11:15:03	change_point_in_line (ptr @ link: A219AS301461, point_idx: 2 )
+TRACE	2022-12-01 11:15:03	point_move: 1
+TRACE	2022-12-01 11:15:03	change_point_in_line (ptr @ link: A219AS301461, point_idx: 3 )
+TRACE	2022-12-01 11:15:03	point_move: 1
+TRACE	2022-12-01 11:15:03	change_point_in_line (ptr @ link: A219AS301461, point_idx: 4 )
+TRACE	2022-12-01 11:15:03	point_move: 1
+TRACE	2022-12-01 11:15:03	change_point_in_line (ptr @ link: A219AS301461, point_idx: 5 )
+TRACE	2022-12-01 11:15:03	point_move: 1
+TRACE	2022-12-01 11:15:03	change_point_in_line (ptr @ link: A219AS301461, point_idx: 6 )
+TRACE	2022-12-01 11:15:03	point_move: 1
+TRACE	2022-12-01 11:15:03	change_point_in_line (ptr @ link: A219AS301461, point_idx: 7 )
+TRACE	2022-12-01 11:15:03	point_move: 1
+TRACE	2022-12-01 11:15:03	change_point_in_line (ptr @ link: A219AS301461, point_idx: 8 )
+TRACE	2022-12-01 11:15:03	point_move: 1
+TRACE	2022-12-01 11:15:03	change_point_in_line (ptr @ link: A219AS301461, point_idx: 9 )
+TRACE	2022-12-01 11:15:03	point_move: 1
+TRACE	2022-12-01 11:15:03	change_point_in_line (ptr @ link: A219AS301461, point_idx: 10 )
+TRACE	2022-12-01 11:15:03	point_move: 1
+TRACE	2022-12-01 11:15:03	change_point_in_line (ptr @ link: A219AS301461, point_idx: 11 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 12 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 13 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 14 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 15 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 16 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 17 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 18 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 19 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 20 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 21 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 22 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 23 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 24 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 25 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 26 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 27 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 28 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 29 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 30 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 31 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 32 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 33 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 34 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 35 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 36 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 37 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 38 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 39 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 40 )
+TRACE	2022-12-01 11:15:04	point_move: 1
+TRACE	2022-12-01 11:15:04	change_point_in_line (ptr @ link: A219AS301461, point_idx: 41 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 42 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 43 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 44 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 45 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 46 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 47 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 48 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 49 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 50 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 51 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 52 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 53 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 54 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 55 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 56 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 57 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 58 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 59 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 60 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 61 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 62 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 63 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 64 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 65 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 66 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 67 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 68 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 69 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 70 )
+TRACE	2022-12-01 11:15:05	point_move: 1
+TRACE	2022-12-01 11:15:05	change_point_in_line (ptr @ link: A219AS301461, point_idx: 71 )
+TRACE	2022-12-01 11:15:06	point_move: 1
+TRACE	2022-12-01 11:15:06	change_point_in_line (ptr @ link: A219AS301461, point_idx: 72 )
+TRACE	2022-12-01 11:15:06	point_move: 1
+TRACE	2022-12-01 11:15:06	change_point_in_line (ptr @ link: A219AS301461, point_idx: 73 )
+TRACE	2022-12-01 11:15:06	point_move: 1
+TRACE	2022-12-01 11:15:06	change_point_in_line (ptr @ link: A219AS301461, point_idx: 74 )
+TRACE	2022-12-01 11:15:06	point_move: 1
+TRACE	2022-12-01 11:15:06	change_point_in_line (ptr @ link: A219AS301461, point_idx: 75 )
+TRACE	2022-12-01 11:15:06	point_move: 1
+TRACE	2022-12-01 11:15:06	change_point_in_line (ptr @ link: A219AS301461, point_idx: 76 )
+TRACE	2022-12-01 11:15:06	point_move: 1
+TRACE	2022-12-01 11:15:06	change_point_in_line (ptr @ link: A219AS301461, point_idx: 77 )
+TRACE	2022-12-01 11:15:06	point_move: 1
+TRACE	2022-12-01 11:15:06	change_point_in_line (ptr @ link: A219AS301461, point_idx: 78 )
+TRACE	2022-12-01 11:15:06	point_move: 1
+TRACE	2022-12-01 11:15:06	change_point_in_line (ptr @ link: A219AS301461, point_idx: 79 )
+TRACE	2022-12-01 11:15:06	point_move: 1
+TRACE	2022-12-01 11:15:06	change_point_in_line (ptr @ link: A219AS301461, point_idx: 80 )
+TRACE	2022-12-01 11:15:06	point_move: 1
+TRACE	2022-12-01 11:15:06	change_point_in_line (ptr @ link: A219AS301461, point_idx: 81 )
+TRACE	2022-12-01 11:15:06	point_move: 1
+TRACE	2022-12-01 11:15:06	change_point_in_line (ptr @ link: A219AS301461, point_idx: 82 )
+TRACE	2022-12-01 11:15:07	point_move: 1
+TRACE	2022-12-01 11:15:07	change_point_in_line (ptr @ link: A219AS301461, point_idx: 83 )
+TRACE	2022-12-01 11:15:07	point_move: 1
+TRACE	2022-12-01 11:15:07	change_point_in_line (ptr @ link: A219AS301461, point_idx: 84 )
+TRACE	2022-12-01 11:15:07	point_move: 1
+TRACE	2022-12-01 11:15:07	change_point_in_line (ptr @ link: A219AS301461, point_idx: 85 )
+TRACE	2022-12-01 11:15:07	point_move: 1
+TRACE	2022-12-01 11:15:07	change_point_in_line (ptr @ link: A219AS301461, point_idx: 86 )
+TRACE	2022-12-01 11:15:07	point_move: 1
+TRACE	2022-12-01 11:15:07	change_point_in_line (ptr @ link: A219AS301461, point_idx: 87 )
+TRACE	2022-12-01 11:15:08	point_move: -1
+TRACE	2022-12-01 11:15:08	change_point_in_line (ptr @ link: A219AS301461, point_idx: 86 )
+TRACE	2022-12-01 11:15:09	Called: divide_a_link_smart
+TRACE	2022-12-01 11:15:09	dist_start: 43.00, dist_end: 54.90 -> keep_front = False
+TRACE	2022-12-01 11:15:09	Called: divide_a_link
+TRACE	2022-12-01 11:15:09	set_point_in_line (ptr @ link: A219AS301461, point_idx: 0 )
+TRACE	2022-12-01 11:15:13	Called: reset_start_point
+TRACE	2022-12-01 11:15:13	Called: reset_end_point
+TRACE	2022-12-01 11:15:13	Called: reset_stop_point
+INFO	2022-12-01 11:15:13	divide_a_link is done successfully
+TRACE	2022-12-01 11:15:17	Called: reset_start_point
+TRACE	2022-12-01 11:15:17	Called: reset_end_point
+TRACE	2022-12-01 11:15:17	Called: reset_stop_point
+TRACE	2022-12-01 11:15:18	point_move: 1
+TRACE	2022-12-01 11:15:18	change_point_in_line (ptr @ link: A219AS301460, point_idx: 1 )
+TRACE	2022-12-01 11:15:19	point_move: 1
+TRACE	2022-12-01 11:15:19	change_point_in_line (ptr @ link: A219AS301460, point_idx: 2 )
+TRACE	2022-12-01 11:15:19	point_move: 1
+TRACE	2022-12-01 11:15:19	change_point_in_line (ptr @ link: A219AS301460, point_idx: 3 )
+TRACE	2022-12-01 11:15:19	point_move: 1
+TRACE	2022-12-01 11:15:19	change_point_in_line (ptr @ link: A219AS301460, point_idx: 4 )
+TRACE	2022-12-01 11:15:19	point_move: 1
+TRACE	2022-12-01 11:15:19	change_point_in_line (ptr @ link: A219AS301460, point_idx: 5 )
+TRACE	2022-12-01 11:15:19	point_move: 1
+TRACE	2022-12-01 11:15:19	change_point_in_line (ptr @ link: A219AS301460, point_idx: 6 )
+TRACE	2022-12-01 11:15:19	point_move: 1
+TRACE	2022-12-01 11:15:19	change_point_in_line (ptr @ link: A219AS301460, point_idx: 7 )
+TRACE	2022-12-01 11:15:19	point_move: 1
+TRACE	2022-12-01 11:15:19	change_point_in_line (ptr @ link: A219AS301460, point_idx: 8 )
+TRACE	2022-12-01 11:15:19	point_move: 1
+TRACE	2022-12-01 11:15:19	change_point_in_line (ptr @ link: A219AS301460, point_idx: 9 )
+TRACE	2022-12-01 11:15:19	point_move: 1
+TRACE	2022-12-01 11:15:19	change_point_in_line (ptr @ link: A219AS301460, point_idx: 10 )
+TRACE	2022-12-01 11:15:19	point_move: 1
+TRACE	2022-12-01 11:15:19	change_point_in_line (ptr @ link: A219AS301460, point_idx: 11 )
+TRACE	2022-12-01 11:15:19	point_move: 1
+TRACE	2022-12-01 11:15:19	change_point_in_line (ptr @ link: A219AS301460, point_idx: 12 )
+TRACE	2022-12-01 11:15:19	point_move: 1
+TRACE	2022-12-01 11:15:19	change_point_in_line (ptr @ link: A219AS301460, point_idx: 13 )
+TRACE	2022-12-01 11:15:19	point_move: 1
+TRACE	2022-12-01 11:15:19	change_point_in_line (ptr @ link: A219AS301460, point_idx: 14 )
+TRACE	2022-12-01 11:15:19	point_move: 1
+TRACE	2022-12-01 11:15:19	change_point_in_line (ptr @ link: A219AS301460, point_idx: 15 )
+TRACE	2022-12-01 11:15:19	point_move: 1
+TRACE	2022-12-01 11:15:19	change_point_in_line (ptr @ link: A219AS301460, point_idx: 16 )
+TRACE	2022-12-01 11:15:19	point_move: 1
+TRACE	2022-12-01 11:15:19	change_point_in_line (ptr @ link: A219AS301460, point_idx: 17 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 18 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 19 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 20 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 21 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 22 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 23 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 24 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 25 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 26 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 27 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 28 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 29 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 30 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 31 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 32 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 33 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 34 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 35 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 36 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 37 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 38 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 39 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 40 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 41 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 42 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 43 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 44 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 45 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 46 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 47 )
+TRACE	2022-12-01 11:15:20	point_move: 1
+TRACE	2022-12-01 11:15:20	change_point_in_line (ptr @ link: A219AS301460, point_idx: 48 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 49 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 50 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 51 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 52 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 53 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 54 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 55 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 56 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 57 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 58 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 59 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 60 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 61 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 62 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 63 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 64 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 65 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 66 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 67 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 68 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 69 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 70 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 71 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 72 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 73 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 74 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 75 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 76 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 77 )
+TRACE	2022-12-01 11:15:21	point_move: 1
+TRACE	2022-12-01 11:15:21	change_point_in_line (ptr @ link: A219AS301460, point_idx: 78 )
+TRACE	2022-12-01 11:15:22	point_move: 1
+TRACE	2022-12-01 11:15:22	change_point_in_line (ptr @ link: A219AS301460, point_idx: 79 )
+TRACE	2022-12-01 11:15:22	point_move: 1
+TRACE	2022-12-01 11:15:22	change_point_in_line (ptr @ link: A219AS301460, point_idx: 80 )
+TRACE	2022-12-01 11:15:22	point_move: 1
+TRACE	2022-12-01 11:15:22	change_point_in_line (ptr @ link: A219AS301460, point_idx: 81 )
+TRACE	2022-12-01 11:15:22	point_move: 1
+TRACE	2022-12-01 11:15:22	change_point_in_line (ptr @ link: A219AS301460, point_idx: 82 )
+TRACE	2022-12-01 11:15:22	point_move: 1
+TRACE	2022-12-01 11:15:22	change_point_in_line (ptr @ link: A219AS301460, point_idx: 83 )
+TRACE	2022-12-01 11:15:22	point_move: 1
+TRACE	2022-12-01 11:15:22	change_point_in_line (ptr @ link: A219AS301460, point_idx: 84 )
+TRACE	2022-12-01 11:15:22	point_move: 1
+TRACE	2022-12-01 11:15:22	change_point_in_line (ptr @ link: A219AS301460, point_idx: 85 )
+TRACE	2022-12-01 11:15:22	point_move: 1
+TRACE	2022-12-01 11:15:22	change_point_in_line (ptr @ link: A219AS301460, point_idx: 86 )
+TRACE	2022-12-01 11:15:22	point_move: 1
+TRACE	2022-12-01 11:15:22	change_point_in_line (ptr @ link: A219AS301460, point_idx: 87 )
+TRACE	2022-12-01 11:15:22	point_move: 1
+TRACE	2022-12-01 11:15:22	change_point_in_line (ptr @ link: A219AS301460, point_idx: 88 )
+TRACE	2022-12-01 11:15:22	point_move: -1
+TRACE	2022-12-01 11:15:22	change_point_in_line (ptr @ link: A219AS301460, point_idx: 87 )
+TRACE	2022-12-01 11:15:23	Called: divide_a_link_smart
+TRACE	2022-12-01 11:15:23	dist_start: 43.50, dist_end: 55.01 -> keep_front = False
+TRACE	2022-12-01 11:15:23	Called: divide_a_link
+TRACE	2022-12-01 11:15:23	set_point_in_line (ptr @ link: A219AS301460, point_idx: 0 )
+TRACE	2022-12-01 11:15:27	Called: reset_start_point
+TRACE	2022-12-01 11:15:27	Called: reset_end_point
+TRACE	2022-12-01 11:15:27	Called: reset_stop_point
+INFO	2022-12-01 11:15:27	divide_a_link is done successfully
+TRACE	2022-12-01 11:15:31	Called: reset_start_point
+TRACE	2022-12-01 11:15:31	Called: reset_end_point
+TRACE	2022-12-01 11:15:31	Called: reset_stop_point
+INFO	2022-12-01 11:15:40	[Edit item properties] id: LN000033, lane_ch_link_right : None > LN000032
+INFO	2022-12-01 11:15:40	[Edit item properties] id: LN000033, lane_ch_link_left : None > None
+INFO	2022-12-01 11:15:40	[Edit item properties] id: LN000032, lane_ch_link_right : None > None
+INFO	2022-12-01 11:15:40	[Edit item properties] id: LN000032, lane_ch_link_left : None > LN000033
+TRACE	2022-12-01 11:15:44	Called: connect_nodes
+INFO	2022-12-01 11:15:44	connecting link (id: LN000036) created (from node: ND000104 -> to: ND000103)
+TRACE	2022-12-01 11:15:45	Called: reset_start_point
+TRACE	2022-12-01 11:15:45	Called: reset_end_point
+TRACE	2022-12-01 11:15:45	Called: reset_stop_point
+INFO	2022-12-01 11:15:49	start, put points on line
+INFO	2022-12-01 11:15:51	end, put points on line
+INFO	2022-12-01 11:15:58	start, put points on line
+INFO	2022-12-01 11:16:00	end, put points on line
+INFO	2022-12-01 11:16:06	start, put points on line
+INFO	2022-12-01 11:16:08	end, put points on line
+TRACE	2022-12-01 11:16:20	Called: fill_points_in_links
+INFO	2022-12-01 11:16:26	Filled points in selected links
+TRACE	2022-12-01 12:45:40	Called: connect_nodes
+INFO	2022-12-01 12:45:40	connecting link (id: LN000106) created (from node: ND000103 -> to: ND000727)
+TRACE	2022-12-01 12:45:42	Called: reset_start_point
+TRACE	2022-12-01 12:45:42	Called: reset_end_point
+TRACE	2022-12-01 12:45:42	Called: reset_stop_point
+TRACE	2022-12-01 12:45:44	Called: connect_nodes
+INFO	2022-12-01 12:45:44	connecting link (id: LN000107) created (from node: A119AS301966 -> to: ND000725)
+TRACE	2022-12-01 12:45:46	Called: reset_start_point
+TRACE	2022-12-01 12:45:46	Called: reset_end_point
+TRACE	2022-12-01 12:45:46	Called: reset_stop_point
+INFO	2022-12-01 12:45:49	start, put points on line
+INFO	2022-12-01 12:45:51	end, put points on line
+INFO	2022-12-01 12:45:56	start, put points on line
+INFO	2022-12-01 12:45:59	end, put points on line
+INFO	2022-12-01 12:46:04	start, put points on line
+INFO	2022-12-01 12:46:07	end, put points on line
+INFO	2022-12-01 12:46:12	start, put points on line
+INFO	2022-12-01 12:46:14	end, put points on line
+TRACE	2022-12-01 12:46:19	Called: delete_item
+INFO	2022-12-01 12:46:21	LINK (id: LN000547) deleted.
+TRACE	2022-12-01 12:46:23	Called: reset_start_point
+TRACE	2022-12-01 12:46:23	Called: reset_end_point
+TRACE	2022-12-01 12:46:23	Called: reset_stop_point
+INFO	2022-12-01 12:46:26	start, put points on line
+INFO	2022-12-01 12:46:27	end, put points on line
+INFO	2022-12-01 12:46:32	start, put points on line
+INFO	2022-12-01 12:46:34	end, put points on line
+TRACE	2022-12-01 12:46:50	Called: fill_points_in_links
+INFO	2022-12-01 12:46:56	Filled points in selected links
+TRACE	2022-12-01 12:46:58	Called: fill_points_in_links
+INFO	2022-12-01 12:47:05	Filled points in selected links
+TRACE	2022-12-01 12:47:07	Called: fill_points_in_links
+INFO	2022-12-01 12:47:13	Filled points in selected links
+TRACE	2022-12-01 12:47:26	Called: delete_item
+INFO	2022-12-01 12:47:29	LINK (id: LN000106) deleted.
+TRACE	2022-12-01 12:47:31	Called: reset_start_point
+TRACE	2022-12-01 12:47:31	Called: reset_end_point
+TRACE	2022-12-01 12:47:31	Called: reset_stop_point
+TRACE	2022-12-01 12:47:35	Called: connect_nodes
+INFO	2022-12-01 12:47:35	connecting link (id: LN000108) created (from node: A119AS301966 -> to: ND000727)
+TRACE	2022-12-01 12:47:37	Called: reset_start_point
+TRACE	2022-12-01 12:47:37	Called: reset_end_point
+TRACE	2022-12-01 12:47:37	Called: reset_stop_point
+INFO	2022-12-01 12:47:41	start, put points on line
+INFO	2022-12-01 12:47:43	end, put points on line
+TRACE	2022-12-01 12:47:50	Called: fill_points_in_links
+INFO	2022-12-01 12:47:54	Filled points in selected links
+TRACE	2022-12-01 12:48:06	Called: fill_points_in_links
+INFO	2022-12-01 12:48:11	Filled points in selected links
+TRACE	2022-12-01 12:48:15	Called: fill_points_in_links
+INFO	2022-12-01 12:48:19	Filled points in selected links
+TRACE	2022-12-01 12:48:37	point_move: 1
+TRACE	2022-12-01 12:48:37	change_point_in_line (ptr @ link: A219AS301459, point_idx: 1 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 2 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 3 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 4 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 5 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 6 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 7 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 8 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 9 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 10 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 11 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 12 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 13 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 14 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 15 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 16 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 17 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 18 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 19 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 20 )
+TRACE	2022-12-01 12:48:38	point_move: 1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 21 )
+TRACE	2022-12-01 12:48:38	point_move: -1
+TRACE	2022-12-01 12:48:38	change_point_in_line (ptr @ link: A219AS301459, point_idx: 20 )
+TRACE	2022-12-01 12:48:39	point_move: 1
+TRACE	2022-12-01 12:48:39	change_point_in_line (ptr @ link: A219AS301459, point_idx: 21 )
+TRACE	2022-12-01 12:48:39	point_move: 1
+TRACE	2022-12-01 12:48:39	change_point_in_line (ptr @ link: A219AS301459, point_idx: 22 )
+TRACE	2022-12-01 12:48:39	point_move: 1
+TRACE	2022-12-01 12:48:39	change_point_in_line (ptr @ link: A219AS301459, point_idx: 23 )
+TRACE	2022-12-01 12:48:39	point_move: 1
+TRACE	2022-12-01 12:48:39	change_point_in_line (ptr @ link: A219AS301459, point_idx: 24 )
+TRACE	2022-12-01 12:48:39	point_move: 1
+TRACE	2022-12-01 12:48:39	change_point_in_line (ptr @ link: A219AS301459, point_idx: 25 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 26 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 27 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 28 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 29 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 30 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 31 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 32 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 33 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 34 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 35 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 36 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 37 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 38 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 39 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 40 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 41 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 42 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 43 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 44 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 45 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 46 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 47 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 48 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 49 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 50 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 51 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 52 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 53 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 54 )
+TRACE	2022-12-01 12:48:40	point_move: 1
+TRACE	2022-12-01 12:48:40	change_point_in_line (ptr @ link: A219AS301459, point_idx: 55 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 56 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 57 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 58 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 59 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 60 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 61 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 62 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 63 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 64 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 65 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 66 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 67 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 68 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 69 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 70 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 71 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 72 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 73 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 74 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 75 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 76 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 77 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 78 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 79 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 80 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 81 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 82 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 83 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 84 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 85 )
+TRACE	2022-12-01 12:48:41	point_move: 1
+TRACE	2022-12-01 12:48:41	change_point_in_line (ptr @ link: A219AS301459, point_idx: 86 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 87 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 88 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 89 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 90 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 91 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 92 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 93 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 94 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 95 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 96 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 97 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 98 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 99 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 100 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 101 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 102 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 103 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 104 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 105 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 106 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 107 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 108 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 109 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 110 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 111 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 112 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 113 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 114 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 115 )
+TRACE	2022-12-01 12:48:42	point_move: 1
+TRACE	2022-12-01 12:48:42	change_point_in_line (ptr @ link: A219AS301459, point_idx: 116 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 117 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 118 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 119 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 120 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 121 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 122 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 123 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 124 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 125 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 126 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 127 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 128 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 129 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 130 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 131 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 132 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 133 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 134 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 135 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 136 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 137 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 138 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 139 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 140 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 141 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 142 )
+TRACE	2022-12-01 12:48:43	point_move: 1
+TRACE	2022-12-01 12:48:43	change_point_in_line (ptr @ link: A219AS301459, point_idx: 143 )
+TRACE	2022-12-01 12:48:45	point_move: 1
+TRACE	2022-12-01 12:48:45	change_point_in_line (ptr @ link: A219AS301459, point_idx: 144 )
+TRACE	2022-12-01 12:48:46	point_move: 1
+TRACE	2022-12-01 12:48:46	change_point_in_line (ptr @ link: A219AS301459, point_idx: 145 )
+TRACE	2022-12-01 12:48:46	point_move: -1
+TRACE	2022-12-01 12:48:46	change_point_in_line (ptr @ link: A219AS301459, point_idx: 144 )
+TRACE	2022-12-01 12:48:46	Called: divide_a_link_smart
+TRACE	2022-12-01 12:48:46	dist_start: 72.00, dist_end: 32.42 -> keep_front = True
+TRACE	2022-12-01 12:48:46	Called: divide_a_link
+TRACE	2022-12-01 12:48:46	set_point_in_line (ptr @ link: A219AS301459, point_idx: 0 )
+TRACE	2022-12-01 12:48:50	Called: reset_start_point
+TRACE	2022-12-01 12:48:50	Called: reset_end_point
+TRACE	2022-12-01 12:48:50	Called: reset_stop_point
+INFO	2022-12-01 12:48:50	divide_a_link is done successfully
+TRACE	2022-12-01 12:48:54	Called: reset_start_point
+TRACE	2022-12-01 12:48:54	Called: reset_end_point
+TRACE	2022-12-01 12:48:54	Called: reset_stop_point
+TRACE	2022-12-01 12:48:56	point_move: 1
+TRACE	2022-12-01 12:48:56	change_point_in_line (ptr @ link: A219AS301458, point_idx: 1 )
+TRACE	2022-12-01 12:48:56	point_move: 1
+TRACE	2022-12-01 12:48:56	change_point_in_line (ptr @ link: A219AS301458, point_idx: 2 )
+TRACE	2022-12-01 12:48:56	point_move: 1
+TRACE	2022-12-01 12:48:56	change_point_in_line (ptr @ link: A219AS301458, point_idx: 3 )
+TRACE	2022-12-01 12:48:56	point_move: 1
+TRACE	2022-12-01 12:48:56	change_point_in_line (ptr @ link: A219AS301458, point_idx: 4 )
+TRACE	2022-12-01 12:48:56	point_move: 1
+TRACE	2022-12-01 12:48:56	change_point_in_line (ptr @ link: A219AS301458, point_idx: 5 )
+TRACE	2022-12-01 12:48:56	point_move: 1
+TRACE	2022-12-01 12:48:56	change_point_in_line (ptr @ link: A219AS301458, point_idx: 6 )
+TRACE	2022-12-01 12:48:56	point_move: 1
+TRACE	2022-12-01 12:48:56	change_point_in_line (ptr @ link: A219AS301458, point_idx: 7 )
+TRACE	2022-12-01 12:48:56	point_move: 1
+TRACE	2022-12-01 12:48:56	change_point_in_line (ptr @ link: A219AS301458, point_idx: 8 )
+TRACE	2022-12-01 12:48:56	point_move: 1
+TRACE	2022-12-01 12:48:56	change_point_in_line (ptr @ link: A219AS301458, point_idx: 9 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 10 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 11 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 12 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 13 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 14 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 15 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 16 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 17 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 18 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 19 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 20 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 21 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 22 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 23 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 24 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 25 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 26 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 27 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 28 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 29 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 30 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 31 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 32 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 33 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 34 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 35 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 36 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 37 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 38 )
+TRACE	2022-12-01 12:48:57	point_move: 1
+TRACE	2022-12-01 12:48:57	change_point_in_line (ptr @ link: A219AS301458, point_idx: 39 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 40 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 41 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 42 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 43 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 44 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 45 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 46 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 47 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 48 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 49 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 50 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 51 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 52 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 53 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 54 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 55 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 56 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 57 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 58 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 59 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 60 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 61 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 62 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 63 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 64 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 65 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 66 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 67 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 68 )
+TRACE	2022-12-01 12:48:58	point_move: 1
+TRACE	2022-12-01 12:48:58	change_point_in_line (ptr @ link: A219AS301458, point_idx: 69 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 70 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 71 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 72 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 73 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 74 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 75 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 76 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 77 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 78 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 79 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 80 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 81 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 82 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 83 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 84 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 85 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 86 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 87 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 88 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 89 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 90 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 91 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 92 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 93 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 94 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 95 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 96 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 97 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 98 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 99 )
+TRACE	2022-12-01 12:48:59	point_move: 1
+TRACE	2022-12-01 12:48:59	change_point_in_line (ptr @ link: A219AS301458, point_idx: 100 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 101 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 102 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 103 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 104 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 105 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 106 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 107 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 108 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 109 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 110 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 111 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 112 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 113 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 114 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 115 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 116 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 117 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 118 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 119 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 120 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 121 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 122 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 123 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 124 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 125 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 126 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 127 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 128 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 129 )
+TRACE	2022-12-01 12:49:00	point_move: 1
+TRACE	2022-12-01 12:49:00	change_point_in_line (ptr @ link: A219AS301458, point_idx: 130 )
+TRACE	2022-12-01 12:49:01	point_move: 1
+TRACE	2022-12-01 12:49:01	change_point_in_line (ptr @ link: A219AS301458, point_idx: 131 )
+TRACE	2022-12-01 12:49:01	point_move: 1
+TRACE	2022-12-01 12:49:01	change_point_in_line (ptr @ link: A219AS301458, point_idx: 132 )
+TRACE	2022-12-01 12:49:01	point_move: 1
+TRACE	2022-12-01 12:49:01	change_point_in_line (ptr @ link: A219AS301458, point_idx: 133 )
+TRACE	2022-12-01 12:49:01	point_move: 1
+TRACE	2022-12-01 12:49:01	change_point_in_line (ptr @ link: A219AS301458, point_idx: 134 )
+TRACE	2022-12-01 12:49:01	point_move: 1
+TRACE	2022-12-01 12:49:01	change_point_in_line (ptr @ link: A219AS301458, point_idx: 135 )
+TRACE	2022-12-01 12:49:01	point_move: 1
+TRACE	2022-12-01 12:49:01	change_point_in_line (ptr @ link: A219AS301458, point_idx: 136 )
+TRACE	2022-12-01 12:49:01	point_move: 1
+TRACE	2022-12-01 12:49:01	change_point_in_line (ptr @ link: A219AS301458, point_idx: 137 )
+TRACE	2022-12-01 12:49:01	point_move: 1
+TRACE	2022-12-01 12:49:01	change_point_in_line (ptr @ link: A219AS301458, point_idx: 138 )
+TRACE	2022-12-01 12:49:01	point_move: 1
+TRACE	2022-12-01 12:49:01	change_point_in_line (ptr @ link: A219AS301458, point_idx: 139 )
+TRACE	2022-12-01 12:49:01	point_move: 1
+TRACE	2022-12-01 12:49:01	change_point_in_line (ptr @ link: A219AS301458, point_idx: 140 )
+TRACE	2022-12-01 12:49:01	point_move: 1
+TRACE	2022-12-01 12:49:01	change_point_in_line (ptr @ link: A219AS301458, point_idx: 141 )
+TRACE	2022-12-01 12:49:01	point_move: 1
+TRACE	2022-12-01 12:49:01	change_point_in_line (ptr @ link: A219AS301458, point_idx: 142 )
+TRACE	2022-12-01 12:49:01	point_move: 1
+TRACE	2022-12-01 12:49:01	change_point_in_line (ptr @ link: A219AS301458, point_idx: 143 )
+TRACE	2022-12-01 12:49:02	point_move: 1
+TRACE	2022-12-01 12:49:02	change_point_in_line (ptr @ link: A219AS301458, point_idx: 144 )
+TRACE	2022-12-01 12:49:03	Called: divide_a_link_smart
+TRACE	2022-12-01 12:49:03	dist_start: 72.00, dist_end: 33.04 -> keep_front = True
+TRACE	2022-12-01 12:49:03	Called: divide_a_link
+TRACE	2022-12-01 12:49:03	set_point_in_line (ptr @ link: A219AS301458, point_idx: 0 )
+TRACE	2022-12-01 12:49:07	Called: reset_start_point
+TRACE	2022-12-01 12:49:07	Called: reset_end_point
+TRACE	2022-12-01 12:49:07	Called: reset_stop_point
+INFO	2022-12-01 12:49:07	divide_a_link is done successfully
+TRACE	2022-12-01 12:49:10	Called: reset_start_point
+TRACE	2022-12-01 12:49:10	Called: reset_end_point
+TRACE	2022-12-01 12:49:10	Called: reset_stop_point
+TRACE	2022-12-01 12:49:13	Called: connect_nodes
+INFO	2022-12-01 12:49:13	connecting link (id: LN000122) created (from node: A119AS301963 -> to: ND000107)
+TRACE	2022-12-01 12:49:15	Called: reset_start_point
+TRACE	2022-12-01 12:49:15	Called: reset_end_point
+TRACE	2022-12-01 12:49:15	Called: reset_stop_point
+INFO	2022-12-01 12:49:21	start, put points on line
+INFO	2022-12-01 12:49:22	end, put points on line
+INFO	2022-12-01 12:49:28	start, put points on line
+INFO	2022-12-01 12:49:30	end, put points on line
+INFO	2022-12-01 12:49:37	start, put points on line
+INFO	2022-12-01 12:49:39	end, put points on line
+INFO	2022-12-01 12:49:44	start, put points on line
+INFO	2022-12-01 12:49:47	end, put points on line
+TRACE	2022-12-01 12:49:55	Called: fill_points_in_links
+INFO	2022-12-01 12:49:59	Filled points in selected links
+INFO	2022-12-01 12:50:02	[Edit item properties] id: A219AS301459, lane_ch_link_right : A219AS301458 > A219AS301458
+INFO	2022-12-01 12:50:02	[Edit item properties] id: A219AS301459, lane_ch_link_left : None > None
+INFO	2022-12-01 12:50:02	[Edit item properties] id: A219AS301458, lane_ch_link_right : None > LN000122
+INFO	2022-12-01 12:50:02	[Edit item properties] id: A219AS301458, lane_ch_link_left : A219AS301459 > A219AS301459
+INFO	2022-12-01 12:50:02	[Edit item properties] id: LN000122, lane_ch_link_right : None > None
+INFO	2022-12-01 12:50:02	[Edit item properties] id: LN000122, lane_ch_link_left : None > A219AS301458
+INFO	2022-12-01 12:50:05	[Edit item properties] id: LN000109, lane_ch_link_right : None > LN000114
+INFO	2022-12-01 12:50:05	[Edit item properties] id: LN000109, lane_ch_link_left : None > None
+INFO	2022-12-01 12:50:05	[Edit item properties] id: LN000114, lane_ch_link_right : None > None
+INFO	2022-12-01 12:50:05	[Edit item properties] id: LN000114, lane_ch_link_left : None > LN000109
+INFO	2022-12-01 12:50:07	[Edit item properties] id: LN000033, lane_ch_link_right : LN000032 > LN000032
+INFO	2022-12-01 12:50:07	[Edit item properties] id: LN000033, lane_ch_link_left : None > None
+INFO	2022-12-01 12:50:07	[Edit item properties] id: LN000032, lane_ch_link_right : None > None
+INFO	2022-12-01 12:50:07	[Edit item properties] id: LN000032, lane_ch_link_left : LN000033 > LN000033
+INFO	2022-12-01 12:50:11	[Edit item properties] id: A219AS301460, lane_ch_link_right : A219AS301461 > A219AS301461
+INFO	2022-12-01 12:50:11	[Edit item properties] id: A219AS301460, lane_ch_link_left : None > None
+INFO	2022-12-01 12:50:11	[Edit item properties] id: A219AS301461, lane_ch_link_right : None > LN000036
+INFO	2022-12-01 12:50:11	[Edit item properties] id: A219AS301461, lane_ch_link_left : A219AS301460 > A219AS301460
+INFO	2022-12-01 12:50:11	[Edit item properties] id: LN000036, lane_ch_link_right : None > None
+INFO	2022-12-01 12:50:11	[Edit item properties] id: LN000036, lane_ch_link_left : None > A219AS301461
+TRACE	2022-12-01 12:50:16	init_save_path: C:\Users\sjhan\Desktop
+TRACE	2022-12-01 12:50:29	save MGeo data into: C:/Users/sjhan/Desktop/sejong_mgeo
+INFO	2022-12-01 12:50:29	Successfully exported to: C:/Users/sjhan/Desktop/sejong_mgeo
+TRACE	2022-12-01 12:50:39	point_move: 1
+TRACE	2022-12-01 12:50:39	change_point_in_line (ptr @ link: A219AS301791, point_idx: 1 )
+TRACE	2022-12-01 12:50:40	point_move: 1
+TRACE	2022-12-01 12:50:40	change_point_in_line (ptr @ link: A219AS301791, point_idx: 2 )
+TRACE	2022-12-01 12:50:40	point_move: 1
+TRACE	2022-12-01 12:50:40	change_point_in_line (ptr @ link: A219AS301791, point_idx: 3 )
+TRACE	2022-12-01 12:50:40	point_move: 1
+TRACE	2022-12-01 12:50:40	change_point_in_line (ptr @ link: A219AS301791, point_idx: 4 )
+TRACE	2022-12-01 12:50:40	point_move: 1
+TRACE	2022-12-01 12:50:40	change_point_in_line (ptr @ link: A219AS301791, point_idx: 5 )
+TRACE	2022-12-01 12:50:40	point_move: 1
+TRACE	2022-12-01 12:50:40	change_point_in_line (ptr @ link: A219AS301791, point_idx: 6 )
+TRACE	2022-12-01 12:50:40	point_move: 1
+TRACE	2022-12-01 12:50:40	change_point_in_line (ptr @ link: A219AS301791, point_idx: 7 )
+TRACE	2022-12-01 12:50:40	point_move: 1
+TRACE	2022-12-01 12:50:40	change_point_in_line (ptr @ link: A219AS301791, point_idx: 8 )
+TRACE	2022-12-01 12:50:40	point_move: 1
+TRACE	2022-12-01 12:50:40	change_point_in_line (ptr @ link: A219AS301791, point_idx: 9 )
+TRACE	2022-12-01 12:50:40	point_move: 1
+TRACE	2022-12-01 12:50:40	change_point_in_line (ptr @ link: A219AS301791, point_idx: 10 )
+TRACE	2022-12-01 12:50:40	point_move: 1
+TRACE	2022-12-01 12:50:40	change_point_in_line (ptr @ link: A219AS301791, point_idx: 11 )
+TRACE	2022-12-01 12:50:40	point_move: 1
+TRACE	2022-12-01 12:50:40	change_point_in_line (ptr @ link: A219AS301791, point_idx: 12 )
+TRACE	2022-12-01 12:50:40	point_move: 1
+TRACE	2022-12-01 12:50:40	change_point_in_line (ptr @ link: A219AS301791, point_idx: 13 )
+TRACE	2022-12-01 12:50:40	point_move: 1
+TRACE	2022-12-01 12:50:40	change_point_in_line (ptr @ link: A219AS301791, point_idx: 14 )
+TRACE	2022-12-01 12:50:40	point_move: 1
+TRACE	2022-12-01 12:50:40	change_point_in_line (ptr @ link: A219AS301791, point_idx: 15 )
+TRACE	2022-12-01 12:50:40	point_move: 1
+TRACE	2022-12-01 12:50:40	change_point_in_line (ptr @ link: A219AS301791, point_idx: 16 )
+TRACE	2022-12-01 12:50:40	point_move: 1
+TRACE	2022-12-01 12:50:40	change_point_in_line (ptr @ link: A219AS301791, point_idx: 17 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 18 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 19 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 20 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 21 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 22 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 23 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 24 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 25 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 26 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 27 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 28 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 29 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 30 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 31 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 32 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 33 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 34 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 35 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 36 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 37 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 38 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 39 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 40 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 41 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 42 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 43 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 44 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 45 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 46 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 47 )
+TRACE	2022-12-01 12:50:41	point_move: 1
+TRACE	2022-12-01 12:50:41	change_point_in_line (ptr @ link: A219AS301791, point_idx: 48 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 49 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 50 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 51 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 52 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 53 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 54 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 55 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 56 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 57 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 58 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 59 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 60 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 61 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 62 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 63 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 64 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 65 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 66 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 67 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 68 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 69 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 70 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 71 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 72 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 73 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 74 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 75 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 76 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 77 )
+TRACE	2022-12-01 12:50:42	point_move: 1
+TRACE	2022-12-01 12:50:42	change_point_in_line (ptr @ link: A219AS301791, point_idx: 78 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 79 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 80 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 81 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 82 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 83 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 84 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 85 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 86 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 87 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 88 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 89 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 90 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 91 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 92 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 93 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 94 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 95 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 96 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 97 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 98 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 99 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 100 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 101 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 102 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 103 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 104 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 105 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 106 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 107 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 108 )
+TRACE	2022-12-01 12:50:43	point_move: 1
+TRACE	2022-12-01 12:50:43	change_point_in_line (ptr @ link: A219AS301791, point_idx: 109 )
+TRACE	2022-12-01 12:50:44	point_move: 1
+TRACE	2022-12-01 12:50:44	change_point_in_line (ptr @ link: A219AS301791, point_idx: 110 )
+TRACE	2022-12-01 12:50:44	point_move: 1
+TRACE	2022-12-01 12:50:44	change_point_in_line (ptr @ link: A219AS301791, point_idx: 111 )
+TRACE	2022-12-01 12:50:44	point_move: 1
+TRACE	2022-12-01 12:50:44	change_point_in_line (ptr @ link: A219AS301791, point_idx: 112 )
+TRACE	2022-12-01 12:50:44	point_move: 1
+TRACE	2022-12-01 12:50:44	change_point_in_line (ptr @ link: A219AS301791, point_idx: 113 )
+TRACE	2022-12-01 12:50:44	point_move: 1
+TRACE	2022-12-01 12:50:44	change_point_in_line (ptr @ link: A219AS301791, point_idx: 114 )
+TRACE	2022-12-01 12:50:44	point_move: 1
+TRACE	2022-12-01 12:50:44	change_point_in_line (ptr @ link: A219AS301791, point_idx: 115 )
+TRACE	2022-12-01 12:50:44	point_move: 1
+TRACE	2022-12-01 12:50:44	change_point_in_line (ptr @ link: A219AS301791, point_idx: 116 )
+TRACE	2022-12-01 12:50:44	point_move: 1
+TRACE	2022-12-01 12:50:44	change_point_in_line (ptr @ link: A219AS301791, point_idx: 117 )
+TRACE	2022-12-01 12:50:44	point_move: 1
+TRACE	2022-12-01 12:50:44	change_point_in_line (ptr @ link: A219AS301791, point_idx: 118 )
+TRACE	2022-12-01 12:50:44	point_move: 1
+TRACE	2022-12-01 12:50:44	change_point_in_line (ptr @ link: A219AS301791, point_idx: 119 )
+TRACE	2022-12-01 12:50:44	point_move: 1
+TRACE	2022-12-01 12:50:44	change_point_in_line (ptr @ link: A219AS301791, point_idx: 120 )
+TRACE	2022-12-01 12:50:44	point_move: 1
+TRACE	2022-12-01 12:50:44	change_point_in_line (ptr @ link: A219AS301791, point_idx: 121 )
+TRACE	2022-12-01 12:50:44	point_move: 1
+TRACE	2022-12-01 12:50:44	change_point_in_line (ptr @ link: A219AS301791, point_idx: 122 )
+TRACE	2022-12-01 12:50:44	point_move: 1
+TRACE	2022-12-01 12:50:44	change_point_in_line (ptr @ link: A219AS301791, point_idx: 123 )
+TRACE	2022-12-01 12:50:45	point_move: 1
+TRACE	2022-12-01 12:50:45	change_point_in_line (ptr @ link: A219AS301791, point_idx: 124 )
+TRACE	2022-12-01 12:50:46	Called: divide_a_link_smart
+TRACE	2022-12-01 12:50:46	dist_start: 62.00, dist_end: 135.34 -> keep_front = False
+TRACE	2022-12-01 12:50:46	Called: divide_a_link
+TRACE	2022-12-01 12:50:46	set_point_in_line (ptr @ link: A219AS301791, point_idx: 0 )
+TRACE	2022-12-01 12:50:50	Called: reset_start_point
+TRACE	2022-12-01 12:50:50	Called: reset_end_point
+TRACE	2022-12-01 12:50:50	Called: reset_stop_point
+INFO	2022-12-01 12:50:50	divide_a_link is done successfully
+TRACE	2022-12-01 12:50:54	Called: reset_start_point
+TRACE	2022-12-01 12:50:54	Called: reset_end_point
+TRACE	2022-12-01 12:50:54	Called: reset_stop_point
+TRACE	2022-12-01 12:50:55	point_move: 1
+TRACE	2022-12-01 12:50:55	change_point_in_line (ptr @ link: A219AS301790, point_idx: 1 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 2 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 3 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 4 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 5 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 6 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 7 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 8 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 9 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 10 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 11 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 12 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 13 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 14 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 15 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 16 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 17 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 18 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 19 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 20 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 21 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 22 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 23 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 24 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 25 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 26 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 27 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 28 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 29 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 30 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 31 )
+TRACE	2022-12-01 12:50:56	point_move: 1
+TRACE	2022-12-01 12:50:56	change_point_in_line (ptr @ link: A219AS301790, point_idx: 32 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 33 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 34 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 35 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 36 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 37 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 38 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 39 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 40 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 41 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 42 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 43 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 44 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 45 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 46 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 47 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 48 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 49 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 50 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 51 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 52 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 53 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 54 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 55 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 56 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 57 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 58 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 59 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 60 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 61 )
+TRACE	2022-12-01 12:50:57	point_move: 1
+TRACE	2022-12-01 12:50:57	change_point_in_line (ptr @ link: A219AS301790, point_idx: 62 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 63 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 64 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 65 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 66 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 67 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 68 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 69 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 70 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 71 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 72 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 73 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 74 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 75 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 76 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 77 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 78 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 79 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 80 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 81 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 82 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 83 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 84 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 85 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 86 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 87 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 88 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 89 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 90 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 91 )
+TRACE	2022-12-01 12:50:58	point_move: 1
+TRACE	2022-12-01 12:50:58	change_point_in_line (ptr @ link: A219AS301790, point_idx: 92 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 93 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 94 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 95 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 96 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 97 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 98 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 99 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 100 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 101 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 102 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 103 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 104 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 105 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 106 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 107 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 108 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 109 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 110 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 111 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 112 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 113 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 114 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 115 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 116 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 117 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 118 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 119 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 120 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 121 )
+TRACE	2022-12-01 12:50:59	point_move: 1
+TRACE	2022-12-01 12:50:59	change_point_in_line (ptr @ link: A219AS301790, point_idx: 122 )
+TRACE	2022-12-01 12:51:00	point_move: 1
+TRACE	2022-12-01 12:51:00	change_point_in_line (ptr @ link: A219AS301790, point_idx: 123 )
+TRACE	2022-12-01 12:51:00	point_move: 1
+TRACE	2022-12-01 12:51:00	change_point_in_line (ptr @ link: A219AS301790, point_idx: 124 )
+TRACE	2022-12-01 12:51:01	point_move: -1
+TRACE	2022-12-01 12:51:01	change_point_in_line (ptr @ link: A219AS301790, point_idx: 123 )
+TRACE	2022-12-01 12:51:03	point_move: 1
+TRACE	2022-12-01 12:51:03	change_point_in_line (ptr @ link: A219AS301790, point_idx: 124 )
+TRACE	2022-12-01 12:51:03	Called: divide_a_link_smart
+TRACE	2022-12-01 12:51:03	dist_start: 62.00, dist_end: 135.15 -> keep_front = False
+TRACE	2022-12-01 12:51:03	Called: divide_a_link
+TRACE	2022-12-01 12:51:03	set_point_in_line (ptr @ link: A219AS301790, point_idx: 0 )
+TRACE	2022-12-01 12:51:07	Called: reset_start_point
+TRACE	2022-12-01 12:51:07	Called: reset_end_point
+TRACE	2022-12-01 12:51:07	Called: reset_stop_point
+INFO	2022-12-01 12:51:07	divide_a_link is done successfully
+TRACE	2022-12-01 12:51:11	Called: reset_start_point
+TRACE	2022-12-01 12:51:11	Called: reset_end_point
+TRACE	2022-12-01 12:51:11	Called: reset_stop_point
+TRACE	2022-12-01 12:51:15	Called: connect_nodes
+INFO	2022-12-01 12:51:15	connecting link (id: LN000125) created (from node: A119AS302415 -> to: ND000109)
+TRACE	2022-12-01 12:51:17	Called: reset_start_point
+TRACE	2022-12-01 12:51:17	Called: reset_end_point
+TRACE	2022-12-01 12:51:17	Called: reset_stop_point
+INFO	2022-12-01 12:51:19	start, put points on line
+INFO	2022-12-01 12:51:22	end, put points on line
+TRACE	2022-12-01 12:51:28	Called: fill_points_in_links
+INFO	2022-12-01 12:51:32	Filled points in selected links
+INFO	2022-12-01 12:51:37	[Edit item properties] id: LN000124, lane_ch_link_right : None > LN000123
+INFO	2022-12-01 12:51:37	[Edit item properties] id: LN000124, lane_ch_link_left : None > None
+INFO	2022-12-01 12:51:37	[Edit item properties] id: LN000123, lane_ch_link_right : None > LN000125
+INFO	2022-12-01 12:51:37	[Edit item properties] id: LN000123, lane_ch_link_left : None > LN000124
+INFO	2022-12-01 12:51:37	[Edit item properties] id: LN000125, lane_ch_link_right : None > None
+INFO	2022-12-01 12:51:37	[Edit item properties] id: LN000125, lane_ch_link_left : None > LN000123
+TRACE	2022-12-01 12:51:41	init_save_path: C:\Users\sjhan\Desktop
+TRACE	2022-12-01 12:51:54	save MGeo data into: C:/Users/sjhan/Desktop/sejong_mgeo
+INFO	2022-12-01 12:51:54	Successfully exported to: C:/Users/sjhan/Desktop/sejong_mgeo
+TRACE	2022-12-01 12:53:12	Called: connect_nodes
+INFO	2022-12-01 12:53:12	connecting link (id: LN000126) created (from node: A119AS301985 -> to: A119AS301986)
+TRACE	2022-12-01 12:53:14	Called: reset_start_point
+TRACE	2022-12-01 12:53:14	Called: reset_end_point
+TRACE	2022-12-01 12:53:14	Called: reset_stop_point
+INFO	2022-12-01 12:53:21	start, put points on line
+INFO	2022-12-01 12:53:23	end, put points on line
+INFO	2022-12-01 12:53:29	start, put points on line
+INFO	2022-12-01 12:53:31	end, put points on line
+INFO	2022-12-01 12:53:38	start, put points on line
+INFO	2022-12-01 12:53:41	end, put points on line
+INFO	2022-12-01 12:53:54	start, put points on line
+INFO	2022-12-01 12:53:56	end, put points on line
+INFO	2022-12-01 12:54:04	start, put points on line
+INFO	2022-12-01 12:54:06	end, put points on line
+TRACE	2022-12-01 12:54:14	Called: fill_points_in_links
+INFO	2022-12-01 12:54:21	Filled points in selected links
+INFO	2022-12-01 12:54:25	start, put points on line
+INFO	2022-12-01 12:54:28	end, put points on line
+TRACE	2022-12-01 12:54:38	Called: fill_points_in_links
+INFO	2022-12-01 12:54:44	Filled points in selected links
+INFO	2022-12-01 12:54:59	[Edit item properties] id: A219AS301474, lane_ch_link_right : A219AS301476 > A219AS301476
+INFO	2022-12-01 12:54:59	[Edit item properties] id: A219AS301474, lane_ch_link_left : None > None
+INFO	2022-12-01 12:54:59	[Edit item properties] id: A219AS301476, lane_ch_link_right : None > LN000126
+INFO	2022-12-01 12:54:59	[Edit item properties] id: A219AS301476, lane_ch_link_left : A219AS301474 > A219AS301474
+INFO	2022-12-01 12:54:59	[Edit item properties] id: LN000126, lane_ch_link_right : None > None
+INFO	2022-12-01 12:54:59	[Edit item properties] id: LN000126, lane_ch_link_left : None > A219AS301476
+TRACE	2022-12-01 12:55:03	init_save_path: C:\Users\sjhan\Desktop
+TRACE	2022-12-01 12:55:15	save MGeo data into: C:/Users/sjhan/Desktop/sejong_mgeo
+INFO	2022-12-01 12:55:15	Successfully exported to: C:/Users/sjhan/Desktop/sejong_mgeo
+TRACE	2022-12-01 12:55:38	point_move: 1
+TRACE	2022-12-01 12:55:38	change_point_in_line (ptr @ link: A219AS301569, point_idx: 1 )
+TRACE	2022-12-01 12:55:38	point_move: 1
+TRACE	2022-12-01 12:55:38	change_point_in_line (ptr @ link: A219AS301569, point_idx: 2 )
+TRACE	2022-12-01 12:55:38	point_move: 1
+TRACE	2022-12-01 12:55:38	change_point_in_line (ptr @ link: A219AS301569, point_idx: 3 )
+TRACE	2022-12-01 12:55:38	point_move: 1
+TRACE	2022-12-01 12:55:38	change_point_in_line (ptr @ link: A219AS301569, point_idx: 4 )
+TRACE	2022-12-01 12:55:38	point_move: 1
+TRACE	2022-12-01 12:55:38	change_point_in_line (ptr @ link: A219AS301569, point_idx: 5 )
+TRACE	2022-12-01 12:55:38	point_move: 1
+TRACE	2022-12-01 12:55:38	change_point_in_line (ptr @ link: A219AS301569, point_idx: 6 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 7 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 8 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 9 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 10 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 11 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 12 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 13 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 14 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 15 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 16 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 17 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 18 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 19 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 20 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 21 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 22 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 23 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 24 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 25 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 26 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 27 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 28 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 29 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 30 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 31 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 32 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 33 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 34 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 35 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 36 )
+TRACE	2022-12-01 12:55:39	point_move: 1
+TRACE	2022-12-01 12:55:39	change_point_in_line (ptr @ link: A219AS301569, point_idx: 37 )
+TRACE	2022-12-01 12:55:40	point_move: 1
+TRACE	2022-12-01 12:55:40	change_point_in_line (ptr @ link: A219AS301569, point_idx: 38 )
+TRACE	2022-12-01 12:55:40	point_move: 1
+TRACE	2022-12-01 12:55:40	change_point_in_line (ptr @ link: A219AS301569, point_idx: 39 )
+TRACE	2022-12-01 12:55:40	point_move: 1
+TRACE	2022-12-01 12:55:40	change_point_in_line (ptr @ link: A219AS301569, point_idx: 40 )
+TRACE	2022-12-01 12:55:40	point_move: 1
+TRACE	2022-12-01 12:55:40	change_point_in_line (ptr @ link: A219AS301569, point_idx: 41 )
+TRACE	2022-12-01 12:55:40	point_move: 1
+TRACE	2022-12-01 12:55:40	change_point_in_line (ptr @ link: A219AS301569, point_idx: 42 )
+TRACE	2022-12-01 12:55:40	point_move: 1
+TRACE	2022-12-01 12:55:40	change_point_in_line (ptr @ link: A219AS301569, point_idx: 43 )
+TRACE	2022-12-01 12:55:40	point_move: 1
+TRACE	2022-12-01 12:55:40	change_point_in_line (ptr @ link: A219AS301569, point_idx: 44 )
+TRACE	2022-12-01 12:55:40	point_move: 1
+TRACE	2022-12-01 12:55:40	change_point_in_line (ptr @ link: A219AS301569, point_idx: 45 )
+TRACE	2022-12-01 12:55:40	point_move: 1
+TRACE	2022-12-01 12:55:40	change_point_in_line (ptr @ link: A219AS301569, point_idx: 46 )
+TRACE	2022-12-01 12:55:40	point_move: 1
+TRACE	2022-12-01 12:55:40	change_point_in_line (ptr @ link: A219AS301569, point_idx: 47 )
+TRACE	2022-12-01 12:55:40	point_move: 1
+TRACE	2022-12-01 12:55:40	change_point_in_line (ptr @ link: A219AS301569, point_idx: 48 )
+TRACE	2022-12-01 12:55:41	Called: divide_a_link_smart
+TRACE	2022-12-01 12:55:41	dist_start: 24.00, dist_end: 149.55 -> keep_front = False
+TRACE	2022-12-01 12:55:41	Called: divide_a_link
+TRACE	2022-12-01 12:55:41	set_point_in_line (ptr @ link: A219AS301569, point_idx: 0 )
+TRACE	2022-12-01 12:55:45	Called: reset_start_point
+TRACE	2022-12-01 12:55:45	Called: reset_end_point
+TRACE	2022-12-01 12:55:45	Called: reset_stop_point
+INFO	2022-12-01 12:55:45	divide_a_link is done successfully
+TRACE	2022-12-01 12:55:48	Called: reset_start_point
+TRACE	2022-12-01 12:55:48	Called: reset_end_point
+TRACE	2022-12-01 12:55:48	Called: reset_stop_point
+TRACE	2022-12-01 12:55:50	point_move: 1
+TRACE	2022-12-01 12:55:50	change_point_in_line (ptr @ link: A219AS301571, point_idx: 1 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 2 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 3 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 4 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 5 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 6 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 7 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 8 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 9 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 10 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 11 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 12 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 13 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 14 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 15 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 16 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 17 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 18 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 19 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 20 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 21 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 22 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 23 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 24 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 25 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 26 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 27 )
+TRACE	2022-12-01 12:55:51	point_move: 1
+TRACE	2022-12-01 12:55:51	change_point_in_line (ptr @ link: A219AS301571, point_idx: 28 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 29 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 30 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 31 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 32 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 33 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 34 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 35 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 36 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 37 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 38 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 39 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 40 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 41 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 42 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 43 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 44 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 45 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 46 )
+TRACE	2022-12-01 12:55:52	point_move: 1
+TRACE	2022-12-01 12:55:52	change_point_in_line (ptr @ link: A219AS301571, point_idx: 47 )
+TRACE	2022-12-01 12:55:53	point_move: 1
+TRACE	2022-12-01 12:55:53	change_point_in_line (ptr @ link: A219AS301571, point_idx: 48 )
+TRACE	2022-12-01 12:55:53	point_move: -1
+TRACE	2022-12-01 12:55:53	change_point_in_line (ptr @ link: A219AS301571, point_idx: 47 )
+TRACE	2022-12-01 12:55:54	point_move: 1
+TRACE	2022-12-01 12:55:54	change_point_in_line (ptr @ link: A219AS301571, point_idx: 48 )
+TRACE	2022-12-01 12:55:54	Called: divide_a_link_smart
+TRACE	2022-12-01 12:55:54	dist_start: 24.00, dist_end: 149.30 -> keep_front = False
+TRACE	2022-12-01 12:55:54	Called: divide_a_link
+TRACE	2022-12-01 12:55:54	set_point_in_line (ptr @ link: A219AS301571, point_idx: 0 )
+TRACE	2022-12-01 12:55:58	Called: reset_start_point
+TRACE	2022-12-01 12:55:58	Called: reset_end_point
+TRACE	2022-12-01 12:55:58	Called: reset_stop_point
+INFO	2022-12-01 12:55:58	divide_a_link is done successfully
+TRACE	2022-12-01 12:56:02	Called: reset_start_point
+TRACE	2022-12-01 12:56:02	Called: reset_end_point
+TRACE	2022-12-01 12:56:02	Called: reset_stop_point
+TRACE	2022-12-01 12:56:05	Called: connect_nodes
+INFO	2022-12-01 12:56:05	connecting link (id: LN000134) created (from node: A119AS302102 -> to: ND000111)
+TRACE	2022-12-01 12:56:07	Called: reset_start_point
+TRACE	2022-12-01 12:56:07	Called: reset_end_point
+TRACE	2022-12-01 12:56:07	Called: reset_stop_point
+INFO	2022-12-01 12:56:09	start, put points on line
+INFO	2022-12-01 12:56:12	end, put points on line
+INFO	2022-12-01 12:56:18	start, put points on line
+INFO	2022-12-01 12:56:20	end, put points on line
+INFO	2022-12-01 12:56:26	start, put points on line
+INFO	2022-12-01 12:56:28	end, put points on line
+INFO	2022-12-01 12:56:34	start, put points on line
+INFO	2022-12-01 12:56:36	end, put points on line
+TRACE	2022-12-01 12:56:43	Called: fill_points_in_links
+INFO	2022-12-01 12:56:47	Filled points in selected links
+TRACE	2022-12-01 12:56:55	point_move: 1
+TRACE	2022-12-01 12:56:55	change_point_in_line (ptr @ link: LN000134, point_idx: 1 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 2 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 3 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 4 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 5 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 6 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 7 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 8 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 9 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 10 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 11 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 12 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 13 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 14 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 15 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 16 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 17 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 18 )
+TRACE	2022-12-01 12:56:56	point_move: 1
+TRACE	2022-12-01 12:56:56	change_point_in_line (ptr @ link: LN000134, point_idx: 19 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 20 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 21 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 22 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 23 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 24 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 25 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 26 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 27 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 28 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 29 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 30 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 31 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 32 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 33 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 34 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 35 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 36 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 37 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 38 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 39 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 40 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 41 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 42 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 43 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 44 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 45 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 46 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 47 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 48 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 49 )
+TRACE	2022-12-01 12:56:57	point_move: 1
+TRACE	2022-12-01 12:56:57	change_point_in_line (ptr @ link: LN000134, point_idx: 50 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 51 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 52 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 53 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 54 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 55 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 56 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 57 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 58 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 59 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 60 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 61 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 62 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 63 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 64 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 65 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 66 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 67 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 68 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 69 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 70 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 71 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 72 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 73 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 74 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 75 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 76 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 77 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 78 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 79 )
+TRACE	2022-12-01 12:56:58	point_move: 1
+TRACE	2022-12-01 12:56:58	change_point_in_line (ptr @ link: LN000134, point_idx: 80 )
+TRACE	2022-12-01 12:56:59	point_move: 1
+TRACE	2022-12-01 12:56:59	change_point_in_line (ptr @ link: LN000134, point_idx: 81 )
+TRACE	2022-12-01 12:56:59	point_move: 1
+TRACE	2022-12-01 12:56:59	change_point_in_line (ptr @ link: LN000134, point_idx: 82 )
+TRACE	2022-12-01 12:56:59	point_move: 1
+TRACE	2022-12-01 12:56:59	change_point_in_line (ptr @ link: LN000134, point_idx: 83 )
+TRACE	2022-12-01 12:56:59	point_move: 1
+TRACE	2022-12-01 12:56:59	change_point_in_line (ptr @ link: LN000134, point_idx: 84 )
+TRACE	2022-12-01 12:56:59	point_move: 1
+TRACE	2022-12-01 12:56:59	change_point_in_line (ptr @ link: LN000134, point_idx: 85 )
+TRACE	2022-12-01 12:56:59	point_move: 1
+TRACE	2022-12-01 12:56:59	change_point_in_line (ptr @ link: LN000134, point_idx: 86 )
+TRACE	2022-12-01 12:56:59	point_move: 1
+TRACE	2022-12-01 12:56:59	change_point_in_line (ptr @ link: LN000134, point_idx: 87 )
+TRACE	2022-12-01 12:56:59	point_move: 1
+TRACE	2022-12-01 12:56:59	change_point_in_line (ptr @ link: LN000134, point_idx: 88 )
+TRACE	2022-12-01 12:56:59	point_move: 1
+TRACE	2022-12-01 12:56:59	change_point_in_line (ptr @ link: LN000134, point_idx: 89 )
+TRACE	2022-12-01 12:56:59	point_move: 1
+TRACE	2022-12-01 12:56:59	change_point_in_line (ptr @ link: LN000134, point_idx: 90 )
+TRACE	2022-12-01 12:56:59	point_move: 1
+TRACE	2022-12-01 12:56:59	change_point_in_line (ptr @ link: LN000134, point_idx: 91 )
+TRACE	2022-12-01 12:56:59	point_move: 1
+TRACE	2022-12-01 12:56:59	change_point_in_line (ptr @ link: LN000134, point_idx: 92 )
+TRACE	2022-12-01 12:56:59	point_move: 1
+TRACE	2022-12-01 12:56:59	change_point_in_line (ptr @ link: LN000134, point_idx: 93 )
+TRACE	2022-12-01 12:56:59	point_move: 1
+TRACE	2022-12-01 12:56:59	change_point_in_line (ptr @ link: LN000134, point_idx: 94 )
+TRACE	2022-12-01 12:57:02	point_move: 1
+TRACE	2022-12-01 12:57:02	change_point_in_line (ptr @ link: LN000134, point_idx: 95 )
+TRACE	2022-12-01 12:57:02	point_move: 1
+TRACE	2022-12-01 12:57:02	change_point_in_line (ptr @ link: LN000134, point_idx: 96 )
+INFO	2022-12-01 12:57:09	start, put points on line
+INFO	2022-12-01 12:57:11	end, put points on line
+TRACE	2022-12-01 12:57:17	Called: fill_points_in_links
+INFO	2022-12-01 12:57:22	Filled points in selected links
+TRACE	2022-12-01 12:57:24	point_move: 1
+TRACE	2022-12-01 12:57:24	change_point_in_line (ptr @ link: LN000134, point_idx: 1 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 2 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 3 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 4 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 5 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 6 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 7 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 8 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 9 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 10 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 11 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 12 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 13 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 14 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 15 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 16 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 17 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 18 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 19 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 20 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 21 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 22 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 23 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 24 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 25 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 26 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 27 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 28 )
+TRACE	2022-12-01 12:57:25	point_move: 1
+TRACE	2022-12-01 12:57:25	change_point_in_line (ptr @ link: LN000134, point_idx: 29 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 30 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 31 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 32 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 33 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 34 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 35 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 36 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 37 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 38 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 39 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 40 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 41 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 42 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 43 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 44 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 45 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 46 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 47 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 48 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 49 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 50 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 51 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 52 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 53 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 54 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 55 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 56 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 57 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 58 )
+TRACE	2022-12-01 12:57:26	point_move: 1
+TRACE	2022-12-01 12:57:26	change_point_in_line (ptr @ link: LN000134, point_idx: 59 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 60 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 61 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 62 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 63 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 64 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 65 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 66 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 67 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 68 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 69 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 70 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 71 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 72 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 73 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 74 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 75 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 76 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 77 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 78 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 79 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 80 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 81 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 82 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 83 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 84 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 85 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 86 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 87 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 88 )
+TRACE	2022-12-01 12:57:27	point_move: 1
+TRACE	2022-12-01 12:57:27	change_point_in_line (ptr @ link: LN000134, point_idx: 89 )
+TRACE	2022-12-01 12:57:28	point_move: 1
+TRACE	2022-12-01 12:57:28	change_point_in_line (ptr @ link: LN000134, point_idx: 90 )
+TRACE	2022-12-01 12:57:28	point_move: 1
+TRACE	2022-12-01 12:57:28	change_point_in_line (ptr @ link: LN000134, point_idx: 91 )
+TRACE	2022-12-01 12:57:28	point_move: 1
+TRACE	2022-12-01 12:57:28	change_point_in_line (ptr @ link: LN000134, point_idx: 92 )
+TRACE	2022-12-01 12:57:28	point_move: 1
+TRACE	2022-12-01 12:57:28	change_point_in_line (ptr @ link: LN000134, point_idx: 93 )
+TRACE	2022-12-01 12:57:28	point_move: 1
+TRACE	2022-12-01 12:57:28	change_point_in_line (ptr @ link: LN000134, point_idx: 94 )
+TRACE	2022-12-01 12:57:28	point_move: 1
+TRACE	2022-12-01 12:57:28	change_point_in_line (ptr @ link: LN000134, point_idx: 95 )
+TRACE	2022-12-01 12:57:28	point_move: 1
+TRACE	2022-12-01 12:57:28	change_point_in_line (ptr @ link: LN000134, point_idx: 96 )
+TRACE	2022-12-01 12:57:28	point_move: -1
+TRACE	2022-12-01 12:57:28	change_point_in_line (ptr @ link: LN000134, point_idx: 95 )
+TRACE	2022-12-01 12:57:29	point_move: 1
+TRACE	2022-12-01 12:57:29	change_point_in_line (ptr @ link: LN000134, point_idx: 96 )
+TRACE	2022-12-01 12:57:30	Called: divide_a_link_smart
+TRACE	2022-12-01 12:57:30	dist_start: 48.00, dist_end: 24.03 -> keep_front = True
+TRACE	2022-12-01 12:57:30	Called: divide_a_link
+TRACE	2022-12-01 12:57:30	set_point_in_line (ptr @ link: LN000134, point_idx: 0 )
+TRACE	2022-12-01 12:57:34	Called: reset_start_point
+TRACE	2022-12-01 12:57:34	Called: reset_end_point
+TRACE	2022-12-01 12:57:34	Called: reset_stop_point
+INFO	2022-12-01 12:57:34	divide_a_link is done successfully
+TRACE	2022-12-01 12:57:38	Called: reset_start_point
+TRACE	2022-12-01 12:57:38	Called: reset_end_point
+TRACE	2022-12-01 12:57:38	Called: reset_stop_point
+INFO	2022-12-01 12:57:42	[Edit item properties] id: A219AS301572, lane_ch_link_right : A219AS301570 > A219AS301570
+INFO	2022-12-01 12:57:42	[Edit item properties] id: A219AS301572, lane_ch_link_left : None > None
+INFO	2022-12-01 12:57:42	[Edit item properties] id: A219AS301570, lane_ch_link_right : None > LN000134
+INFO	2022-12-01 12:57:42	[Edit item properties] id: A219AS301570, lane_ch_link_left : A219AS301572 > A219AS301572
+INFO	2022-12-01 12:57:42	[Edit item properties] id: LN000134, lane_ch_link_right : None > None
+INFO	2022-12-01 12:57:43	[Edit item properties] id: LN000134, lane_ch_link_left : None > A219AS301570
+INFO	2022-12-01 12:57:46	[Edit item properties] id: LN000128, lane_ch_link_right : None > LN000127
+INFO	2022-12-01 12:57:46	[Edit item properties] id: LN000128, lane_ch_link_left : None > None
+INFO	2022-12-01 12:57:46	[Edit item properties] id: LN000127, lane_ch_link_right : None > LN000135
+INFO	2022-12-01 12:57:46	[Edit item properties] id: LN000127, lane_ch_link_left : None > LN000128
+INFO	2022-12-01 12:57:46	[Edit item properties] id: LN000135, lane_ch_link_right : None > None
+INFO	2022-12-01 12:57:46	[Edit item properties] id: LN000135, lane_ch_link_left : None > LN000127
+TRACE	2022-12-01 12:57:52	point_move: 1
+TRACE	2022-12-01 12:57:52	change_point_in_line (ptr @ link: A219AS301567, point_idx: 1 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 2 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 3 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 4 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 5 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 6 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 7 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 8 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 9 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 10 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 11 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 12 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 13 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 14 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 15 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 16 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 17 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 18 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 19 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 20 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 21 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 22 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 23 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 24 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 25 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 26 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 27 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 28 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 29 )
+TRACE	2022-12-01 12:57:53	point_move: 1
+TRACE	2022-12-01 12:57:53	change_point_in_line (ptr @ link: A219AS301567, point_idx: 30 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 31 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 32 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 33 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 34 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 35 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 36 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 37 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 38 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 39 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 40 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 41 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 42 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 43 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 44 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 45 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 46 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 47 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 48 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 49 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 50 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 51 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 52 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 53 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 54 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 55 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 56 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 57 )
+TRACE	2022-12-01 12:57:54	point_move: 1
+TRACE	2022-12-01 12:57:54	change_point_in_line (ptr @ link: A219AS301567, point_idx: 58 )
+TRACE	2022-12-01 12:57:55	set_point_in_line (ptr @ link: A219AS301567, point_idx: 385 )
+TRACE	2022-12-01 12:57:55	point_move: -1
+TRACE	2022-12-01 12:57:55	change_point_in_line (ptr @ link: A219AS301567, point_idx: 384 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 383 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 382 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 381 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 380 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 379 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 378 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 377 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 376 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 375 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 374 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 373 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 372 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 371 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 370 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 369 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 368 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 367 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 366 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 365 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 364 )
+TRACE	2022-12-01 12:57:56	point_move: -1
+TRACE	2022-12-01 12:57:56	change_point_in_line (ptr @ link: A219AS301567, point_idx: 363 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 362 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 361 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 360 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 359 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 358 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 357 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 356 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 355 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 354 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 353 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 352 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 351 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 350 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 349 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 348 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 347 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 346 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 345 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 344 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 343 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 342 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 341 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 340 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 339 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 338 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 337 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 336 )
+TRACE	2022-12-01 12:57:57	point_move: -1
+TRACE	2022-12-01 12:57:57	change_point_in_line (ptr @ link: A219AS301567, point_idx: 335 )
+TRACE	2022-12-01 12:57:59	Called: divide_a_link_smart
+TRACE	2022-12-01 12:57:59	dist_start: 167.50, dist_end: 24.96 -> keep_front = True
+TRACE	2022-12-01 12:57:59	Called: divide_a_link
+TRACE	2022-12-01 12:57:59	set_point_in_line (ptr @ link: A219AS301567, point_idx: 0 )
+TRACE	2022-12-01 12:58:03	Called: reset_start_point
+TRACE	2022-12-01 12:58:03	Called: reset_end_point
+TRACE	2022-12-01 12:58:03	Called: reset_stop_point
+INFO	2022-12-01 12:58:03	divide_a_link is done successfully
+TRACE	2022-12-01 12:58:07	Called: reset_start_point
+TRACE	2022-12-01 12:58:07	Called: reset_end_point
+TRACE	2022-12-01 12:58:07	Called: reset_stop_point
+TRACE	2022-12-01 12:58:08	set_point_in_line (ptr @ link: A219AS301565, point_idx: 385 )
+TRACE	2022-12-01 12:58:08	point_move: -1
+TRACE	2022-12-01 12:58:08	change_point_in_line (ptr @ link: A219AS301565, point_idx: 384 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 383 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 382 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 381 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 380 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 379 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 378 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 377 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 376 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 375 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 374 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 373 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 372 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 371 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 370 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 369 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 368 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 367 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 366 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 365 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 364 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 363 )
+TRACE	2022-12-01 12:58:09	point_move: -1
+TRACE	2022-12-01 12:58:09	change_point_in_line (ptr @ link: A219AS301565, point_idx: 362 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 361 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 360 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 359 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 358 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 357 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 356 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 355 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 354 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 353 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 352 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 351 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 350 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 349 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 348 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 347 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 346 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 345 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 344 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 343 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 342 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 341 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 340 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 339 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 338 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 337 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 336 )
+TRACE	2022-12-01 12:58:10	point_move: -1
+TRACE	2022-12-01 12:58:10	change_point_in_line (ptr @ link: A219AS301565, point_idx: 335 )
+TRACE	2022-12-01 12:58:11	point_move: -1
+TRACE	2022-12-01 12:58:11	change_point_in_line (ptr @ link: A219AS301565, point_idx: 334 )
+TRACE	2022-12-01 12:58:12	point_move: 1
+TRACE	2022-12-01 12:58:12	change_point_in_line (ptr @ link: A219AS301565, point_idx: 335 )
+TRACE	2022-12-01 12:58:12	point_move: -1
+TRACE	2022-12-01 12:58:12	change_point_in_line (ptr @ link: A219AS301565, point_idx: 334 )
+TRACE	2022-12-01 12:58:13	Called: divide_a_link_smart
+TRACE	2022-12-01 12:58:13	dist_start: 167.00, dist_end: 25.18 -> keep_front = True
+ERROR	2022-12-01 12:58:13	divide_a_link_smart failed (traceback below) 
+		Traceback (most recent call last):
+		  File "d:\road_model_maker\src\proj_mgeo_editor_morai_opengl\GUI\opengl_canvas.py", line 5005, in divide_a_link_smart
+		    if self.sp['type'] == MGeoItem.LANE_BOUNDARY:
+		TypeError: 'NoneType' object is not subscriptable
+		
+TRACE	2022-12-01 12:58:29	set_point_in_line (ptr @ link: A219AS301565, point_idx: 385 )
+TRACE	2022-12-01 12:58:29	point_move: -1
+TRACE	2022-12-01 12:58:29	change_point_in_line (ptr @ link: A219AS301565, point_idx: 384 )
+TRACE	2022-12-01 12:58:30	point_move: -1
+TRACE	2022-12-01 12:58:30	change_point_in_line (ptr @ link: A219AS301565, point_idx: 383 )
+TRACE	2022-12-01 12:58:30	point_move: -1
+TRACE	2022-12-01 12:58:30	change_point_in_line (ptr @ link: A219AS301565, point_idx: 382 )
+TRACE	2022-12-01 12:58:30	point_move: -1
+TRACE	2022-12-01 12:58:30	change_point_in_line (ptr @ link: A219AS301565, point_idx: 381 )
+TRACE	2022-12-01 12:58:30	point_move: -1
+TRACE	2022-12-01 12:58:30	change_point_in_line (ptr @ link: A219AS301565, point_idx: 380 )
+TRACE	2022-12-01 12:58:30	point_move: -1
+TRACE	2022-12-01 12:58:30	change_point_in_line (ptr @ link: A219AS301565, point_idx: 379 )
+TRACE	2022-12-01 12:58:30	point_move: -1
+TRACE	2022-12-01 12:58:30	change_point_in_line (ptr @ link: A219AS301565, point_idx: 378 )
+TRACE	2022-12-01 12:58:30	point_move: -1
+TRACE	2022-12-01 12:58:30	change_point_in_line (ptr @ link: A219AS301565, point_idx: 377 )
+TRACE	2022-12-01 12:58:30	point_move: -1
+TRACE	2022-12-01 12:58:30	change_point_in_line (ptr @ link: A219AS301565, point_idx: 376 )
+TRACE	2022-12-01 12:58:30	point_move: -1
+TRACE	2022-12-01 12:58:30	change_point_in_line (ptr @ link: A219AS301565, point_idx: 375 )
+TRACE	2022-12-01 12:58:30	point_move: -1
+TRACE	2022-12-01 12:58:30	change_point_in_line (ptr @ link: A219AS301565, point_idx: 374 )
+TRACE	2022-12-01 12:58:30	point_move: -1
+TRACE	2022-12-01 12:58:30	change_point_in_line (ptr @ link: A219AS301565, point_idx: 373 )
+TRACE	2022-12-01 12:58:30	point_move: -1
+TRACE	2022-12-01 12:58:30	change_point_in_line (ptr @ link: A219AS301565, point_idx: 372 )
+TRACE	2022-12-01 12:58:30	point_move: -1
+TRACE	2022-12-01 12:58:30	change_point_in_line (ptr @ link: A219AS301565, point_idx: 371 )
+TRACE	2022-12-01 12:58:30	point_move: -1
+TRACE	2022-12-01 12:58:30	change_point_in_line (ptr @ link: A219AS301565, point_idx: 370 )
+TRACE	2022-12-01 12:58:30	point_move: -1
+TRACE	2022-12-01 12:58:30	change_point_in_line (ptr @ link: A219AS301565, point_idx: 369 )
+TRACE	2022-12-01 12:58:30	point_move: -1
+TRACE	2022-12-01 12:58:30	change_point_in_line (ptr @ link: A219AS301565, point_idx: 368 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 367 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 366 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 365 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 364 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 363 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 362 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 361 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 360 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 359 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 358 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 357 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 356 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 355 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 354 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 353 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 352 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 351 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 350 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 349 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 348 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 347 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 346 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 345 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 344 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 343 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 342 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 341 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 340 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 339 )
+TRACE	2022-12-01 12:58:31	point_move: -1
+TRACE	2022-12-01 12:58:31	change_point_in_line (ptr @ link: A219AS301565, point_idx: 338 )
+TRACE	2022-12-01 12:58:32	point_move: -1
+TRACE	2022-12-01 12:58:32	change_point_in_line (ptr @ link: A219AS301565, point_idx: 337 )
+TRACE	2022-12-01 12:58:32	point_move: -1
+TRACE	2022-12-01 12:58:32	change_point_in_line (ptr @ link: A219AS301565, point_idx: 336 )
+TRACE	2022-12-01 12:58:32	point_move: -1
+TRACE	2022-12-01 12:58:32	change_point_in_line (ptr @ link: A219AS301565, point_idx: 335 )
+TRACE	2022-12-01 12:58:32	point_move: -1
+TRACE	2022-12-01 12:58:32	change_point_in_line (ptr @ link: A219AS301565, point_idx: 334 )
+TRACE	2022-12-01 12:58:33	Called: divide_a_link_smart
+TRACE	2022-12-01 12:58:33	dist_start: 167.00, dist_end: 25.18 -> keep_front = True
+TRACE	2022-12-01 12:58:33	Called: divide_a_link
+TRACE	2022-12-01 12:58:33	set_point_in_line (ptr @ link: A219AS301565, point_idx: 0 )
+TRACE	2022-12-01 12:58:37	Called: reset_start_point
+TRACE	2022-12-01 12:58:37	Called: reset_end_point
+TRACE	2022-12-01 12:58:37	Called: reset_stop_point
+INFO	2022-12-01 12:58:37	divide_a_link is done successfully
+TRACE	2022-12-01 12:58:41	Called: reset_start_point
+TRACE	2022-12-01 12:58:41	Called: reset_end_point
+TRACE	2022-12-01 12:58:41	Called: reset_stop_point
+TRACE	2022-12-01 12:58:42	init_save_path: C:\Users\sjhan\Desktop
