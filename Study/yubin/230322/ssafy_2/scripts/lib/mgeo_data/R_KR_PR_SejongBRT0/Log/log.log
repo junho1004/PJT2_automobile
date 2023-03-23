@@ -1,0 +1,10 @@
+TRACE	2022-12-07 13:32:26	Called: check_mgeo_data
+TRACE	2022-12-07 13:32:26	load MGeo data from: C:/Users/sjhan/Desktop/sejong_mgeo
+ERROR	2022-12-07 13:32:37	node (idx: A119AS300787) should have on_stop_line=True (currently False). The node is from_node of link (idx: A219AS303241), refrenced by TLs
+ERROR	2022-12-07 13:32:37	node (idx: A119AS300785) should have on_stop_line=True (currently False). The node is from_node of link (idx: A219AS303238), refrenced by TLs
+ERROR	2022-12-07 13:32:37	node (idx: A119AS301596) should have on_stop_line=True (currently False). The node is from_node of link (idx: A219AS303131), refrenced by TLs
+ERROR	2022-12-07 13:32:37	node (idx: A119AS301593) should have on_stop_line=True (currently False). The node is from_node of link (idx: A219AS303127), refrenced by TLs
+ERROR	2022-12-07 13:32:37	node (idx: A119AS300787) should have on_stop_line=True (currently False). The node is from_node of link (idx: A219AS303241), refrenced by TLs
+ERROR	2022-12-07 13:32:37	node (idx: A119AS300785) should have on_stop_line=True (currently False). The node is from_node of link (idx: A219AS303238), refrenced by TLs
+ERROR	2022-12-07 13:32:37	node (idx: A119AS301596) should have on_stop_line=True (currently False). The node is from_node of link (idx: A219AS303131), refrenced by TLs
+ERROR	2022-12-07 13:32:37	node (idx: A119AS301593) should have on_stop_line=True (currently False). The node is from_node of link (idx: A219AS303127), refrenced by TLs
