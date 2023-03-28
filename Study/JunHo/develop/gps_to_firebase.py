@@ -14,7 +14,7 @@ from morai_msgs.msg import GPSMessage
 # init api_key to connect with firebase
 cred = credentials.Certificate('/home/ssafy/mobility-autodriving-skeleton/ssafy_ad/src/ssafy_2/key/mykey.json')
 firebase_admin.initialize_app(cred, {
-    'projectID' : 'ssafy-seo8-44f08',
+    'projectID' : 'ssafy-seo8-9e74c',
 })
 
 db = firestore.client()
@@ -34,8 +34,8 @@ class GPS:
             if self.is_GPS_data_received == True:
                 print("GPS_data was just written to Firebase_storage")
                 doc_ref.set({
-                    u'lat': float(self.current_lat),
-                    u'lon': float(self.current_lon)
+                    u'lat': self.current_lat,
+                    u'lon': self.current_lon
                 })
             else:
                 print("waiting for GPS data...")
