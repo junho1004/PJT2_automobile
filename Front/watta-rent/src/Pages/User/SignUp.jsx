@@ -17,6 +17,8 @@ import styled from 'styled-components'
 import { firebaseAuth , createUserWithEmailAndPassword } from "../../firebase-config";
 import { updateProfile } from '@firebase/auth';
 import carImg from '../../assets/images/car.png'
+import { toast, ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 /* ... */
 
@@ -26,6 +28,7 @@ padding-bottom: 40px !important;
 `;
 
 const Register = () => {
+    const sessionStorage = window.sessionStorage;
     const navigate = useNavigate();
     const theme = createTheme();
     const [checked, setChecked] = useState(false);
@@ -33,6 +36,7 @@ const Register = () => {
     const [registerPassword, setRegisterPassword] = useState("");
     const [registerNickname, setRegisterNickname] = useState("");
     const [errorMsg, setErrorMsg] = useState("　");
+
 
     const onChangeEmail = (event) => {
         console.log(event.target.value)
@@ -60,20 +64,24 @@ const Register = () => {
         })
         setRegisterEmail("");
         setRegisterPassword("");
+        sessionStorage.setItem("success_signup", true)
         navigate("/")
         } catch(err){
         console.log(err.code);
         switch (err.code) {
             case 'auth/weak-password':
             setErrorMsg('비밀번호는 6자리 이상이어야 합니다');
+            toast.error("😭비밀번호는 8자리 이상이어야 합니다!")
             console.log(errorMsg)
             break;
             case 'auth/invalid-email':
             setErrorMsg('잘못된 이메일 주소입니다');
+            toast.error("😭이메일 주소를 확인해주세요!")
             console.log(errorMsg)
             break;
             case 'auth/email-already-in-use':
             setErrorMsg('이미 가입되어 있는 계정입니다');
+            toast.error("😭이미 가입되어 있는 계정입니다!")
             console.log(errorMsg)
             break;
         }
@@ -92,6 +100,11 @@ const Register = () => {
     e.preventDefault();
   };
 
+  // login page 이동
+  const naviLogin = () => {
+    navigate("/")
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
@@ -103,7 +116,8 @@ const Register = () => {
             flexDirection: 'column',
             alignItems: 'center',
           }}
-        >
+          >
+          <button onClick={naviLogin} style={{marginLeft:"300px"}}>🏠</button>
           <img src={carImg} style={{ width:"300px", height:"200px"}} alt="car"/>
           <Typography component="h1" variant="h5">
             Sign Up
@@ -168,7 +182,6 @@ const Register = () => {
                 sx={{ mt: 3, mb: 2 }}
                 size="large"
                 onClick={register}
-
               >
                 회원가입
               </Button>
@@ -176,6 +189,7 @@ const Register = () => {
           </Boxs>
         </Box>
       </Container>
+      <ToastContainer/>
     </ThemeProvider>
   );
 };

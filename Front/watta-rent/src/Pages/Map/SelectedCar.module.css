@@ -78,6 +78,23 @@ align-content: center; */
   color: black;
   /* align-content: center; */
 }
+.text12 {
+  font-weight: 500;
+  font-size: 0.8em;
+  color: black;
+  position: relative;
+  /* font-size: 5rem; */
+  animation: slide 8s infinite linear;
+}
+
+@keyframes slide {
+  from {
+      left: -350px;
+  }
+  to {
+      left: 350px;
+  }
+}
 
 .map {
   /* padding-left:20px ; */
@@ -161,7 +178,12 @@ align-content: center; */
   height: 70%;
   width: 25%;
 }
+.size3 {
+  height: 2%;
+  width: 5%;
 
+  display: inline-flex;
+}
 .in {
   justify-content: center;
   align-items: center;
