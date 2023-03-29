@@ -16,6 +16,7 @@ import SelectCar from "./Pages/Map/SelectCar"
 import SelectedCar from "./Pages/Map/SelectedCar"
 import CompleteCar from "./Pages/Map/CompleteCar"
 import DestinationMap from "./Pages/Map/DestinationMap"
+import MoveTo from "./Pages/Map/MoveTo"
 
 
 
@@ -35,6 +36,7 @@ const router = createBrowserRouter([
       { path: "/SelectedCar", element: <SelectedCar/> },
       { path: "/CompleteCar", element: <CompleteCar/> },
       { path: "/DestinationMap", element: <DestinationMap/> },
+      { path: "/MoveTo", element: <MoveTo/> },
       
 
     ],

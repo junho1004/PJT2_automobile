@@ -9,11 +9,12 @@ const Calendar = () => {
     
     const handleValueChange = (newValue) => {
         setValue(newValue);
-        console.log(value);
-        localStorage.setItem("reservation_start_date", value.startDate)
-        localStorage.setItem("reservation_end_date", value.endDate)
+        // console.log(newValue);
+        // console.log(value)
+        sessionStorage.setItem("reservation_start_date", newValue.startDate)
+        sessionStorage.setItem("reservation_end_date", newValue.endDate)
     }
-    
+    // console.log(value)
     return (
         <div>
           <h2 >시작 날짜와 종료 날짜를 선택해주세요</h2>

@@ -1,27 +1,34 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./LoginComponent.module.css";
 import car1 from "../../assets/images/car1.png";
+import * as React from 'react';
+import { toast, ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 import { firebaseAuth , signInWithEmailAndPassword } from "../../firebase-config";
+
 
 export default function HomeBanner() {
   const navigate = useNavigate();
   let localStorage = window.localStorage;
-  const token = window.localStorage.getItem("token");
+  let sessionStorage = window.sessionStorage;
   let [loginId, setLoginId] = useState("");
   let [loginPassword, setLoginPassword] = useState("");
   let [appropriate, setIsAppropriate] = useState(false);
   let [user, setUser] = useState();
 
-  // login onClick function
+  useEffect(() => {
+    console.log(sessionStorage.getItem('success_signup'))
+    if (sessionStorage.getItem('success_signup') == 'true') {
+      sessionStorage.setItem("success_signup", false)
+      toast.success("회원가입 성공!")
+  }
+  }, [])
   const login = async () => {
-      // localStorage.setItem("loginPassword", loginPassword);
-      // setSavedLoginPassword(localStorage.getItem("loginPassword"));
-      
-      if (loginId.length === 0)  {
-        alert("아이디를 입력해주세요");
+      if (loginId.length == 0)  {
+        toast.error("이메일을 입력해주세요!")
       } else if(loginPassword.length === 0) {
-        alert("비밀번호를 입력해주세요");
+        toast.error("비밀번호를 입력해주세요!")
       } else {
         try {
           const curUserInfo = await signInWithEmailAndPassword(firebaseAuth, loginId, loginPassword)
@@ -34,23 +41,25 @@ export default function HomeBanner() {
         } catch(err) {
           setIsAppropriate(false)
           console.log(appropriate)
-          alert("아이디와 비밀번호를 확인해주세요!")
+          toast.error("이메일과 비밀번호를 확인해주세요!")
         }
-        // localStorage.setItem("loginId", loginId);
-        // setSavedLoginId(localStorage.getItem("loginId"));
       }
+  }
+
+  const signup = () => {
+    navigate("/signup");
   }
 
   return (
     <div className={styles.body}>
         <div className={styles.topleft}>
-          <img src={car1} alt="go" style={{width:"90%",height:"250%"}} />
+          <img src={car1} alt="go" style={{width:"90%",height:"250%", marginBottom:"20px"}} />
       </div>
-      <div className={styles.bottom}>
-          <span style={{color:"white",fontSize:"1em"}}>아이디 :</span>{" "}
+      <div className={styles.bottom} style={{ marginTop:"10px" }}>
+          <span style={{color:"white",fontSize:"1em"}}>이메일 :</span>{" "}
           <input
             type="text"
-            style={{width:"100%", padding:"2%", marginBottom:"3%"}}
+            style={{width:"100%", padding:"2%", marginBottom:"3%",  backgroundColor:"white"}}
             onChange={(e) => {
               setLoginId(e.target.value);
             }}
@@ -59,7 +68,7 @@ export default function HomeBanner() {
         <span style={{color:"white",fontSize:"1em"}}>비밀번호 :</span>{" "}
           <input
             type="password"
-            style={{width:"100%", padding:"2%", marginBottom:"3%"}}
+            style={{width:"100%", padding:"2%", marginBottom:"3%", backgroundColor:"white"}}
             onChange={(e) => {
               setLoginPassword(e.target.value);
             }}
@@ -67,12 +76,25 @@ export default function HomeBanner() {
         </div>
 
       </div>
-      <div className={styles.bottom2}>
+      <div className={styles.bottom2} style={{ marginTop:"10px"}}>
         <button
           onClick={login}
         >
-          <span style={{color:"black",fontWeight:"700",fontSize:"1em"}}>Login</span>
+          <span style={{color:"white",fontWeight:"700",fontSize:"1em"}}>Login</span>
         </button>
+      </div>
+      <div className={styles.bottom2} style={{ marginTop:"10px"}}>
+        <button
+          onClick={signup}
+        >
+          <span style={{color:"white",fontWeight:"700",fontSize:"1em"}}>SignUp</span>
+        </button>
+        <ToastContainer
+          position="top-right"
+          autoClose={2000}
+          limit={1}
+          hideProgressBar={true}
+          />
       </div>
     </div>
   );
