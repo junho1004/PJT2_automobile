@@ -1,6 +1,6 @@
 /*global kakao*/
 import React from "react";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./SelectCar.module.css";
 import { markerdata } from "./Markerdata";
@@ -8,9 +8,9 @@ import previous from "../../assets/images/previous.png";
 import minicar from "../../assets/images/minicar.png";
 import spot from "../../assets/images/spot.png";
 import car from "../../assets/images/car.png";
-import useInterval from "./CustomInterval.ts"
 
 const { kakao } = window;
+
 const address = window.localStorage.getItem("address");
 const lat = window.localStorage.getItem("lat");
 const lng = window.localStorage.getItem("lng");
@@ -32,6 +32,7 @@ function SelectCar() {
   useEffect(() => {
     mapscript();
   }, []);
+
   const navigate = useNavigate();
   const imageSrc = minicar;
   const imageSize = new kakao.maps.Size(30, 30);

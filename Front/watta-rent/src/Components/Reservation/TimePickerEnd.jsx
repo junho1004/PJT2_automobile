@@ -6,7 +6,7 @@ import { TimePicker } from 'react-ios-time-picker';
 
    const onChange = (timeValue) => {
        setValue(timeValue);
-       localStorage.setItem("reservation_end_time", timeValue)
+       sessionStorage.setItem("reservation_end_time", timeValue)
        //    console.log(value)
    }
    // console.log(value)
