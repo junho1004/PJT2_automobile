@@ -21,7 +21,7 @@ export default function MapHome() {
                 { navigate("/");}
               }}
             >
-              HOME
+              🏠HOME
             </button>
           </div>
           <div className={styles.texta}><span className={styles.textc}>{id}</span> 님 안녕하세요</div>

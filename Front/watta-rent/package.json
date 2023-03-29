@@ -39,6 +39,7 @@
     "react-tailwindcss-datepicker": "^1.5.1",
     "react-timeit": "^1.2.12",
     "react-timekeeper": "^2.2.1",
+    "react-toastify": "^9.1.2",
     "redux": "^4.2.1",
     "sockjs-client": "^1.6.1",
     "styled-components": "^5.3.9",
