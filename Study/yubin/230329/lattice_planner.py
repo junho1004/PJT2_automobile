@@ -14,16 +14,12 @@ class latticePlanner:
     def __init__(self):
         rospy.init_node('lattice_planner', anonymous=True)
 
-        arg = rospy.myargv(argv=sys.argv)
-        object_topic_name = arg[1]
-
-        rospy.Subscriber(object_topic_name, ObjectStatusList, self.object_callback)
-
-   
+        # (1) subscriber, publisher 선언
         rospy.Subscriber("/local_path", Path, self.path_callback)
-        rospy.Subscriber("/Ego_topic", EgoVehicleStatus, self.status_callback)
-        self.lattice_path_pub = rospy.Publisher("/lattice_path", Path, queue_size=10)
+        rospy.Subscriber("/Ego_topic",EgoVehicleStatus, self.status_callback)
+        rospy.Subscriber("/Object_topic", ObjectStatusList, self.object_callback)
 
+        self.lattice_path_pub = rospy.Publisher('/lattice_path', Path, queue_size = 1)
 
         self.is_path = False
         self.is_status = False
@@ -33,13 +29,11 @@ class latticePlanner:
         while not rospy.is_shutdown():
 
             if self.is_path and self.is_status and self.is_obj:
-                # 장애물이 있는지 탐색한다.
                 if self.checkObject(self.local_path, self.object_data):
-                    # 장애물이 있다면
                     lattice_path = self.latticePlanner(self.local_path, self.status_msg)
                     lattice_path_index = self.collision_check(self.object_data, lattice_path)
 
-                    #TODO: (7) lattice 경로 메세지 Publish
+                    # (7)  lattice 경로 메세지 Publish
                     self.lattice_path_pub.publish(lattice_path[lattice_path_index])
                 else:
                     self.lattice_path_pub.publish(self.local_path)
@@ -49,27 +43,16 @@ class latticePlanner:
 
         is_crash = False
         for obstacle in object_data.obstacle_list:
-            for path in ref_path.poses:
-                dis = sqrt((path.pose.position.x - obstacle.position.x)**2 + (path.pose.position.y - obstacle.position.y)**2)
+            for path in ref_path.poses:  
+                dis = sqrt(pow(path.pose.position.x - obstacle.position.x, 2) + pow(path.pose.position.y - obstacle.position.y, 2))                
                 if dis < 2.35: # 장애물의 좌표값이 지역 경로 상의 좌표값과의 직선거리가 2.35 미만일때 충돌이라 판단.
                     is_crash = True
                     break
-            
-            if is_crash:
-                break
 
         return is_crash
 
     def collision_check(self, object_data, out_path):
         #TODO: (6) 생성된 충돌회피 경로 중 낮은 비용의 경로 선택
-        '''
-        # 충돌 회피 경로를 생성 한 이후 가장 낮은 비용의 경로를 선택 합니다.
-        # lane_weight 에는 기존 경로를 제외하고 좌 우로 3개씩 총 6개의 경로를 가지도록 합니다.
-        # 이 중 장애물이 있는 차선에는 가중치 값을 추가합니다.
-        # 모든 Path를 탐색 후 가장 비용이 낮은 Path를 선택하게 됩니다.
-        # 장애물이 존제하는 차선은 가중치가 추가 되어 높은 비용을 가지게 되기 떄문에 
-        # 최종적으로 가장 낮은 비용은 차선을 선택 하게 됩니다. 
-        '''
         
         selected_lane = -1        
         lane_weight = [3, 2, 1, 1, 2, 3] #reference path 
@@ -81,7 +64,8 @@ class latticePlanner:
                     if dis < 1.5:
                         lane_weight[path_num] = lane_weight[path_num] + 100
 
-        selected_lane = lane_weight.index(min(lane_weight))                    
+        selected_lane = lane_weight.index(min(lane_weight))     
+
         return selected_lane
 
     def path_callback(self,msg):
@@ -96,12 +80,6 @@ class latticePlanner:
         self.is_obj = True
         self.object_data = msg
 
-        print(msg.num_of_npcs)
-        print(msg.num_of_pedestrian)
-        print(msg.num_of_obstacle)
-        for obstacle in msg.obstacle_list:
-            print(obstacle.position)
-
     def latticePlanner(self,ref_path, vehicle_status):
         out_path = []
         vehicle_pose_x = vehicle_status.position.x
@@ -111,11 +89,17 @@ class latticePlanner:
         look_distance = int(vehicle_velocity * 0.2 * 2)
 
         
-        if look_distance < 20 : #min 10m   
+        if look_distance < 20 :
             look_distance = 20                    
 
-        if len(ref_path.poses) > look_distance :
+        if len(ref_path.poses) > look_distance :  
             #TODO: (3) 좌표 변환 행렬 생성
+            """
+            # 좌표 변환 행렬을 만듭니다.
+            # Lattice 경로를 만들기 위해서 경로 생성을 시작하는 Point 좌표에서 
+            # 경로 생성이 끝나는 Point 좌표의 상대 위치를 계산해야 합니다.
+            
+            """          
 
             global_ref_start_point      = (ref_path.poses[0].pose.position.x, ref_path.poses[0].pose.position.y)
             global_ref_start_next_point = (ref_path.poses[1].pose.position.x, ref_path.poses[1].pose.position.y)
@@ -125,99 +109,76 @@ class latticePlanner:
             theta = atan2(global_ref_start_next_point[1] - global_ref_start_point[1], global_ref_start_next_point[0] - global_ref_start_point[0])
             translation = [global_ref_start_point[0], global_ref_start_point[1]]
 
-            trans_matrix    = np.array([    [cos(theta), -sin(theta), translation[0]], 
-                                            [sin(theta), cos(theta), translation[1]], 
-                                            [         0,          0,             1 ]])
+            trans_matrix    = np.array([    [cos(theta),                -sin(theta),                                                                      translation[0]], 
+                                            [sin(theta),                 cos(theta),                                                                      translation[1]], 
+                                            [         0,                          0,                                                                                  1 ]     ])
 
             det_trans_matrix = np.array([   [trans_matrix[0][0], trans_matrix[1][0],        -(trans_matrix[0][0] * translation[0] + trans_matrix[1][0] * translation[1])], 
                                             [trans_matrix[0][1], trans_matrix[1][1],        -(trans_matrix[0][1] * translation[0] + trans_matrix[1][1] * translation[1])],
                                             [                 0,                  0,                                                                                   1]     ])
 
             world_end_point = np.array([[global_ref_end_point[0]], [global_ref_end_point[1]], [1]])
-            # 시작점(global_ref_start_point)을 기준으로 변환한 끝점(global_ref_end_point) 좌표
             local_end_point = det_trans_matrix.dot(world_end_point)
             world_ego_vehicle_position = np.array([[vehicle_pose_x], [vehicle_pose_y], [1]])
-            # 시작점(global_ref_start_point)을 기준으로 변환한 자동차(world_ego_vehicle_position) 좌표
             local_ego_vehicle_position = det_trans_matrix.dot(world_ego_vehicle_position)
-            # [-3.0, -1.75, -1, 1, 1.75, 3.0] [-40.0, -20.75, -10, 10, 20.75, 40.0]
             lane_off_set = [-3.0, -1.75, -1, 1, 1.75, 3.0]
             local_lattice_points = []
             
             for i in range(len(lane_off_set)):
                 local_lattice_points.append([local_end_point[0][0], local_end_point[1][0] + lane_off_set[i], 1])
             
-
-            for end_point in local_lattice_points:
-                # lane_change_3.py의 내용 참고
-                waypoints_x=[]
-                waypoints_y=[]
-                x_interval = 0.5 # 생성할 Path 의 Point 간격을 0.5 로 한다.
-                x_start=0
-                x_end=end_point[0]
-
-                y_start = 0.0
-                y_end = end_point[1]
-
-                x_num = x_end/x_interval
-                # End Point 까지의 길이를 Point 간 간격으로 나눠 필요한 Point 의 수를 계산한다.
-                # 계산된 Point 의 숫자 만큼 X 좌표를 생성한다.
-                for i in range(x_start,int(x_num)) : 
-                    waypoints_x.append(i*x_interval)
-
-                # 3차 곡선을 이용한 주행 경로 생성
-
-                # 3 차 방정식을 이용하여 부드러운 차량 거동을 위한 차선변경 경로를 만듭니다.
-                # 시작 위치와 목표 위치 사이 부드러운 곡선 경로를 주행하도록 합니다.
-                # 차량이 차선 변경 시 알맞을 조향 각도를 조절하여 차선을 변경합니다.
-                # 이때 큰 조향각을 가진다면 차량의 횡방향 가속도가 커지고 거동의 안정성이 떨어집니다.
-                # 차량이 안정적으로 주행 할 수 있는 경로를 만들어 주는 예제입니다.
-                # 
-                # 차량이 안정적으로 주행 할 수 있는 경로를 만들기 위해 3차 방정식을 이용합니다.
-                # EX )  3차 방정식
-                #       
-                #       f(x) = a*x^3 + b*x^2 + c*x + d
-                # 
-                # 위에 예시로 작성한 3차 방정식을 아래 예제에 작성 한다.
-                d = 0
-                c = 0
-                b = 3*(y_end - y_start) / x_end**2
-                a = -2*(y_end - y_start) / x_end**3
-
-                for x in waypoints_x:
-                    # 3 차 방정식 수식을 작성한다. (f(x) = a*x^3 + b*x^2 + c*x + d)
-                    result = a*x**3 + b*x**2 + c*x + d
-                    waypoints_y.append(result)
-                    
-
-                # ros path 메시지 형식 경로 데이터 생성
+            #TODO: (4) Lattice 충돌 회피 경로 생성
+            '''
+            # Local 좌표계로 변경 후 3차곡선계획법에 의해 경로를 생성한 후 다시 Map 좌표계로 가져옵니다.
+            # Path 생성 방식은 3차 방정식을 이용하며 lane_change_ 예제와 동일한 방식의 경로 생성을 하면 됩니다.
+            # 생성된 Lattice 경로는 out_path 변수에 List 형식으로 넣습니다.
+            # 충돌 회피 경로는 기존 경로를 제외하고 좌 우로 3개씩 총 6개의 경로를 가지도록 합니다.
+            '''
                 
-                # out_path 변수에 정의한 ros path 데이터 형식에 맞춰 경로 데이터를 만든다.
-                # Local Result 는 차선 변경 시작 위치 기준 좌표의 Point 정보이고
-                # Global Result 는 map 기준 좌표의 Point 좌표 이다.
-                # 좌표 변환 행렬을 통해 Local Result 를 이용해 Global Result 를 계산한다.
-                # Global Result 는 차선 변경 Path 의 데이터가 된다.
+            for end_point in local_lattice_points :
+                lattice_path = Path()
+                lattice_path.header.frame_id = 'map'
+                x = []
+                y = []
+                x_interval = 0.5
+                xs = 0
+                xf = end_point[0]
+                ps = local_ego_vehicle_position[1][0]
 
-                temp_path = Path()
-                temp_path.header.frame_id='/map'
-                for i in range(0,len(waypoints_y)) :
-                    local_result = np.array([[waypoints_x[i]],[waypoints_y[i]],[1]])
+                pf = end_point[1]
+                x_num = xf / x_interval
+
+                for i in range(xs,int(x_num)) : 
+                    x.append(i*x_interval)
+                
+                a = [0.0, 0.0, 0.0, 0.0]
+                a[0] = ps
+                a[1] = 0
+                a[2] = 3.0 * (pf - ps) / (xf * xf)
+                a[3] = -2.0 * (pf - ps) / (xf * xf * xf)
+                
+                # 3차 곡선 계획
+                for i in x:
+                    result = a[3] * i * i * i + a[2] * i * i + a[1] * i + a[0]
+                    y.append(result)
+
+                for i in range(0,len(y)) :
+                    local_result = np.array([[x[i]], [y[i]], [1]])
                     global_result = trans_matrix.dot(local_result)
 
-                    read_pose=PoseStamped()
+                    read_pose = PoseStamped()
                     read_pose.pose.position.x = global_result[0][0]
                     read_pose.pose.position.y = global_result[1][0]
-                    read_pose.pose.position.z = 0.
+                    read_pose.pose.position.z = 0
                     read_pose.pose.orientation.x = 0
                     read_pose.pose.orientation.y = 0
                     read_pose.pose.orientation.z = 0
                     read_pose.pose.orientation.w = 1
+                    lattice_path.poses.append(read_pose)
 
-                    temp_path.poses.append(read_pose)
+                out_path.append(lattice_path)
 
-                out_path.append(temp_path)
-
-            # Add_point            
-            # 3 차 곡선 경로가 모두 만들어 졌다면 이후 주행 경로를 추가 합니다.
+            #Add_point            
             add_point_size = min(int(vehicle_velocity * 2), len(ref_path.poses) )           
             
             for i in range(look_distance*2,add_point_size):
@@ -239,19 +200,16 @@ class latticePlanner:
                         read_pose.pose.orientation.z = 0
                         read_pose.pose.orientation.w = 1
                         out_path[lane_num].poses.append(read_pose)
-            
+                        
             #TODO: (5) 생성된 모든 Lattice 충돌 회피 경로 메시지 Publish
-            
+            '''
             # 생성된 모든 Lattice 충돌회피 경로는 ros 메세지로 송신하여
             # Rviz 창에서 시각화 하도록 합니다.
-
+            '''
             for i in range(len(out_path)):          
-                # Ros에 globals라는 함수 내에서 딕셔너리로 기본적으로 제공되는 변수가 있는데 lattice_pub_1라는 키가 있고 
-                # 해당 키에 /lattice_path_1 같은 이름으로 publisher를 지정할 수 있는 것 같다.
                 globals()['lattice_pub_{}'.format(i+1)] = rospy.Publisher('/lattice_path_{}'.format(i+1),Path,queue_size=1)
                 globals()['lattice_pub_{}'.format(i+1)].publish(out_path[i])
-
-
+        
         return out_path
 
 if __name__ == '__main__':
