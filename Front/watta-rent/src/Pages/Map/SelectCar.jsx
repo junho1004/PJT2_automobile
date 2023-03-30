@@ -12,8 +12,8 @@ import car from "../../assets/images/car.png";
 const { kakao } = window;
 
 const address = window.localStorage.getItem("address");
-const lat = window.localStorage.getItem("lat");
-const lng = window.localStorage.getItem("lng");
+const lat = window.sessionStorage.getItem("user_lat");
+const lng = window.sessionStorage.getItem("user_lon");
 
 function SelectCar() {
   let [caraddress, Setcaraddress] = useState("");
