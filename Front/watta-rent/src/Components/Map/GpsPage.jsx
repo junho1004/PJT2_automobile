@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import { useEffect } from "react"
 import styles from "./GpsPage.module.css";
 import { db } from "../../firebase-config"
-import { collection, updateDoc, doc, setDoc } from "firebase/firestore";
+import { doc, setDoc } from "firebase/firestore";
 
 const { kakao } = window
 

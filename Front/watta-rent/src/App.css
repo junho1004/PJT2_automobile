@@ -36,3 +36,6 @@
     transform: rotate(360deg);
   }
 }
+* {
+  font-family: 'S-CoreDream-3Light';
+}

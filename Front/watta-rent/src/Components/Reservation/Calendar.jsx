@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import Datepicker from "react-tailwindcss-datepicker";
+import { db } from "../../firebase-config"
+import { doc, setDoc } from "firebase/firestore";
 
 const Calendar = () => {
     const [value, setValue] = useState({
@@ -13,7 +15,15 @@ const Calendar = () => {
         // console.log(value)
         sessionStorage.setItem("reservation_start_date", newValue.startDate)
         sessionStorage.setItem("reservation_end_date", newValue.endDate)
+        updateFirebase()
     }
+    async function updateFirebase() {
+        const result = await setDoc(doc(db, "Reservation", "reservation_date"), {
+          end_date: sessionStorage.getItem("reservation_end_date"),
+          start_date: sessionStorage.getItem("reservation_start_date")
+        });
+        return result;
+      }
     // console.log(value)
     return (
         <div>
