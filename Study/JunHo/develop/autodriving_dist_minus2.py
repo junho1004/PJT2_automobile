@@ -1,12 +1,15 @@
-#!/usr/bin/env python2.7
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import time
 import rospy
 import rospkg
 from math import cos,sin,pi,sqrt,pow,atan2
 from geometry_msgs.msg import Point,PoseWithCovarianceStamped
 from nav_msgs.msg import Odometry,Path
-from morai_msgs.msg import CtrlCmd,EgoVehicleStatus,ObjectStatusList
+from morai_msgs.msg import CtrlCmd, EgoVehicleStatus, ObjectStatusList, GetTrafficLightStatus
+from morai_msgs.msg import EventInfo, Lamps
+from morai_msgs.srv import MoraiEventCmdSrv
 import numpy as np
 import tf
 from tf.transformations import euler_from_quaternion,quaternion_from_euler
@@ -16,7 +19,7 @@ from firebase_admin import credentials, firestore
 # ===============================================================================================
 from std_msgs.msg import String
 
-sFlag = False
+sFlag = "False"
 
 def callback(data):
     global sFlag
@@ -28,10 +31,13 @@ firebase_admin.initialize_app(cred, {
     'projectID' : 'ssafy-seo8-9e74c',
 })
 db = firestore.client()
-doc_ref = db.collection(u'Ego').document(u'total_distance')
+doc_ref_dist = db.collection(u'Ego').document(u'total_distance')
+doc_ref_time = db.collection(u'Reservation').document(u'start_waiting_time')
 
-total_dist = doc_ref.get().to_dict()["dist"]
+total_dist = doc_ref_dist.get().to_dict()["dist"]
+start_wait = doc_ref_time.get().to_dict()["start_wait"]
 
+time.sleep(start_wait)
 # acc 는 차량의 Adaptive Cruise Control 예제입니다.
 # 차량 경로상의 장애물을 탐색하여 탐색된 차량과의 속도 차이를 계산하여 Cruise Control 을 진행합니다.
 
@@ -77,7 +83,17 @@ class pure_pursuit :
         # ===============================================================================================
         rospy.Subscriber('start_driving_flag', String, callback)
         # ===============================================================================================
+        rospy.Subscriber("/GetTrafficLightStatus", GetTrafficLightStatus, self.traffic_light_callback)
+        # ===============================================================================================
+        rospy.wait_for_service('/Service_MoraiEventCmd')
+        # # ===============================================================================================
+        self.set_Event_control = EventInfo()
+        self.set_Event_control.option = 7
+        self.set_Event_control.ctrl_mode = 3
+        self.set_Event_control.gear = 4
         
+
+
         self.ctrl_cmd_pub = rospy.Publisher("/ctrl_cmd", CtrlCmd, queue_size=1)
         
 
@@ -96,8 +112,8 @@ class pure_pursuit :
 
         self.vehicle_length = 2.6
         self.lfd = 8
-        self.min_lfd=5
-        self.max_lfd=30
+        self.min_lfd = 5
+        self.max_lfd = 30
         self.lfd_gain = 0.78
         self.target_velocity = 60
 
@@ -111,19 +127,28 @@ class pure_pursuit :
                 break
             else:
                 rospy.loginfo('Waiting global path data')
-        
+        # ===============================================================================================
         temp_x = self.current_postion.x
         temp_y = self.current_postion.y
-        # print(total_dist)
+        
         self.total_dist = total_dist
-        # ===============================================================================================
         cnt = 0
+
+        #self.start_wait = start_wait
+
+        # ===============================================================================================
+        self.red_Flag = 0
+        self.green_Flag = 0
         rate = rospy.Rate(30) # 30hz
-        while not rospy.is_shutdown() and sFlag == True:
+        # ===============================================================================================
+
+        
+        
+        # ===============================================================================================
+        while not rospy.is_shutdown():
             
-            if self.is_path == True and self.is_odom == True and self.is_status == True:
+            if self.is_path == True and self.is_odom == True and self.is_status == True and sFlag == "True":
                 
-                doc_ref_dist = db.collection(u'Ego').document(u'total_distance')
                 if self.total_dist > 0:
                     minus_dist = sqrt(pow(self.current_postion.x - temp_x, 2) + pow(self.current_postion.y - temp_y, 2))    
                     self.total_dist -= minus_dist
@@ -134,7 +159,6 @@ class pure_pursuit :
                         doc_ref_dist.set({u'dist' : self.total_dist})
                     
                 else :
-                    
                     doc_ref_dist.set({u'dist' : 0})
                 
                 # global_obj,local_obj
@@ -171,13 +195,23 @@ class pure_pursuit :
                 else:
                     self.ctrl_cmd_msg.accel = 0.0
                     self.ctrl_cmd_msg.brake = -output
-
-                #TODO: (10) 제어입력 메세지 Publish
                 
+                #TODO: (10) 제어입력 메세지 Publish
                 # 제어입력 메세지 를 전송하는 publisher 를 만든다.
+                # if self.red_Flag == 1:
+                #     self.ctrl_cmd_msg.longlCmdType = 3
+                #     self.ctrl_cmd_msg.acceleration -= 0.0001  
+                #     self.ctrl_cmd_pub.publish(self.ctrl_cmd_msg)
+
+                ros_srv = rospy.ServiceProxy('/Service_MoraiEventCmd', MoraiEventCmdSrv)
+                result = ros_srv(self.set_Event_control)    
                 self.ctrl_cmd_pub.publish(self.ctrl_cmd_msg)
                 
-                
+            else :
+                self.ctrl_cmd_msg.accel = 0.0
+                self.ctrl_cmd_msg.brake = 1.0
+                self.ctrl_cmd_msg.steering = 0.0   
+                self.ctrl_cmd_pub.publish(self.ctrl_cmd_msg)
 
             rate.sleep()
 
@@ -203,6 +237,27 @@ class pure_pursuit :
     def object_info_callback(self,data): ## Object information Subscriber
         self.is_object_info = True
         self.object_data = data 
+        
+    def traffic_light_callback(self, data):
+        status = data.trafficLightStatus
+        
+        if status == 1: # Red
+            self.red_Flag = 1
+
+        elif status == 4: # Yellow
+            self.red_Flag = 1
+
+        elif status == 16: # Green
+            self.red_Flag = 0
+        
+        elif status == 5: # Red + Yellow
+            self.red_Flag = 1
+        
+        elif status == 20: # Yellow + Green
+            self.red_Flag = 0
+        
+        elif status == 48 or status == 31: # Green + left
+            self.red_Flag = 0
 
     def get_current_waypoint(self,ego_status,global_path):
         min_dist = float('inf')        
@@ -447,7 +502,6 @@ class AdaptiveCruiseControl:
         # 아래 예제는 주행 경로에서 Object 까지의 거리를 파악하여 
         # 경로를 기준으로 2.5 m 안쪽에 있다면 주행 경로 내 장애물이 있다고 판단 합니다.
         # 주행 경로 상 장애물이 여러게 있는 경우 가장 가까이 있는 장애물 정보를 가지도록 합니다.
-
         '''
 
         
