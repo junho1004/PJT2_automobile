@@ -102,7 +102,7 @@ const Register = () => {
 
   // login page 이동
   const naviLogin = () => {
-    navigate("/")
+    navigate("/LoginComponent1")
   }
 
   return (

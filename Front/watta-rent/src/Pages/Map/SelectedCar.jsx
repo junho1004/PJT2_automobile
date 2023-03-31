@@ -178,7 +178,7 @@ function SelectedCar() {
           className={styles.next3}
           onClick={() => {
             {
-              navigate("/CompleteCar");
+              {window.location.replace("/CompleteCar")}
             }
           }}
         >
