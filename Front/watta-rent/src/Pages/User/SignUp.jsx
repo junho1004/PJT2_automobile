@@ -65,7 +65,7 @@ const Register = () => {
         setRegisterEmail("");
         setRegisterPassword("");
         sessionStorage.setItem("success_signup", true)
-        navigate("/")
+        navigate("/logincomponent1")
         } catch(err){
         console.log(err.code);
         switch (err.code) {
@@ -102,7 +102,7 @@ const Register = () => {
 
   // login page 이동
   const naviLogin = () => {
-    navigate("/")
+    navigate("/LoginComponent1")
   }
 
   return (

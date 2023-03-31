@@ -3,6 +3,7 @@ import "./App.css";
 // User
 import SignUp from "./Pages/User/SignUp";
 import Home from "./Pages/User/Login";
+import LoginComponent1 from "./Components/Login/LoginComponent1";
 //Maphome
 import MapHome from "./Pages/Map/MapHome"
 //gpspage
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
       { path: "/CompleteCar", element: <CompleteCar/> },
       { path: "/DestinationMap", element: <DestinationMap/> },
       { path: "/MoveTo", element: <MoveTo/> },
-      
+      { path: "/LoginComponent1", element: <LoginComponent1/> },
 
     ],
   },

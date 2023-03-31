@@ -7,16 +7,23 @@ import TimePickerStart from "../../Components/Reservation/TimePickerStart";
 import TimePickerEnd from "../../Components/Reservation/TimePickerEnd";
 import previous from "../../assets/images/previous.png";
 import { db } from "../../firebase-config"
-import { doc, onSnapshot } from "firebase/firestore";
+import { doc, onSnapshot, updateDoc } from "firebase/firestore";
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
 export default function ReservationHome() {
   const navigate = useNavigate();
+  const todayDate = new Date()
+  const year = todayDate.getFullYear()
+  const month = todayDate.getMonth() + 1
+  const date = todayDate.getDate()
   const address = window.localStorage.getItem("address");
   const nickname = window.localStorage.getItem("loginNickname")
-  const [ startdate, setStartdate ] = useState("")
-  const [ enddate, setEnddate ] = useState("")
-  const [ starttime, setStarttime ] = useState("")
-  const [ endtime, setEndtime ] = useState("")
+  const [ startdate, setStartdate ] = useState(year + "-" + month + "-" + date)
+  const [ enddate, setEnddate ] = useState(year + "-" + month + "-" + date)
+  const [ starttime, setStarttime ] = useState("00:00")
+  const [ endtime, setEndtime ] = useState("00:00")
 
   const firebaseDate = onSnapshot(doc(db, "Reservation", "reservation_date"), (doc) => {
     setStartdate(doc.data().start_date)
@@ -31,10 +38,27 @@ export default function ReservationHome() {
     firebaseTime()
   })
 
+  const getDateDiff = (d1, d2, t1, t2) => {
+    const date1 = new Date(d1 + " " + t1);
+    const date2 = new Date(d2 + " " + t2);
+    const diffDate = date2.getTime() - date1.getTime();
+    console.log(diffDate / 1000)
+
+    // firebase 출발 시간 업데이트
+    async function updateFirebase() {
+      const result = await updateDoc(doc(db, "Reservation", "start_waiting_time"), {
+        start_wait: diffDate / 1000,
+      });
+      return result;
+    }
+    updateFirebase()
+    return Math.abs(diffDate / (1000)); // 밀리세컨 * 초 * 분 * 시 = 일
+  }
+  
   return (
     <div className={styles.background}>
       <div className={styles.back1}>
-         <div className={styles.next}>
+        <div className={styles.next}>
           <div className={styles.text} style={{backgroundColor:"black"}}>예약하기</div>
           <button
               onClick={() => {
@@ -51,7 +75,7 @@ export default function ReservationHome() {
             </div>
         </div>
 
-      <div style={{width:"100%", height:"50%"}}>
+      <div style={{width:"100%", height:"60%"}}>
       <div className={styles.next1}  style={{height:"17%", justifyContent:"center", margin:"auto", fontWeight:"800", fontSize:"1.7em"}}>
         <p className={styles.text1} style={{textAlign:"center"}}>날짜&시간 선택</p>
         </div>
@@ -73,34 +97,36 @@ export default function ReservationHome() {
           <TimePickerEnd/>
         </div>
       </div>
-      <div style={{width:"100%", height:"50%"}}>
-        <div className={styles.next1}  style={{height:"17%", marginTop:"50px", justifyContent:"center", fontWeight:"800", fontSize:"1.7em"}}>
+      <div style={{width:"100%", height:"40%"}}>
+        <div className={styles.next1}  style={{height:"20%", marginTop:"10px", justifyContent:"center", fontWeight:"800", fontSize:"1.7em"}}>
           <p className={styles.text1} style={{textAlign:"center"}}>예약 확인</p>
         </div>
+
+        {/* 예약 확인 카드 */}
         <div>
-          <p className={styles.text2}>
-              {nickname}님
-          </p>
-          <p className={styles.text2}>
-              {startdate}일자 {starttime}부터
-          </p>
-          <p>
-              {enddate}일자 {endtime}까지
-          </p>
-          <p>
-              예약하실래요?
-          </p>
+          <Card style={{ width: 350, height:"170px", margin:"auto", marginTop:"5px" }}>
+            <CardContent style={{margin:"15px"}}>
+              <Typography variant="h6" style={{textAlign:"center"}}>
+                🚕{nickname}님이 선택하신 📆⌚는
+              </Typography>
+              <Typography variant="h6" component="div" style={{textAlign:"center"}}>
+                {startdate}일자 {starttime}부터
+              </Typography>
+              <Typography variant="h6" component="div" style={{textAlign:"center"}}>
+              {enddate}일자 {endtime}입니다.
+              </Typography>
+            </CardContent>
+          </Card>
         </div>
+
       </div>
 
       <div className={styles.next3}>
         <button
           className={styles.next3}
                 onClick={() => {
-                  // updateDateFirebase()
-                  // updateTimeFirebase()
-                  { navigate("/SelectCar")};
-                  // window.location.reload();
+                  getDateDiff(startdate, enddate, starttime, endtime)
+                  { window.location.replace("/SelectCar")};
                 }}
               >
               <div className={styles.text3}>다음</div>

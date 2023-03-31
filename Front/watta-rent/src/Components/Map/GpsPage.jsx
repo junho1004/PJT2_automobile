@@ -13,7 +13,7 @@ export default function GpsPage() {
 
   // firebase와 통신
   async function updateFirebase() {
-    const result = await setDoc(doc(db, "test", "gps"), {
+    const result = await setDoc(doc(db, "UserLatLng", "user"), {
       lat: sessionStorage.getItem("user_lat"),
       lon: sessionStorage.getItem("user_lon")
     });
