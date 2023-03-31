@@ -4,21 +4,22 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./SelectedCar.module.css";
 import previous from "../../assets/images/previous.png";
-import minicar from "../../assets/images/minicar.png";
+import minicar from "../../assets/images/mapcar.png";
 import spot from "../../assets/images/spot.png";
 import car from "../../assets/images/car.png";
 import { onSnapshot, doc } from "firebase/firestore"
 import { db } from "../../firebase-config"
+import { Modal } from "@mui/material";
 
 const { kakao } = window;
-const address = window.localStorage.getItem("address");
-const lat = window.sessionStorage.getItem("user_lat");
-const lng = window.sessionStorage.getItem("user_lon");
 function SelectedCar() {
-  const [ carLat, setCatLat ] = useState(0)
-  const [ carLon, setCatLon ] = useState(0)
+  const address = window.localStorage.getItem("address");
+  const lat = window.sessionStorage.getItem("user_lat");
+  const lng = window.sessionStorage.getItem("user_lon");
+  // window.location.reload()
   const [ cardis, setCatdis ] = useState(0)
   const [ carmin, setCatmin ] = useState(0)
+  // const [ modal, setModal ] = useState(false)
   
   let sessionStorage = window.sessionStorage;
   const caraddress1 = window.localStorage.getItem("caraddress");
@@ -174,7 +175,8 @@ function SelectedCar() {
           className={styles.next3}
           onClick={() => {
             {
-              navigate("/CompleteCar");
+              // setModal(true)
+             {window.location.replace("/completeCar")}
             }
           }}
         >

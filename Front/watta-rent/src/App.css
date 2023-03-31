@@ -36,6 +36,7 @@
     transform: rotate(360deg);
   }
 }
-* {
-  font-family: 'S-CoreDream-3Light';
+.App::-webkit-scrollbar {
+  display: none;
 }
+

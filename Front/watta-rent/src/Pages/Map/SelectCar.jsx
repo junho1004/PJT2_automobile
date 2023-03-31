@@ -5,17 +5,18 @@ import { useNavigate } from "react-router-dom";
 import styles from "./SelectCar.module.css";
 import { markerdata } from "./Markerdata";
 import previous from "../../assets/images/previous.png";
-import minicar from "../../assets/images/minicar.png";
+import minicar from "../../assets/images/mapcar.png";
 import spot from "../../assets/images/spot.png";
 import car from "../../assets/images/car.png";
+import { db } from "../../firebase-config"
+import { doc, updateDoc } from "firebase/firestore";
 
 const { kakao } = window;
 
 const address = window.localStorage.getItem("address");
-const lat = window.sessionStorage.getItem("user_lat");
-const lng = window.sessionStorage.getItem("user_lon");
-
 function SelectCar() {
+  const lat = window.sessionStorage.getItem("user_lat");
+  const lng = window.sessionStorage.getItem("user_lon");
   let [caraddress, Setcaraddress] = useState("");
   let [modal, setModal] = useState(false);
   let [carNumber, SetCarnumber] = useState("");
@@ -23,6 +24,17 @@ function SelectCar() {
   let [carFee, SetCarfee] = useState("");
   let [carlat, SetCarlat] = useState("");
   let [carlng, SetCarlng] = useState("");
+
+  const firebaseUpdate = () => {
+    async function updateFirebase() {
+      const result = await updateDoc(doc(db, "Reservation", "choice_btn"), {
+        choice_btn: true
+      });
+      console.log("123")
+      return result;
+      }
+      updateFirebase()
+    }
 
   const getcartype = window.localStorage.getItem("cartype");
   const closeModal = () => {
@@ -60,23 +72,7 @@ function SelectCar() {
     myMarker.setMap(map);
 
     markerdata.forEach((el) => {
-      // const markerPosition = new kakao.maps.LatLng(el.lat, el.lng);
-      // 마커를 생성합니다
-      // let imageSize = new kakao.maps.Size(24, 35)
-      // // let markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize)
-      // const content = '<div class="customoverlay">' +
-      // `    <span class="title">${el.title}</span>` +
-      // '  </a>' +
-      // '</div>'
       const position = new kakao.maps.LatLng(el.lat, el.lng);
-      // let customOverlay = new kakao.maps.CustomOverlay({
-      //     map:map,
-      //     position: position,
-      //     content: content,
-      //     yAnchor: 1,
-      // })
-      // const title1 = new kakao.maps.title(el.title);
-
       const marker = new kakao.maps.Marker({
         //마커가 표시 될 지도
         map: map,
@@ -86,8 +82,6 @@ function SelectCar() {
         clickable: true,
       });
 
-      // const titles = new kakao.maps.title(el.title)
-
       marker.setMap(map);
 
       let carnumber = el.number;
@@ -95,7 +89,6 @@ function SelectCar() {
       let carfee = el.fee;
 
       kakao.maps.event.addListener(marker, "click", function () {
-        // infowindow.open(map, marker);
         setModal(true);
 
         let lat = el.lat;
@@ -108,7 +101,6 @@ function SelectCar() {
           let callback = function (result, status) {
             if (status === kakao.maps.services.Status.OK) {
               Setcaraddress(result[0].address.address_name);
-              // Settitle(title1)
               SetCarnumber(carnumber);
               SetCartype(cartype);
               SetCarfee(carfee);
@@ -173,6 +165,7 @@ function SelectCar() {
                 <button
                   className={styles.button}
                   onClick={() => {
+                    firebaseUpdate()
                     localStorage.setItem("carnumber", carNumber);
                     localStorage.setItem("cartype", carType);
                     localStorage.setItem("carfee", carFee);
@@ -190,7 +183,6 @@ function SelectCar() {
         </div>
       )}
 
-      {/* <div className="open"> */}
       <div
         id="map"
         className={styles.map}
@@ -199,7 +191,6 @@ function SelectCar() {
           height: "60vh",
         }}
       ></div>
-      {/* </div> */}
       <div className={styles.next2}>
         <img
           src={spot}
@@ -220,7 +211,6 @@ function SelectCar() {
                   justifyContent: "center",
                   alignItems: "center",
                   alignContent: "center",
-                  // display: "flex",
                 }}
               >
                 <span style={{ fontSize: "1em" }}>이 차량의 현재 위치 : </span>
@@ -252,7 +242,7 @@ function SelectCar() {
             }
           }}
         >
-          <div className={styles.text3}>다음</div>
+          <div className={styles.text3}>예약 확인</div>
         </button>
       </div>
     </div>
