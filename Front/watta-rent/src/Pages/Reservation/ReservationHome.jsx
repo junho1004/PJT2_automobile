@@ -76,8 +76,9 @@ export default function ReservationHome() {
                 onClick={() => {
                   updateDateFirebase()
                   updateTimeFirebase()
-                  { navigate("/SelectCar")};
-                  window.location.reload();
+                  // { navigate("/SelectCar")};
+                  // window.location.reload();
+                  {window.location.replace("/SelectCar")}
                 }}
               >
               <div className={styles.text3}>다음</div>
