@@ -1,0 +1,16 @@
+<launch>
+    <node pkg="ssafy_2" type="mgeo_pub.py" name="mgeo_pub"  />
+    <node pkg="ssafy_2" type="gpsimu_parser.py" name="gpsimu_parser" />
+    <node pkg="ssafy_2" type="tf_pub.py" name="tf"  />
+    <!-- <node pkg="rviz" type="rviz" name="rviz" args="-d $(find ssafy_3)/rviz/lane_detection_rviz.rviz" /> -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find ssafy_2)/rviz/kcity_rviz.rviz" />
+
+    <!-- <node pkg="ssafy_2" type="dijkstra.py" name="dijkstra" /> -->
+    <node pkg="ssafy_2" type="global_path_pub.py" name="global_path_pub" />
+    <node pkg="ssafy_2" type="local_path_pub.py" name="local_path_pub" />
+
+    <node pkg="ssafy_2" type="acc.py" name="advanced_purepursuit"  />
+    <!-- <node pkg="ssafy_2" type="advanced_purepursuit.py" name="advanced_purepursuit"  /> -->
+    <!-- <node pkg="ssafy_2" type="autodriving_dist_minus2.py" name="advanced_purepursuit"  /> -->
+
+</launch>
