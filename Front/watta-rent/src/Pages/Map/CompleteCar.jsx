@@ -19,7 +19,7 @@ function CompleteCar() {
   let [modal, setModal] = useState(false);
   const [visible, setVisible] = useState(false);
   const [InputText, setInputText] = useState("");
-  
+
   const closeModal = () => {
     setModal(false);
   };
@@ -33,9 +33,13 @@ function CompleteCar() {
 
   // 검색 버튼 눌렀을 때
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setInputText("");
-    navigate("/DestinationMap", { state: InputText });
+    if (InputText.length == 0) {
+      alert("목적지를 입력해주세요!");
+    } else {
+      e.preventDefault();
+      setInputText("");
+      navigate("/DestinationMap", { state: InputText });
+    }
   };
 
   return (
@@ -82,17 +86,11 @@ function CompleteCar() {
               <button type="submit">📍</button>
             </div>
           </form>
-          <button
-            onClick={() => {
-              navigate("/DestinationMap", { state: InputText });
-            }}
-            className={styles.endbtn}
-          >
+          <button onClick={handleSubmit} className={styles.endbtn}>
             확인
           </button>
         </div>
       </div>
-
 
       <div className={styles.next6}>
         <div>
@@ -165,8 +163,9 @@ function CompleteCar() {
               {visible && (
                 <div className={styles.containerM}>
                   <div className={styles.modalM}>
-                      <div onClick={close} className={styles.x}>
-              <div>x</div></div>
+                    <div onClick={close} className={styles.x}>
+                      <div>x</div>
+                    </div>
                     <div className={styles.modaltext}>
                       <div style={{ fontSize: "1em", fontWeight: "800" }}>
                         와따렌트를<div>이용해주셔서 감사합니다!</div>
@@ -195,7 +194,6 @@ function CompleteCar() {
         </div>
       )}
     </div>
-    
   );
 }
 

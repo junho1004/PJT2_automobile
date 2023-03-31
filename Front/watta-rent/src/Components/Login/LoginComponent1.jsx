@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./LoginComponent.module.css";
+import styles from "./LoginComponent1.module.css";
 import car12 from "../../assets/images/car12.png";
-import front from "../../assets/images/front.png";
+// import front from "../../assets/images/front.png";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {
@@ -70,32 +70,8 @@ export default function HomeBanner() {
   };
 
   return (
+    <div className={styles.background}>
     <div className={styles.body}>
-      {modal && (
-        <button1
-          className={styles.button1}
-          onClick={onButtonClick}
-        >
-            <div className={styles.container}>
-              <div
-                id="hz"
-                className={styles.modal}
-                // style={{ border: "red 2px solid" }}
-              >
-                <div className={styles.front}>
-                  <img src={front} alt="go" style={{ width: "90%" }} />
-                </div>
-                <div className={styles.modaltext}>
-                  와따렌트와 함께! 손이 편안한 여행!
-                </div>
-                {/* <div className={styles.buttons}>취소</div> */}
-            </div>
-              <div className={styles.back} >
-              </div>
-          </div>
-        </button1>
-      )}
-
       <div className={styles.topleft}>
         <img
           src={car12}
@@ -153,6 +129,7 @@ export default function HomeBanner() {
           hideProgressBar={true}
         />
       </div>
+    </div>
     </div>
   );
   // }
