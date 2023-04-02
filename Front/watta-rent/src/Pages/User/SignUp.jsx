@@ -65,7 +65,7 @@ const Register = () => {
         setRegisterEmail("");
         setRegisterPassword("");
         sessionStorage.setItem("success_signup", true)
-        navigate("/")
+        navigate("/logincomponent1")
         } catch(err){
         console.log(err.code);
         switch (err.code) {
@@ -118,7 +118,7 @@ const Register = () => {
           }}
           >
           <button onClick={naviLogin} style={{marginLeft:"300px"}}>🏠</button>
-          <img src={carImg} style={{ width:"300px", height:"200px"}} alt="car"/>
+          <img src={carImg} style={{ width:"220px", height:"200px"}} alt="car"/>
           <Typography component="h1" variant="h5">
             Sign Up
           </Typography>
