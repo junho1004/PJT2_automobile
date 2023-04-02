@@ -1,30 +1,59 @@
 /*global kakao*/
 import React from "react";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./SelectedCar.module.css";
-import { markerdata } from "./Markerdata";
 import previous from "../../assets/images/previous.png";
-import minicar from "../../assets/images/minicar.png";
+import minicar from "../../assets/images/mapcar.png";
 import spot from "../../assets/images/spot.png";
 import car from "../../assets/images/car.png";
-
+import { onSnapshot, doc } from "firebase/firestore"
+import { db } from "../../firebase-config"
+import { Modal } from "@mui/material";
 
 const { kakao } = window;
-const address = window.localStorage.getItem("address");
-const lat = window.localStorage.getItem("lat");
-const lng = window.localStorage.getItem("lng");
-
 function SelectedCar() {
-  let localStorage = window.localStorage;
+  const address = window.localStorage.getItem("address");
+  const lat = window.sessionStorage.getItem("user_lat");
+  const lng = window.sessionStorage.getItem("user_lon");
+  // window.location.reload()
+  const [ cardis, setCatdis ] = useState(0)
+  const [ carmin, setCatmin ] = useState(0)
+  // const [ modal, setModal ] = useState(false)
+  
+  let sessionStorage = window.sessionStorage;
   const caraddress1 = window.localStorage.getItem("caraddress");
+  const dist = Math.floor(sessionStorage.getItem("cardis"))
+  const min = Math.floor(dist / 170)
 
   const carnumber = window.localStorage.getItem("carnumber");
   
+  const unsub = onSnapshot(doc(db, "Ego", "current_gps"), (doc) => {
+    sessionStorage.setItem("carlat", doc.data().lat)
+    sessionStorage.setItem("carlon", doc.data().lon)
+    console.log(sessionStorage.getItem("carlat"))
+    console.log(sessionStorage.getItem("carlon"))
+  });
+  
+  const getDis = onSnapshot(doc(db, "Ego", "total_distance"), (doc) => {
+    sessionStorage.setItem("cardis", doc.data().dist)
+    // console.log(sessionStorage.getItem("catdis"))
+    console.log(doc.data().dist)
+    setCatdis(dist)
+    setCatmin(min)
+  })
 
   useEffect(() => {
-    mapscript();
-  }, []);
+    unsub()
+    const interval = setInterval(()=> {
+      getDis()
+      mapscript();
+    },1000)
+    return  () => {
+      clearInterval(interval)
+    }
+  }, 1000);
+
   const navigate = useNavigate();
   const imageSrc = minicar;
   const imageSize = new kakao.maps.Size(30, 30);
@@ -38,8 +67,8 @@ function SelectedCar() {
   const mapscript = () => {
     let container = document.getElementById("map");
     let options = {
-      center: new kakao.maps.LatLng(lat, lng),
-      level: 8,
+      center: new kakao.maps.LatLng(sessionStorage.getItem("carlat"), sessionStorage.getItem("carlon")),
+      level: 4,
     };
 
     //map
@@ -51,45 +80,13 @@ function SelectedCar() {
     });
     myMarker.setMap(map);
 
+    const carMarker = new kakao.maps.Marker({
+      map : map,
+      position : new kakao.maps.LatLng(sessionStorage.getItem("carlat"), sessionStorage.getItem("carlon")),
+      image: markerimage,
+    })
 
-    markerdata.forEach(() => {
-      let carlat = window.localStorage.getItem("carlat");
-      let carlng = window.localStorage.getItem("carlng");
-    
-      const position = new kakao.maps.LatLng(carlat, carlng);
-
-      const marker = new kakao.maps.Marker({
-        //마커가 표시 될 지도
-        map: map,
-        //마커가 표시 될 위치
-        position: position,
-        image: markerimage,
-        clickable: true,
-      });
-
-
-      marker.setMap(map);
-      
-
-      // kakao.maps.event.addListener(marker, "click", function () {
-      //   // infowindow.open(map, marker);
-        
-      //   let lat = el.lat;
-      //   let lng = el.lng;
-        
-
-      //   let geocoder = new kakao.maps.services.Geocoder();
-      //   Gpspage(lat, lng);
-      //   function Gpspage(lat, lng) {
-      //     let coord = new kakao.maps.LatLng(lat, lng);
-      //     let callback = function (result, status) {
-      //       if (status === kakao.maps.services.Status.OK) {
-      //       }
-      //     };
-      //     geocoder.coord2Address(coord.getLng(), coord.getLat(), callback);
-      //   }
-      // });
-    });
+    carMarker.setMap(map)
   };
 
   return (
@@ -160,12 +157,12 @@ function SelectedCar() {
             <div className={styles.box}>
               <div>
                 <span>예상 도착 시간은 </span>
-                <span style={{ fontSize: "1em" }}>약 10분</span>
+                <span style={{ fontSize: "1em" }}>약 {carmin}분</span>
                 <span> 입니다</span>
               </div>
               <div>
                 <span>내 위치에서 </span>
-                <span style={{ fontSize: "1em" }}>약 500m</span>
+                <span style={{ fontSize: "1em" }}>약 {cardis}M</span>
                 <span> 떨어져있습니다</span>
               </div>
             </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./ReservationHome.module.css";
 import spot from "../../assets/images/spot.png";
@@ -7,34 +7,58 @@ import TimePickerStart from "../../Components/Reservation/TimePickerStart";
 import TimePickerEnd from "../../Components/Reservation/TimePickerEnd";
 import previous from "../../assets/images/previous.png";
 import { db } from "../../firebase-config"
-import { collection, updateDoc, doc, setDoc } from "firebase/firestore";
+import { doc, onSnapshot, updateDoc } from "firebase/firestore";
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
 export default function ReservationHome() {
   const navigate = useNavigate();
+  const todayDate = new Date()
+  const year = todayDate.getFullYear()
+  const month = todayDate.getMonth() + 1
+  const date = todayDate.getDate()
   const address = window.localStorage.getItem("address");
+  const nickname = window.localStorage.getItem("loginNickname")
+  const [ startdate, setStartdate ] = useState(year + "-" + month + "-" + date)
+  const [ enddate, setEnddate ] = useState(year + "-" + month + "-" + date)
+  const [ starttime, setStarttime ] = useState("00:00")
+  const [ endtime, setEndtime ] = useState("00:00")
 
-  // firebase와 통신
-  async function updateDateFirebase() {
-    const dateResult = await setDoc(doc(db, "Reservation", "reservation_date"), {
-      start_date: sessionStorage.getItem("reservation_start_date"),
-      end_date: sessionStorage.getItem("reservation_end_date"),
-    });
-    return dateResult;
+  const firebaseDate = onSnapshot(doc(db, "Reservation", "reservation_date"), (doc) => {
+    setStartdate(doc.data().start_date)
+    setEnddate(doc.data().end_date)
+  })
+  const firebaseTime = onSnapshot(doc(db, "Reservation", "reservation_time"), (doc) => {
+    setStarttime(doc.data().start_time)
+    setEndtime(doc.data().end_time)
+  })
+  useEffect(()=> {
+    firebaseDate()
+    firebaseTime()
+  })
+
+  const getDateDiff = (d1, d2, t1, t2) => {
+    const date1 = new Date(d1 + " " + t1);
+    const date2 = new Date(d2 + " " + t2);
+    const diffDate = date2.getTime() - date1.getTime();
+    console.log(diffDate / 1000)
+
+    // firebase 출발 시간 업데이트
+    async function updateFirebase() {
+      const result = await updateDoc(doc(db, "Reservation", "start_waiting_time"), {
+        start_wait: diffDate / 1000,
+      });
+      return result;
+    }
+    updateFirebase()
+    return Math.abs(diffDate / (1000)); // 밀리세컨 * 초 * 분 * 시 = 일
   }
-
-  async function updateTimeFirebase() {
-    const timeResult = await setDoc(doc(db, "Reservation", "reservation_time"), {
-      start_time: sessionStorage.getItem("reservation_start_time"),
-      end_time: sessionStorage.getItem("reservation_end_time")
-    });
-    return timeResult;
-  }
-
-
+  
   return (
     <div className={styles.background}>
       <div className={styles.back1}>
-         <div className={styles.next}>
+        <div className={styles.next}>
           <div className={styles.text} style={{backgroundColor:"black"}}>예약하기</div>
           <button
               onClick={() => {
@@ -44,18 +68,22 @@ export default function ReservationHome() {
         </div>
         </div>
         <div className={styles.next1}>
-            <img src={spot} alt="go" style={{width:"60px",height:"50px"}} />
+            <img src={spot} alt="go" style={{width:"40px",height:"30px"}} />
             <div>
             <div className={styles.text1}>현재위치</div>
-            <div className={styles.text2}>{address}</div>
+            <div className={styles.text1} style={{fontSize:"0.7em"}}>{address}</div>
             </div>
         </div>
 
-      <div style={{width:"100%", height:"100%"}}>
+      <div style={{width:"100%", height:"60%"}}>
+      <div className={styles.next1}  style={{height:"17%", justifyContent:"center", margin:"auto", fontWeight:"800", fontSize:"1.7em"}}>
+        <p className={styles.text1} style={{textAlign:"center"}}>날짜&시간 선택</p>
+        </div>
         <div style={{ marginTop : "30px", marginLeft: "10px"}}>
           <Calendar />
           <br />
         </div>
+
         <div className={styles.text4}>
           <h2 >대여 시간 : </h2>
           <hr style={{marginBottom:"10px",}}/>
@@ -69,16 +97,36 @@ export default function ReservationHome() {
           <TimePickerEnd/>
         </div>
       </div>
+      <div style={{width:"100%", height:"40%"}}>
+        <div className={styles.next1}  style={{height:"20%", marginTop:"10px", justifyContent:"center", fontWeight:"800", fontSize:"1.7em"}}>
+          <p className={styles.text1} style={{textAlign:"center"}}>예약 확인</p>
+        </div>
+
+        {/* 예약 확인 카드 */}
+        <div>
+          <Card style={{ width: 350, height:"170px", margin:"auto", marginTop:"5px" }}>
+            <CardContent style={{margin:"15px"}}>
+              <Typography variant="h6" style={{textAlign:"center"}}>
+                🚕{nickname}님이 선택하신 📆⌚는
+              </Typography>
+              <Typography variant="h6" component="div" style={{textAlign:"center"}}>
+                {startdate}일자 {starttime}부터
+              </Typography>
+              <Typography variant="h6" component="div" style={{textAlign:"center"}}>
+              {enddate}일자 {endtime}입니다.
+              </Typography>
+            </CardContent>
+          </Card>
+        </div>
+
+      </div>
 
       <div className={styles.next3}>
         <button
           className={styles.next3}
                 onClick={() => {
-                  updateDateFirebase()
-                  updateTimeFirebase()
-                  // { navigate("/SelectCar")};
-                  // window.location.reload();
-                  {window.location.replace("/SelectCar")}
+                  getDateDiff(startdate, enddate, starttime, endtime)
+                  { window.location.replace("/SelectCar")};
                 }}
               >
               <div className={styles.text3}>다음</div>

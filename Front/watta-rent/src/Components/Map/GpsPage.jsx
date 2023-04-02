@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import { useEffect } from "react"
 import styles from "./GpsPage.module.css";
 import { db } from "../../firebase-config"
-import { collection, updateDoc, doc, setDoc } from "firebase/firestore";
+import { doc, setDoc } from "firebase/firestore";
 
 const { kakao } = window
 
@@ -13,7 +13,7 @@ export default function GpsPage() {
 
   // firebase와 통신
   async function updateFirebase() {
-    const result = await setDoc(doc(db, "test", "gps"), {
+    const result = await setDoc(doc(db, "UserLatLng", "user"), {
       lat: sessionStorage.getItem("user_lat"),
       lon: sessionStorage.getItem("user_lon")
     });
