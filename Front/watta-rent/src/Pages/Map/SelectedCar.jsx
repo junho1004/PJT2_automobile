@@ -175,7 +175,8 @@ function SelectedCar() {
           className={styles.next3}
           onClick={() => {
             {
-              {window.location.replace("/CompleteCar")}
+              // setModal(true)
+             {window.location.replace("/completeCar")}
             }
           }}
         >
