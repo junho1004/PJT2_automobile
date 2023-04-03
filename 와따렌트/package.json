@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@stomp/stompjs": "^6.1.2",
-    "redux-persist": "^6.0.0"
-  }
-}
