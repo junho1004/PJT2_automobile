@@ -13,7 +13,7 @@ const lng = window.localStorage.getItem("lng");
 const address = window.localStorage.getItem("address");
 ////
 const { kakao } = window;
-const nickname = window.localStorage.getItem("loginPassword");
+// const nickname = window.localStorage.getItem("loginPassword");
 
 // const reload = window.location.reload()
 const DestinationMap = ({ searchPlace }) => {
@@ -21,6 +21,7 @@ const DestinationMap = ({ searchPlace }) => {
   const location = useLocation();
   const [under, setunder] = useState(false);
   const navigate = useNavigate();
+  const nickname = window.localStorage.getItem("loginNickname")
 
   useEffect(() => {
     let searchPlace = location.state;
@@ -134,7 +135,10 @@ const DestinationMap = ({ searchPlace }) => {
         infowindow.open(map, marker);
 
         // 내가 클릭한 주소좌표가 나옴
-        // console.log(place.y);
+        console.log(place.y);
+        console.log(place.x);
+        window.sessionStorage.setItem("deslat", place.x)
+        window.sessionStorage.setItem("deslon", place.y)
         let y = place.y;
         let x = place.x;
         getAddr(y, x);
@@ -207,7 +211,7 @@ const DestinationMap = ({ searchPlace }) => {
                     fontSize: "1.2em",
                     marginBottom: "2%",
                   }}
-                  ><div><span style={{fontWeight: "800"}}>{nickname}</span> 님</div>
+                  ><div><span style={{fontWeight: "800"}}>{nickname}</span>님</div>
                   목적지를 선택해주세요!
                 </div>
                 <div>{ready}</div>

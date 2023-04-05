@@ -1,13 +1,13 @@
 /*global kakao*/
 import React from "react";
-import { useEffect, useState, useRef } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./CompleteCar.module.css";
-import { markerdata } from "./Markerdata";
 import previous from "../../assets/images/previous.png";
-import minicar from "../../assets/images/minicar.png";
 import spot from "../../assets/images/spot.png";
 import car from "../../assets/images/car.png";
+import { db } from "../../firebase-config"
+import { doc, updateDoc } from "firebase/firestore";
 
 const address = window.localStorage.getItem("address");
 const carnumber = window.localStorage.getItem("carnumber");
@@ -41,6 +41,16 @@ function CompleteCar() {
       navigate("/DestinationMap", { state: InputText });
     }
   };
+
+  const firebaseUpdate = () => {
+    async function updateFirebase() {
+      const result = await updateDoc(doc(db, "Reservation", "return_btn"), {
+        return_btn: true
+      });
+      return result;
+      }
+      updateFirebase()
+    }
 
   return (
     // 상단 네비게이션
@@ -166,9 +176,12 @@ function CompleteCar() {
                     <div onClick={close} className={styles.x}>
                       <div>x</div>
                     </div>
-                    <div className={styles.modaltext}>
+                    <div className={styles.modaltextm}>
                       <div style={{ fontSize: "1em", fontWeight: "800" }}>
-                        와따렌트를<div>이용해주셔서 감사합니다!</div>
+                        <div style={{alignContent:"center",justifyContent:"center",alignItems:"center",display:"flex"}}><div><span style={{fontSize:"1.2em"}}>와따렌트</span>를</div></div>
+                        <div style={{alignContent:"center",justifyContent:"center",alignItems:"center",display:"flex"}}>이용해주셔서 감사합니다!</div>
+                        <div style={{fontSize:"0.7em",paddingTop:"4%",alignContent:"center",justifyContent:"center",alignItems:"center",display:"flex", fontWeight:"100"}}>15분 뒤, 차가 알아서 차고지로 복귀합니다!</div>
+                        <div style={{fontSize:"0.7em",alignContent:"center",justifyContent:"center",alignItems:"center",display:"flex",fontWeight:"100"}}>두고 내린 소지품은 없는지 확인해 주세요!</div>
                       </div>
                     </div>
                     <button

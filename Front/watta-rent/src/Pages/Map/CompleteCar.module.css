@@ -280,6 +280,13 @@ input::placeholder {
   align-content: center;
   display: flex;
 }
+.modaltextm {
+  margin-bottom: 5%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+}
 .size1 {
   height: 70%;
   width: 25%;
@@ -373,5 +380,5 @@ display: flex;
   padding: 2%;
   border-radius: 20px;
   font-size: 0.7em;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
