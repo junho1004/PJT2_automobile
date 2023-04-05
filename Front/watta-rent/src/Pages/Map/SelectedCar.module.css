@@ -76,8 +76,26 @@ align-content: center; */
   font-weight: 500;
   font-size: 0.8em;
   color: black;
+  
   /* align-content: center; */
 }
+.memo{
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  /* animation-delay: 5s; */
+  animation-iteration-count: infinite;
+  /* animation-timing-function: linear; */
+  animation-direction: alternate;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .text12 {
   font-weight: 500;
   font-size: 0.8em;
