@@ -9,22 +9,24 @@ import spot from "../../assets/images/spot.png";
 import car from "../../assets/images/car.png";
 import { onSnapshot, doc } from "firebase/firestore"
 import { db } from "../../firebase-config"
-import { Modal } from "@mui/material";
 
 const { kakao } = window;
 function SelectedCar() {
   const address = window.localStorage.getItem("address");
   const lat = window.sessionStorage.getItem("user_lat");
   const lng = window.sessionStorage.getItem("user_lon");
-  // window.location.reload()
+  const [ modal, setModal ] = useState(false);
   const [ cardis, setCatdis ] = useState(0)
   const [ carmin, setCatmin ] = useState(0)
-  // const [ modal, setModal ] = useState(false)
   
   let sessionStorage = window.sessionStorage;
   const caraddress1 = window.localStorage.getItem("caraddress");
   const dist = Math.floor(sessionStorage.getItem("cardis"))
   const min = Math.floor(dist / 170)
+
+  const closeModal = () => {
+    setModal(false)
+  }
 
   const carnumber = window.localStorage.getItem("carnumber");
   
@@ -36,11 +38,15 @@ function SelectedCar() {
   });
   
   const getDis = onSnapshot(doc(db, "Ego", "total_distance"), (doc) => {
-    sessionStorage.setItem("cardis", doc.data().dist)
-    // console.log(sessionStorage.getItem("catdis"))
-    console.log(doc.data().dist)
-    setCatdis(dist)
-    setCatmin(min)
+    if ( doc.data().dist < 100 ) {
+      console.log("123")
+      setModal(true)
+    } else if (doc.data().dist >= 100) {
+      sessionStorage.setItem("cardis", doc.data().dist)
+      console.log(doc.data().dist)
+      setCatdis(dist)
+      setCatmin(min)
+    }
   })
 
   useEffect(() => {
@@ -63,6 +69,7 @@ function SelectedCar() {
     imageSize,
     imageOption
   );
+
 
   const mapscript = () => {
     let container = document.getElementById("map");
@@ -111,7 +118,37 @@ function SelectedCar() {
         <div className={styles.text11}>선택하신 " <span className={styles.memo} style={{ fontWeight: "800" }}>{carnumber}</span> " (이)가 달려가고있어요!</div>
       </div>
 
-     
+      {modal && (
+        <div className={styles.container}>
+          <div className={styles.modal}>
+            <div className={styles.modalcontents1}>
+              <div className={styles.modaltext}>
+                <div style={{ fontSize: "1em", fontWeight: "800" }}>
+                  차량이 곧 도착합니다. 
+                  <br></br>
+                  탑승 준비해주세요!!
+                </div>
+              </div>
+              <div className={styles.modaltext1}>
+                <div className={styles.contenttext}>
+                </div>
+              </div>
+              <div className={styles.modaltext}>
+                <button
+                  className={styles.button}
+                  onClick={() => {
+                    navigate("/completeCar");
+                  }}
+                >
+                  목적지 선택 화면으로
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.back}></div>
+        </div>
+      )}
+
       <div
         id="map"
         className={styles.map}
@@ -137,11 +174,9 @@ function SelectedCar() {
         <div className={styles.text1}>
           <div
             style={{
-              // paddingBottom: "5px",
               justifyContent: "center",
               alignItems: "center",
               alignContent: "center",
-              // display: "flex",
             }}
             >
             <span style={{ fontSize: "1em", fontWeight:"100"}}>이 차량의 현재 위치 : </span>
@@ -151,9 +186,7 @@ function SelectedCar() {
       </div>
         <div className={styles.next5}>
           <div className={styles.in}>
-            {/* <div style={{ margin:"auto" }}> */}
               <img src={car} alt="go" className={styles.size1} />
-              {/* </div> */}
             <div className={styles.box}>
               <div>
                 <span>예상 도착 시간은 </span>
@@ -175,12 +208,11 @@ function SelectedCar() {
           className={styles.next3}
           onClick={() => {
             {
-              // setModal(true)
              {window.location.replace("/completeCar")}
             }
           }}
         >
-          <div className={styles.text3}>완료</div>
+          <div className={styles.text3}>목적지 선택 화면으로</div>
         </button>
       </div> */}
     </div>

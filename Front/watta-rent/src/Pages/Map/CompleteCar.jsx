@@ -1,13 +1,13 @@
 /*global kakao*/
 import React from "react";
-import { useEffect, useState, useRef } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./CompleteCar.module.css";
-import { markerdata } from "./Markerdata";
 import previous from "../../assets/images/previous.png";
-import minicar from "../../assets/images/minicar.png";
 import spot from "../../assets/images/spot.png";
 import car from "../../assets/images/car.png";
+import { db } from "../../firebase-config"
+import { doc, updateDoc } from "firebase/firestore";
 
 const address = window.localStorage.getItem("address");
 const carnumber = window.localStorage.getItem("carnumber");
@@ -41,6 +41,16 @@ function CompleteCar() {
       navigate("/DestinationMap", { state: InputText });
     }
   };
+
+  const firebaseUpdate = () => {
+    async function updateFirebase() {
+      const result = await updateDoc(doc(db, "Reservation", "return_btn"), {
+        return_btn: true
+      });
+      return result;
+      }
+      updateFirebase()
+    }
 
   return (
     // 상단 네비게이션

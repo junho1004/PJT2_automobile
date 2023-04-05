@@ -1,31 +1,72 @@
 /*global kakao*/
 import React from "react";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./SelectedCar.module.css";
 import { markerdata } from "./Markerdata";
-import previous from "../../assets/images/previous.png";
 import spot from "../../assets/images/spot.png";
+import minicar from "../../assets/images/mapcar.png";
 import spot1 from "../../assets/images/spot1.png";
 import car2 from "../../assets/images/car2.png";
-import { buttonUnstyledClasses } from "@mui/base";
+import { onSnapshot, doc } from "firebase/firestore"
+import { db } from "../../firebase-config"
 
 const { kakao } = window;
 const address = window.localStorage.getItem("address");
 const destination = window.localStorage.getItem("destination");
-const lat = window.localStorage.getItem("lat");
-const lng = window.localStorage.getItem("lng");
+const lat = window.sessionStorage.getItem("carlat");
+const lng = window.sessionStorage.getItem("carlon");
 // const Dlat = window.localStorage.getItem("destinationLat");
 // const Dlng = window.localStorage.getItem("destinationLng");
 
 function MoveTo() {
-  //   const caraddress1 = window.localStorage.getItem("caraddress");
+  const [ cardis, setDesDis ] = useState(0)
+  const [ carmin, setCatmin ] = useState(0)
+  let sessionStorage = window.sessionStorage;
+  const min = Math.floor(cardis / 170)
   const carnumber = window.localStorage.getItem("carnumber");
 
+  // 목적지와 거리 구하는 공식
+  const getDistanceFromLatLonInKm = (lat1,lng1,lat2,lng2) => {
+    function deg2rad(deg) {
+        return deg * (Math.PI/180)
+    }
+    var R = 6371; // Radius of the earth in km
+    var dLat = deg2rad(lat2-lat1);  // deg2rad below
+    var dLon = deg2rad(lng2-lng1);
+    var a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * Math.sin(dLon/2) * Math.sin(dLon/2);
+    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    var d = R * c ; // Distance in km
+    setCatmin(Math.floor(d / 1000))
+    if (Math.floor(d) > 1000) {
+      setDesDis(Math.floor(d * 0.001) + " km")
+    } else {
+      setDesDis(Math.floor(d) + " m")
+    }
+    return d;
+}
+
+  const unsub = onSnapshot(doc(db, "Ego", "current_gps"), (doc) => {
+    sessionStorage.setItem("carlat", doc.data().lat)
+    sessionStorage.setItem("carlon", doc.data().lon)
+    console.log(sessionStorage.getItem("carlat"))
+    console.log(sessionStorage.getItem("carlon"))
+  });
+  
   useEffect(() => {
-    mapscript();
-  }, []);
+    unsub()
+    const interval = setInterval(()=> {
+      getDistanceFromLatLonInKm(sessionStorage.getItem("carlat"), sessionStorage.getItem("carlon"), sessionStorage.getItem("deslat"), sessionStorage.getItem("deslon"))
+      mapscript();
+    }, 5000)
+    return  () => {
+      clearInterval(interval)
+    }
+  }, 5000);
+
   const navigate = useNavigate();
+
+  // 도착지 마커
   var imageSrc =
       "https://cdn.pixabay.com/photo/2014/04/02/10/45/location-304467_1280.png", // 마커이미지의 주소입니다
     imageSize = new kakao.maps.Size(25, 40), // 마커이미지의 크기입니다
@@ -37,18 +78,29 @@ function MoveTo() {
     imageOption
   );
 
+  // 본인 마커
+  const myImageSrc = minicar;
+  const myImageSize = new kakao.maps.Size(35, 35);
+  const myImageOption = { offset: new kakao.maps.Point(5, 5) };
+  const myMarkerImage = new kakao.maps.MarkerImage(
+    myImageSrc,
+    myImageSize,
+    myImageOption
+  );
+
   const mapscript = () => {
     let container = document.getElementById("map");
     let options = {
       ///여기 현재위치를 나타내는 것 실시간으로 바뀌어야함,,///
-      center: new kakao.maps.LatLng(lat, lng),
-      level: 14,
+      center: new kakao.maps.LatLng(sessionStorage.getItem("carlat"), sessionStorage.getItem("carlon")),
+      level: 7,
     };
     //map
     const map = new kakao.maps.Map(container, options);
 
     const myMarker = new kakao.maps.Marker({
       map: map,
+      image: myMarkerImage,
       position: new kakao.maps.LatLng(lat, lng),
     });
     myMarker.setMap(map);
@@ -150,12 +202,12 @@ function MoveTo() {
               <div className={styles.box}>
                 <div>
                   <span>예상 도착 시간은 </span>
-                  <span style={{ fontSize: "1em" }}>약 10분</span>
+                  <span style={{ fontSize: "1em" }}>약 {carmin}분</span>
                   <span> 입니다</span>
                 </div>
                 <div>
                   <span>내 위치에서 </span>
-                  <span style={{ fontSize: "1em" }}>약 500m</span>
+                  <span style={{ fontSize: "1em" }}>약 {cardis}</span>
                   <span> 떨어져있습니다</span>
                 </div>
               </div>

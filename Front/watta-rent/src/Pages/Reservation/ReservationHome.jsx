@@ -6,49 +6,43 @@ import Calendar from "../../Components/Reservation/Calendar";
 import TimePickerStart from "../../Components/Reservation/TimePickerStart";
 import TimePickerEnd from "../../Components/Reservation/TimePickerEnd";
 import previous from "../../assets/images/previous.png";
-import { db } from "../../firebase-config";
+import { db } from "../../firebase-config"
 import { doc, onSnapshot, updateDoc } from "firebase/firestore";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
 export default function ReservationHome() {
   const navigate = useNavigate();
-  const todayDate = new Date();
-  const year = todayDate.getFullYear();
-  const month = todayDate.getMonth() + 1;
-  const date = todayDate.getDate();
+  const todayDate = new Date()
+  const year = todayDate.getFullYear()
+  const month = todayDate.getMonth() + 1
+  const date = todayDate.getDate()
   const address = window.localStorage.getItem("address");
-  const nickname = window.localStorage.getItem("loginNickname");
-  const [startdate, setStartdate] = useState(year + "-" + month + "-" + date);
-  const [enddate, setEnddate] = useState(year + "-" + month + "-" + date);
-  const [starttime, setStarttime] = useState("00:00");
-  const [endtime, setEndtime] = useState("00:00");
+  const nickname = window.localStorage.getItem("loginNickname")
+  const [ startdate, setStartdate ] = useState(year + "-" + month + "-" + date)
+  const [ enddate, setEnddate ] = useState(year + "-" + month + "-" + date)
+  const [ starttime, setStarttime ] = useState("00:00")
+  const [ endtime, setEndtime ] = useState("00:00")
 
-  const firebaseDate = onSnapshot(
-    doc(db, "Reservation", "reservation_date"),
-    (doc) => {
-      setStartdate(doc.data().start_date);
-      setEnddate(doc.data().end_date);
-    }
-  );
-  const firebaseTime = onSnapshot(
-    doc(db, "Reservation", "reservation_time"),
-    (doc) => {
-      setStarttime(doc.data().start_time);
-      setEndtime(doc.data().end_time);
-    }
-  );
-  useEffect(() => {
-    firebaseDate();
-    firebaseTime();
-  });
+  const firebaseDate = onSnapshot(doc(db, "Reservation", "reservation_date"), (doc) => {
+    setStartdate(doc.data().start_date)
+    setEnddate(doc.data().end_date)
+  })
+  const firebaseTime = onSnapshot(doc(db, "Reservation", "reservation_time"), (doc) => {
+    setStarttime(doc.data().start_time)
+    setEndtime(doc.data().end_time)
+  })
+  useEffect(()=> {
+    firebaseDate()
+    firebaseTime()
+  })
 
   const getDateDiff = (d1, d2, t1, t2) => {
     const date1 = new Date(d1 + " " + t1);
     const date2 = new Date(d2 + " " + t2);
     const diffDate = date2.getTime() - date1.getTime();
-    console.log(diffDate / 1000);
+    console.log(diffDate / 1000)
 
     // firebase 출발 시간 업데이트
     async function updateFirebase() {
@@ -64,7 +58,7 @@ export default function ReservationHome() {
     return Math.abs(diffDate / 1000); // 밀리세컨 * 초 * 분 * 시 = 일
   };
 
-  return (
+   return (
     <div className={styles.background}>
       <div className={styles.back1}>
         <div className={styles.next}>
