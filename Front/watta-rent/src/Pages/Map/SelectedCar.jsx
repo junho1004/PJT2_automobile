@@ -108,7 +108,7 @@ function SelectedCar() {
               </div>
         </div>
       <div className={styles.next1}>
-        <div className={styles.text11}>선택하신 "<span style={{ fontWeight: "800" }}>{carnumber}</span>" (이)가 달려가고있어요!</div>
+        <div className={styles.text11}>선택하신 " <span className={styles.memo} style={{ fontWeight: "800" }}>{carnumber}</span> " (이)가 달려가고있어요!</div>
       </div>
 
      
@@ -144,7 +144,7 @@ function SelectedCar() {
               // display: "flex",
             }}
             >
-            <span style={{ fontSize: "1em" }}>이 차량의 현재 위치 : </span>
+            <span style={{ fontSize: "1em", fontWeight:"100"}}>이 차량의 현재 위치 : </span>
             <span> {caraddress1}</span>
           </div>
         </div>
@@ -170,7 +170,7 @@ function SelectedCar() {
         </div>
         </div>
        </div>
-      <div className={styles.next3}>
+      {/* <div className={styles.next3}>
         <button
           className={styles.next3}
           onClick={() => {
@@ -182,7 +182,7 @@ function SelectedCar() {
         >
           <div className={styles.text3}>완료</div>
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

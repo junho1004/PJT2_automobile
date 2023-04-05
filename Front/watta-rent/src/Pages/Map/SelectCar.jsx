@@ -213,7 +213,7 @@ function SelectCar() {
                   alignContent: "center",
                 }}
               >
-                <span style={{ fontSize: "1em" }}>이 차량의 현재 위치 : </span>
+                <span style={{ fontSize: "1em", fontWeight:"100" }}>이 차량의 현재 위치 : </span>
                 <span> {caraddress}</span>
               </div>
             </div>
@@ -224,7 +224,7 @@ function SelectCar() {
               <div className={styles.box}>
                 <div>
                   <div> 고객님이 선택하신 차량은 </div>
-                  <div style={{ fontSize: "1.2em" }}>{getcartype}</div>
+                  <div style={{ fontSize: "1.2em", fontWeight:"600" }}>{getcartype}</div>
                   <div> 입니다</div>
                 </div>
               </div>

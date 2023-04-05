@@ -170,8 +170,8 @@ function CompleteCar() {
                       <div style={{ fontSize: "1em", fontWeight: "800" }}>
                         <div style={{alignContent:"center",justifyContent:"center",alignItems:"center",display:"flex"}}><div><span style={{fontSize:"1.2em"}}>와따렌트</span>를</div></div>
                         <div style={{alignContent:"center",justifyContent:"center",alignItems:"center",display:"flex"}}>이용해주셔서 감사합니다!</div>
-                        <div style={{fontSize:"0.7em",paddingTop:"4%",alignContent:"center",justifyContent:"center",alignItems:"center",display:"flex"}}>15분뒤, 차가 알아서 차고지로 복귀합니다!</div>
-                        <div style={{fontSize:"0.7em",alignContent:"center",justifyContent:"center",alignItems:"center",display:"flex"}}>두고 내린 소지품은 없는지 확인해 주세요!</div>
+                        <div style={{fontSize:"0.7em",paddingTop:"4%",alignContent:"center",justifyContent:"center",alignItems:"center",display:"flex", fontWeight:"100"}}>15분 뒤, 차가 알아서 차고지로 복귀합니다!</div>
+                        <div style={{fontSize:"0.7em",alignContent:"center",justifyContent:"center",alignItems:"center",display:"flex",fontWeight:"100"}}>두고 내린 소지품은 없는지 확인해 주세요!</div>
                       </div>
                     </div>
                     <button
