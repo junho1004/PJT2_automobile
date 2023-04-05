@@ -30,11 +30,20 @@ function SelectCar() {
       const result = await updateDoc(doc(db, "Reservation", "choice_btn"), {
         choice_btn: true
       });
-      console.log("123")
       return result;
       }
       updateFirebase()
     }
+
+  const changeReservationBtn = () => {
+    async function updateBtn() {
+      const result = await updateDoc(doc(db, "Reservation", "reservation_btn"), {
+        reservation_btn: true
+      });
+      return result;
+      }
+      updateBtn()
+  }
 
   const getcartype = window.localStorage.getItem("cartype");
   const closeModal = () => {
@@ -237,6 +246,7 @@ function SelectCar() {
           className={styles.next3}
           onClick={() => {
             {
+              changeReservationBtn()
               localStorage.setItem("caraddress", caraddress);
               navigate("/SelectedCar");
             }

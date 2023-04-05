@@ -8,7 +8,8 @@ const Calendar = () => {
         startDate: "",
         endDate: ""
     });
-    
+    const today = new Date()
+    const yesterday = new Date(today.setDate(today.getDate() - 1))
     const handleValueChange = (newValue) => {
         setValue(newValue);
         // console.log(newValue);
@@ -35,7 +36,7 @@ const Calendar = () => {
                 separator={"~"} 
                 // showFooter={true} 
                 useRange={false} 
-                minDate={new Date()} 
+                minDate={yesterday} 
                 maxDate={new Date("2023-12-31")} 
             />
         </div>
