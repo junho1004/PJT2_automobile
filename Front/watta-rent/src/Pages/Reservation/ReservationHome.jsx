@@ -24,19 +24,22 @@ export default function ReservationHome() {
   const [ enddate, setEnddate ] = useState(year + "-" + month + "-" + date)
   const [ starttime, setStarttime ] = useState("00:00")
   const [ endtime, setEndtime ] = useState("00:00")
+  const [ data, setData ] = useState(null)
+  
 
-  const firebaseDate = onSnapshot(doc(db, "Reservation", "reservation_date"), (doc) => {
-    setStartdate(doc.data().start_date)
-    setEnddate(doc.data().end_date)
-  })
-  const firebaseTime = onSnapshot(doc(db, "Reservation", "reservation_time"), (doc) => {
-    setStarttime(doc.data().start_time)
-    setEndtime(doc.data().end_time)
-  })
+  // firebaseTime()
   useEffect(()=> {
-    firebaseDate()
-    firebaseTime()
-  })
+    onSnapshot(doc(db, "Reservation", "reservation_date"), (doc) => {
+      setStartdate(doc.data().start_date)
+      setEnddate(doc.data().end_date)
+    })
+    // firebaseDate()
+    onSnapshot(doc(db, "Reservation", "reservation_time"), (doc) => {
+      setStarttime(doc.data().start_time)
+      setEndtime(doc.data().end_time)
+      console.log("123")
+    })
+  }, [])
 
   const getDateDiff = (d1, d2, t1, t2) => {
     const date1 = new Date(d1 + " " + t1);
@@ -149,7 +152,7 @@ export default function ReservationHome() {
               marginTop: "3%",
             }}
           >
-            <CardContent style={{ margin: "15px" }}>
+            <CardContent style={{ margin: "15px", paddingLeft: "0px", paddingRight: "0px" }}>
               <Typography
                 variant="h6"
                 style={{ textAlign: "center", fontSize: "0.9em" }}
