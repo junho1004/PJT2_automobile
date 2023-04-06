@@ -22,7 +22,7 @@ function SelectedCar() {
   let sessionStorage = window.sessionStorage;
   const caraddress1 = window.localStorage.getItem("caraddress");
   const dist = Math.floor(sessionStorage.getItem("cardis"))
-  const min = Math.floor(dist / 170)
+
 
   // const closeModal = () => {
   //   setModal(false)
@@ -30,29 +30,34 @@ function SelectedCar() {
 
   const carnumber = window.localStorage.getItem("carnumber");
   
-  const unsub = onSnapshot(doc(db, "Ego", "current_gps"), (doc) => {
-    sessionStorage.setItem("carlat", doc.data().lat)
-    sessionStorage.setItem("carlon", doc.data().lon)
-    console.log(sessionStorage.getItem("carlat"))
-    console.log(sessionStorage.getItem("carlon"))
-  });
+//  onSnapshot(doc(db, "Ego", "current_gps"), (doc) => {
+//     sessionStorage.setItem("carlat", doc.data().lat)
+//     sessionStorage.setItem("carlon", doc.data().lon)
+//     console.log(sessionStorage.getItem("carlat"))
+//     console.log(sessionStorage.getItem("carlon"))
+//   });
   
-  const getDis = onSnapshot(doc(db, "Ego", "total_distance"), (doc) => {
-    if ( doc.data().dist < 100 ) {
-      console.log("123")
-      setModal(true)
-    } else if (doc.data().dist >= 100) {
-      sessionStorage.setItem("cardis", doc.data().dist)
-      console.log(doc.data().dist)
-      setCatdis(dist)
-      setCatmin(min)
-    }
-  })
 
   useEffect(() => {
-    unsub()
+
+    onSnapshot(doc(db, "Ego", "current_gps"), (doc) => {
+      sessionStorage.setItem("carlat", doc.data().lat)
+      sessionStorage.setItem("carlon", doc.data().lon)
+      console.log(sessionStorage.getItem("carlat"))
+      console.log(sessionStorage.getItem("carlon"))
+    });
+
+    onSnapshot(doc(db, "Ego", "total_distance"), (doc) => {
+        setCatdis(Math.floor(doc.data().dist))
+        setCatmin(Math.floor(doc.data().dist / 170))
+        if (doc.data().dist < 100) {
+          setModal(true)
+        } else {
+          setModal(false)
+        }
+    })
+
     const interval = setInterval(()=> {
-      getDis()
       mapscript();
     },1000)
     return  () => {
@@ -118,7 +123,7 @@ function SelectedCar() {
         <div className={styles.text11}>선택하신 " <span className={styles.memo} style={{ fontWeight: "800" }}>{carnumber}</span> " (이)가 달려가고있어요!</div>
       </div>
 
-      {modal && (
+      { modal && (
         <div className={styles.container}>
           <div className={styles.modal}>
             <div className={styles.modalcontents1}>
@@ -184,23 +189,42 @@ function SelectedCar() {
           </div>
         </div>
       </div>
-        <div className={styles.next5}>
-          <div className={styles.in}>
-              <img src={car} alt="go" className={styles.size1} />
-            <div className={styles.box}>
-              <div>
-                <span>예상 도착 시간은 </span>
-                <span style={{ fontSize: "1em" }}>약 <span style={{ fontSize: "1em", fontWeight: "700" }}>{carmin}</span>분</span>
-                <span> 입니다</span>
-              </div>
-              <div>
-                <span>내 위치에서 </span>
-                <span style={{ fontSize: "1em" }}>약 <span style={{ fontSize: "1em", fontWeight: "700" }}>{cardis}</span>M</span>
-                <span> 떨어져있습니다</span>
+      { cardis > 100 ?
+        (<div className={styles.next5}>
+            <div className={styles.in}>
+                <img src={car} alt="go" className={styles.size1} />
+              <div className={styles.box}>
+                <div>
+                  <span>예상 도착 시간은 </span>
+                  <span style={{ fontSize: "1em" }}>약 <span style={{ fontSize: "1em", fontWeight: "700" }}>{carmin}</span>분</span>
+                  <span> 입니다</span>
+                </div>
+                <div>
+                  <span>내 위치에서 </span>
+                  <span style={{ fontSize: "1em" }}>약 <span style={{ fontSize: "1em", fontWeight: "700" }}>{cardis}</span>M</span>
+                  <span> 떨어져있습니다</span>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+          </div>)
+         : (<div className={styles.next5}>
+            <div className={styles.in}>
+                <img src={car} alt="go" className={styles.size1} />
+              <div className={styles.box}>
+                <div>
+                  <span>차량이 곧  </span>
+                  <span style={{ fontSize: "1em" }}>도착</span>
+                  <span>합니다!</span>
+                </div>
+                <div>
+                  <span>차량 번호</span>
+                  <span style={{ fontSize: "1em" }}>와 위치를 </span>
+                  <span>확인 해주세요!</span>
+                </div>
+              </div>
+            </div>
+          </div>)
+        }
         </div>
        </div>
       {/* <div className={styles.next3}>

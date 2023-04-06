@@ -48,7 +48,8 @@
     "swiper": "^8.4.7",
     "utm-latlng": "^1.0.7",
     "web-vitals": "^2.1.0",
-    "websocket": "^1.0.34"
+    "websocket": "^1.0.34",
+    "yarn": "^1.22.19"
   },
   "scripts": {
     "start": "react-scripts start",
