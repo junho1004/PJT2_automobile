@@ -165,6 +165,7 @@ function CompleteCar() {
                 className={styles.button1}
                 onClick={() => {
                   setVisible(!visible);
+                  firebaseUpdate();
                 }}
               >
                 확인

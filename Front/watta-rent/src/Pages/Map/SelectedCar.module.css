@@ -107,10 +107,10 @@ align-content: center; */
 
 @keyframes slide {
   from {
-      left: -350px;
+      right: -350px;
   }
   to {
-      left: 350px;
+      right: 350px;
   }
 }
 
@@ -210,4 +210,86 @@ align-content: center; */
   width: 90%;
   height: 100%;
   /* justify-content: space-between; */
+}
+
+.modal {
+  position: absolute;
+  z-index: 5;
+  width: 80%;
+  height: 22%;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  /* margin: 5%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modaltext {
+  /* margin-bottom: 6%; */
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  width: 100%;
+}
+.size1 {
+  height: 70%;
+  width: 25%;
+}
+
+.in {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  width: 90%;
+  height: 100%;
+  /* justify-content: space-between; */
+}
+.x {
+
+  justify-content: right;
+  display: flex;
+  font-size: 0.8rem;
+  width: 80%;
+  /* margin: 5%; */
+}
+.modaltext1 {
+ align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  /* border: 2px solid red; */
+  margin: auto;
+}
+
+.size {
+  flex-grow: 1;
+  height: 40%;
+  width: 25%;
+  /* border: 2px solid red; */
+  margin: auto 6%;
+}
+
+.name {
+  font-size: 0.7em;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.texts {
+  font-size: 0.4em;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.button {
+  background-color: rgba(252, 234, 43, 1);
+  width: 80%;
+  /* margin: 2% 0 0 0; */
+  padding: 3% 6% 3% 6%;
+  border-radius: 20px;
+  font-size: 0.7em;
 }
