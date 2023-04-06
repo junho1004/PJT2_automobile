@@ -17,7 +17,7 @@ const address = window.localStorage.getItem("address");
 function SelectCar() {
   const lat = window.sessionStorage.getItem("user_lat");
   const lng = window.sessionStorage.getItem("user_lon");
-  let [caraddress, Setcaraddress] = useState("");
+  let [caraddress, Setcaraddress] = useState(null);
   let [modal, setModal] = useState(false);
   let [carNumber, SetCarnumber] = useState("");
   let [carType, SetCartype] = useState("");
@@ -214,7 +214,9 @@ function SelectCar() {
         <div>
           <div className={styles.next4}>
             <div className={styles.text1}>
-              <div
+
+              { caraddress &&
+              (<div
                 style={{
                   paddingBottom: "5px",
                   justifyContent: "center",
@@ -222,20 +224,32 @@ function SelectCar() {
                   alignContent: "center",
                 }}
               >
-                <span style={{ fontSize: "1em" }}>이 차량의 현재 위치 : </span>
+                <span style={{ fontSize: "1em",fontWeight: "100" }}>차량의 현재 위치 : </span>
                 <span> {caraddress}</span>
-              </div>
+              </div>)
+              }
+
             </div>
           </div>
           <div className={styles.next5}>
             <div className={styles.in}>
               <img src={car} alt="go" className={styles.size1} />
               <div className={styles.box}>
-                <div>
-                  <div> 고객님이 선택하신 차량은 </div>
-                  <div style={{ fontSize: "1.2em" }}>{getcartype}</div>
-                  <div> 입니다</div>
-                </div>
+              { 
+                  caraddress == null
+                  ? (<div>
+                    <div> 고객님이 선택하신 차량은 </div>
+                    <div style={{ fontSize: "1.2em",fontWeight: "500" }}>{getcartype}</div>
+                    <div> 입니다</div> 
+                   </div>)
+                  : (<div>
+                    <div> 차량을 </div>
+                    <div style={{ fontSize: "1.2em",fontWeight: "500" }}>선택해</div>
+                    <div> 주세요!!</div>
+                    </div>)
+                }
+
+
               </div>
             </div>
           </div>

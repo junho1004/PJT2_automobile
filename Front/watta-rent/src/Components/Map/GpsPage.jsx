@@ -81,8 +81,20 @@ export default function GpsPage() {
           className = {styles.map}
           ></div>
         </div>
-      <div className={styles.textb}>"{address1}" <span className={styles.textd} >(으)로</span></div>
-      <div className={styles.textc}> 차를 부를까요?</div>
+        
+      { 
+      address1
+      ? <div className={styles.textb}>"{address1}" <span className={styles.textd} >(으)로</span></div>
+      : <div className={styles.textb} >지도에서 픽업 위치를 </div>
+      
+      }
+
+      { 
+      address1 
+      ? <div className={styles.textb} style={{marginTop:"1px", marginBottom:"5px"}}> 차를 부를까요?</div>
+      : <div className={styles.textb} style={{marginTop:"1px", marginBottom:"5px"}}>선택해주세요!!</div>
+      }
+      
     </div>
   );
 }

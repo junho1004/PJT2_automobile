@@ -17,8 +17,8 @@ export const markerdata = [
   },
   {
     title: "렌트카3",
-    lat: 37.24030906248257,
-    lng: 126.77335949273622,
+    lat:37.23924906248257,
+    lng: 126.77316949273622,
     number: "광주 12가 4567",
     type : "2020_Kia_Stinger",
     fee : 180
