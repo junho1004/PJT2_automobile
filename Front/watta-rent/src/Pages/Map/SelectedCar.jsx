@@ -24,9 +24,9 @@ function SelectedCar() {
   const dist = Math.floor(sessionStorage.getItem("cardis"))
   const min = Math.floor(dist / 170)
 
-  const closeModal = () => {
-    setModal(false)
-  }
+  // const closeModal = () => {
+  //   setModal(false)
+  // }
 
   const carnumber = window.localStorage.getItem("carnumber");
   
@@ -123,7 +123,7 @@ function SelectedCar() {
           <div className={styles.modal}>
             <div className={styles.modalcontents1}>
               <div className={styles.modaltext}>
-                <div style={{ fontSize: "1em", fontWeight: "800" }}>
+                <div style={{ fontSize: "1em", fontWeight: "800",marginBottom:"6%" }}>
                   차량이 곧 도착합니다. 
                   <br></br>
                   탑승 준비해주세요!!
@@ -190,12 +190,12 @@ function SelectedCar() {
             <div className={styles.box}>
               <div>
                 <span>예상 도착 시간은 </span>
-                <span style={{ fontSize: "1em" }}>약 {carmin}분</span>
+                <span style={{ fontSize: "1em" }}>약 <span style={{ fontSize: "1em", fontWeight: "700" }}>{carmin}</span>분</span>
                 <span> 입니다</span>
               </div>
               <div>
                 <span>내 위치에서 </span>
-                <span style={{ fontSize: "1em" }}>약 {cardis}M</span>
+                <span style={{ fontSize: "1em" }}>약 <span style={{ fontSize: "1em", fontWeight: "700" }}>{cardis}</span>M</span>
                 <span> 떨어져있습니다</span>
               </div>
             </div>
