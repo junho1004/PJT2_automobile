@@ -20,7 +20,7 @@ export default function HomeBanner() {
   let [loginId, setLoginId] = useState("");
   let [loginPassword, setLoginPassword] = useState("");
   let [appropriate, setIsAppropriate] = useState(false);
-  let [user, setUser] = useState();
+  let [user, setUser] = useState("");
   const [modal, setModal] = useState(true);
 
   useEffect(() => {
@@ -50,7 +50,7 @@ export default function HomeBanner() {
         navigate("/Maphome");
       } catch (err) {
         setIsAppropriate(false);
-        console.log(appropriate);
+        console.log(err);
         toast.error("이메일과 비밀번호를 확인해주세요!");
       }
     }
