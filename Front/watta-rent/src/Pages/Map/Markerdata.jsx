@@ -25,7 +25,7 @@ export const markerdata = [
   },
   {
     title: "렌트카4",
-    lat: 37.31135486091657,
+    lat: 37.41135486091657,
     lng: 127.48588963629977,
     number: "부산 12가 4567",
     type : "2020_volvo_xc90",
