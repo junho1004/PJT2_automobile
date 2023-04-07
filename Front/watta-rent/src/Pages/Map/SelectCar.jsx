@@ -24,6 +24,8 @@ function SelectCar() {
   let [carFee, SetCarfee] = useState("");
   let [carlat, SetCarlat] = useState("");
   let [carlng, SetCarlng] = useState("");
+  let [carimage, Setcarimage] = useState(null);
+  const navigate = useNavigate();
 
   const firebaseUpdate = () => {
     async function updateFirebase() {
@@ -54,21 +56,13 @@ function SelectCar() {
     mapscript();
   }, []);
 
-  const navigate = useNavigate();
-  const imageSrc = minicar;
-  const imageSize = new kakao.maps.Size(30, 30);
-  const imageOption = { offset: new kakao.maps.Point(5, 5) };
-  const markerimage = new kakao.maps.MarkerImage(
-    imageSrc,
-    imageSize,
-    imageOption
-  );
+
 
   const mapscript = () => {
     let container = document.getElementById("map");
     let options = {
       center: new kakao.maps.LatLng(lat, lng),
-      level: 3,
+      level: 4,
     };
 
     //map
@@ -81,6 +75,17 @@ function SelectCar() {
     myMarker.setMap(map);
 
     markerdata.forEach((el) => {
+      
+      const imageSrc = el.image;
+      const imageSize = new kakao.maps.Size(25, 25);
+      const imageOption = { offset: new kakao.maps.Point(5, 5) };
+      const markerimage = new kakao.maps.MarkerImage(
+        imageSrc,
+        imageSize,
+        imageOption
+      );
+
+      // let carimage = el.image
       const position = new kakao.maps.LatLng(el.lat, el.lng);
       const marker = new kakao.maps.Marker({
         //마커가 표시 될 지도
@@ -96,6 +101,8 @@ function SelectCar() {
       let carnumber = el.number;
       let cartype = el.type;
       let carfee = el.fee;
+      let carimage = el.image;
+  
 
       kakao.maps.event.addListener(marker, "click", function () {
         setModal(true);
@@ -115,6 +122,7 @@ function SelectCar() {
               SetCarfee(carfee);
               SetCarlat(lat);
               SetCarlng(lng);
+              Setcarimage(carimage);
             }
           };
           geocoder.coord2Address(coord.getLng(), coord.getLat(), callback);
@@ -158,9 +166,11 @@ function SelectCar() {
                 </div>
               </div>
               <div className={styles.modaltext1}>
+                <div style={{margin:"8%",width:"80px",justifyContent:"center",alignContent:"center",alignItems:"center",display:"flex"}}>
                 <div className={styles.size}>
-                  <img src={car} alt="go" />
+                  <img src={carimage} alt="go" />
                 </div>
+                                  </div>
                 <div className={styles.contenttext}>
                   <div className={styles.name}>차번호</div>
                   <div className={styles.texts}>: {carNumber}</div>
@@ -232,26 +242,35 @@ function SelectCar() {
             </div>
           </div>
           <div className={styles.next5}>
-            <div className={styles.in}>
+            {/* <div className={styles.in} style={{ border:"2px red solid" }}>
               <img src={car} alt="go" className={styles.size1} />
-              <div className={styles.box}>
+              <div className={styles.box}> */}
               { 
                   caraddress == null
-                  ? (<div>
-                    <div> 고객님이 선택하신 차량은 </div>
-                    <div style={{ fontSize: "1.2em",fontWeight: "500" }}>{getcartype}</div>
-                    <div> 입니다</div> 
-                   </div>)
-                  : (<div>
-                    <div> 차량을 </div>
-                    <div style={{ fontSize: "1.2em",fontWeight: "500" }}>선택해</div>
-                    <div> 주세요!!</div>
+                  ? (<div className={styles.in}>
+                  <img src={car} alt="go" className={styles.size1} />
+                  <div className={styles.box}>
+                  <div> 
+                    <div style={{ fontSize: "1.2em",fontWeight: "500" }}>차량을 선택해주세요!!</div>
+                    </div>
+                    </div>
                     </div>)
+
+                  : (<div className={styles.in}>
+                  <img src={carimage} alt="go" className={styles.size1} />
+                  <div className={styles.box}>
+                  <div>
+                    <div> 고객님이 선택하신 차량은 </div>
+                    <div style={{ fontSize: "1.2em",fontWeight: "700" }}>{getcartype}</div>
+                    <div> 입니다</div> 
+                   </div>
+                   </div>
+                   </div>)
                 }
 
 
-              </div>
-            </div>
+              {/* </div>
+            </div> */}
           </div>
         </div>
       </div>
