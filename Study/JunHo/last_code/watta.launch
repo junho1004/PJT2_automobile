@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="watta_dir" type="gpsimu_pub.py" name="gpsimu_pub" />
+    <node pkg="watta_dir" type="dijkstra_global_path_pub.py" name="dijkstra_global_path_pub" />
+    <node pkg="watta_dir" type="local_path_pub.py" name="local_path_pub" />
+    <node pkg="watta_dir" type="lattice_planner.py" name="lattice_planner" />
+    
+    <!-- <node pkg="watta_dir" type="mgeo_pub.py" name="mgeo_pub"  />
+    <node pkg="watta_dir" type="tf_pub.py" name="tf"  />
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find watta_dir)/rviz/kcity_rviz.rviz" /> -->
+</launch>
