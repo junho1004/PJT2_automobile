@@ -7,15 +7,13 @@
 
 ![Untitled](assets/Untitled.png)
 
-## 🔴 서비스 소개
+## 🔴 서비스 소개 [<소개 영상>](https://www.youtube.com/watch?v=zynzqoHcAv4)
 
 ```
 자율주행 기술 기반 렌터카 서비스
 차가 스스로 와따(왔다), 와따(👍)!
 
 자율주행을 기반으로 차량 대여와 반납에 이어 차량 이용에서 편의를 제공하고자 하는 서비스
-
-[<소개 영상>](https://www.youtube.com/watch?v=zynzqoHcAv4)
 ```
 
 ## 🔴 기획 배경
