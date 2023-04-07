@@ -195,8 +195,8 @@ align-content: center; */
   display: flex;
 }
 .size1 {
-  height: 70%;
-  width: 25%;
+  height: 50%;
+  width: 20%;
 }
 
 .in {
@@ -227,13 +227,15 @@ align-content: center; */
 
 .size {
   flex-grow: 1;
-  height: 40%;
-  width: 25%;
+  height: 80px;
+  width: 100px;
   /* border: 2px solid red; */
   margin: auto 6%;
+  /* margin-right: 20%; */
 }
 .contenttext {
   /* border: 2px solid red; */
+  width: 200px
 }
 .name {
   font-size: 0.7em;

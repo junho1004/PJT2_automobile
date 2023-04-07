@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./SelectedCar.module.css";
 import previous from "../../assets/images/previous.png";
-import minicar from "../../assets/images/mapcar.png";
+// import minicar from "../../assets/images/mapcar.png";
+import car5 from "../../assets/images/car5.png";
 import spot from "../../assets/images/spot.png";
 import car from "../../assets/images/car.png";
 import { onSnapshot, doc } from "firebase/firestore"
@@ -66,7 +67,7 @@ function SelectedCar() {
   }, 1000);
 
   const navigate = useNavigate();
-  const imageSrc = minicar;
+  const imageSrc = car5;
   const imageSize = new kakao.maps.Size(30, 30);
   const imageOption = { offset: new kakao.maps.Point(5, 5) };
   const markerimage = new kakao.maps.MarkerImage(
@@ -192,7 +193,7 @@ function SelectedCar() {
       { cardis > 100 ?
         (<div className={styles.next5}>
             <div className={styles.in}>
-                <img src={car} alt="go" className={styles.size1} />
+                <img src={car5} alt="go" className={styles.size1} />
               <div className={styles.box}>
                 <div>
                   <span>예상 도착 시간은 </span>
